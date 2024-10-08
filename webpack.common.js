@@ -147,26 +147,26 @@ module.exports = {
 <<<<<<< HEAD
     // Cemetery
     new HtmlWebpackPlugin({
-      template: './src/cemetery.html',
-      filename: './cemetery.html'
+      template: './src/cemetery/cemetery.html',
+      filename: './cemetery/cemetery.html'
     }),
 
     // Advices 
     new HtmlWebpackPlugin({
-      template: './src/advices.html',
-      filename: './advices.html'
+      template: './src/advices/advices.html',
+      filename: './advices/advices.html'
     }),
 
     // Team Search
     new HtmlWebpackPlugin({
-      template: './src/team.html',
-      filename: './team.html'
+      template: './src/team/team.html',
+      filename: './team/team.html'
     }),
 
     // Article
     new HtmlWebpackPlugin({
-          template: './src/articles/about_dead_startup.html',
-          filename: './articles/about_dead_startup.html'
+          template: './src/cemetery/articles/about_dead_startup.html',
+          filename: './cemetery/articles/about_dead_startup.html'
      }),
 
     // Partials

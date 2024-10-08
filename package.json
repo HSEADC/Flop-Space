@@ -1,15 +1,8 @@
 {
-<<<<<<< HEAD
   "name": "Startdown",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Max Coch",
-=======
-  "name": "static-site-boilerplate",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Anna Komkova <ann.komkova98@gmail.com>",
->>>>>>> e7d96b23a8b9065747c30f2a69378aa290930b18
   "license": "MIT",
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.js",
@@ -37,11 +30,7 @@
     "postcss-preset-env": "^10.0.3",
     "sass": "^1.78.0",
     "sass-loader": "^16.0.1",
-<<<<<<< HEAD
     "webpack": "^5.95.0",
-=======
-    "webpack": "^5.94.0",
->>>>>>> e7d96b23a8b9065747c30f2a69378aa290930b18
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0",
     "webpack-merge": "^6.0.1"

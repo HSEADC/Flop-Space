@@ -1,5 +1,4 @@
 * {
-<<<<<<< HEAD
     box-sizing: border-box;
   }
   
@@ -13,41 +12,3 @@
     font-size: 14px;
     font-weight: 400;
   }
-=======
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-body {
-  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
-  font-weight: 400;
-}
-
-.images {
-  display: flex;
-
-  * {
-    width: 24px;
-    height: 24px;
-    margin: 0 10px;
-  }
-
-  .image {
-    &#bgPNG {
-      background-image: url('images/image.png');
-    }
-
-    &#bgJPG {
-      background-image: url('images/image.jpg');
-    }
-
-    &#bgSVG {
-      background-image: url('images/image.svg');
-    }
-  }
-}
->>>>>>> e7d96b23a8b9065747c30f2a69378aa290930b18

@@ -5,28 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
 </head>
-<body>
-    <h1> Добро Пожаловать на StartDown! </h1>
-    <p> StartDown - это сервис о провальных стартапах. Более 90% стартапов проваливаются каждый год.
-         Учитесь на чужих ошибках вместе с нами и возможно именно ваш стартап не окажется в их числе.</p>
+<body class="welcoming_background">
+    <navigation></navigation>
+   
+    <div class="welcoming_background"></div>
 
-    <h2> Разделы Сайта </h2>
-    <p><a href="cemetery/cemetery.html">Кладбище Стартапов</a></p>
-    <p><a href="advices/advices.html">Советы и Тесты</a></p>
-    <p><a href="team/team.html">Поиск Команды</a></p>
-    
-    <h2> Статьи </h2>
-    <p><a href="cemetery/articles/about_dead_startup.html">История очередного мертвого стартапа</a></p>
+    <main>  
+    <div class="welcoming_block"> 
+    <h1> Добро пожаловать <br> на FlopSpace! </h1>
+
+    <p> FlopSpace - это сервис о провальных стартапах. Более 90% стартапов проваливаются каждый год.
+         Учитесь на чужих ошибках вместе с нами и возможно именно ваш стартап не окажется в их числе.</p>
 
     <!-- modify this form HTML and place wherever you want your form -->
 <form id="my-form" action="https://formspree.io/f/mbljrpzp" method="POST">
-    <label>Email:</label>
-    <input type="email" name="email" />
-    <label>Message:</label>
-    <input type="text" name="message" />
-    <button id="my-form-button">Submit</button>
-    <p id="my-form-status"></p>
-  </form>
+     <div class="input_form">  
+        <input type="email" name="email" class="email_input_field" placeholder="Ввести Email"/>
+        <button id="my-form-button" class="email_submit_button"> Подписаться </button>
+     </div>
+        <p id="my-form-status"></p>
+</form>
   
   <!-- Place this script at the end of the body tag -->
   <script>
@@ -44,22 +42,24 @@
         }
       }).then(response => {
         if (response.ok) {
-          status.innerHTML = "Thanks for your submission!";
+          status.innerHTML = "Жди от нас новостей! :)";
           form.reset()
         } else {
           response.json().then(data => {
             if (Object.hasOwn(data, 'errors')) {
               status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
             } else {
-              status.innerHTML = "Oops! There was a problem submitting your form"
+              status.innerHTML = "Ой! Во время отправки случилась ошибка."
             }
           })
         }
       }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
+        status.innerHTML = "Ой! Во время отправки случилась ошибка."
       });
     }
     form.addEventListener("submit", handleSubmit)
   </script>
+  </div>
+  </main>
 </body>
 </html>

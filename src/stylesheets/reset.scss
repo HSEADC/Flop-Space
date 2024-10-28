@@ -46,3 +46,68 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+a {
+	text-decoration: none;
+	color: inherit;
+	
+	&:hover, &:focus, &:active {
+	  text-decoration: none;
+	  outline: none;
+	}
+  }
+
+input {
+	margin: 0;            /* Сбрасываем отступы */
+	padding: 0;           /* Сбрасываем внутренние отступы */
+	border: none;         /* Убираем рамку */
+	background: none;     /* Убираем фон */
+	box-shadow: none;     /* Убираем тени */
+	outline: none;        /* Убираем контур при фокусе */
+	font: inherit;        /* Наследуем шрифт от родителя */
+	color: inherit;       /* Наследуем цвет текста */
+	width: auto;          /* Устанавливаем авто-ширину */
+	height: auto;         /* Устанавливаем авто-высоту */
+	-webkit-appearance: none; /* Отключаем браузерный стиль для WebKit-браузеров */
+	-moz-appearance: none;    /* Отключаем браузерный стиль для Firefox */
+	appearance: none;         /* Отключаем браузерный стиль для всех браузеров */
+}
+
+input::placeholder {
+	color: inherit;        /* Наследуем цвет текста заполнителя */
+	opacity: 1;            /* Устанавливаем полную непрозрачность */
+	font: inherit;         /* Наследуем шрифт */
+}
+
+button {
+	margin: 0;              /* Убираем внешние отступы */
+	padding: 0;             /* Убираем внутренние отступы */
+	border: none;           /* Убираем рамку */
+	background: none;       /* Убираем фон */
+	font: inherit;          /* Наследуем шрифт от родителя */
+	color: inherit;         /* Наследуем цвет текста */
+	text-align: inherit;    /* Наследуем выравнивание текста */
+	line-height: inherit;   /* Наследуем межстрочный интервал */
+	cursor: pointer;        /* Устанавливаем указатель для кликабельности */
+	-webkit-appearance: none; /* Отключаем дефолтное оформление для WebKit-браузеров */
+	-moz-appearance: none;    /* Отключаем дефолтное оформление для Firefox */
+	appearance: none;         /* Отключаем дефолтное оформление для всех браузеров */
+  }
+  
+  button:focus {
+	outline: none;          /* Убираем стандартную рамку фокуса */
+  }
+
+  ::-webkit-scrollbar-track {
+	background: #000000 !important; /* Цвет фона скроллбара */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+	background-color: #ffffff !important; /* Цвет ползунка */
+	border-radius: 12px !important; /* Скругление ползунка */
+	border: none !important; /* Внешняя рамка */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+	background-color: #000000 !important; /* Ползунок темнеет при наведении */
+  }

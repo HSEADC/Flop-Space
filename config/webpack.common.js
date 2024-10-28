@@ -3,6 +3,8 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin');
 const path = require('path');
 const htmlPagesConfig = require('./html-pages.config');
+const htmlPartialsConfig = require('./partials.config');
+const loader = require('sass-loader');
 const htmlPages = htmlPagesConfig;  // Подключение файла с настройками страниц
 
 module.exports = {
@@ -56,35 +58,32 @@ module.exports = {
         type: 'asset/source'
       },
       {
-        test: /\.(png|svg)$/,
-        type: 'asset/resource',
-        generator: {
-          filename: 'images/[hash][ext][query]'
+        test: /\.(png|jpeg|gif|svg)$/i,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[hash:6].[ext]',
+          outputPath: 'images',
+          publicPath: 'images',
+          emitFile: true,
+          esModule: false,
         }
       },
       {
-        test: /\.(ttf|otf)$/i,
-        loader: 'file-loader',
-        options: {
-          name: 'fonts/[name].[ext]'
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[name][hash][ext]'
         }
       }
     ]
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].css',
+      filename: 'style.css',
       chunkFilename: '[id].[contenthash].css'
     }),
     ...htmlPages, // Подключение всех страниц через массив из html-pages.config.js
-    new HtmlWebpackPartialsPlugin([
-      {
-        path: path.join(__dirname,'../src/partials/analytics.html'),
-        location: 'analytics',
-        template_filename: '*',
-        priority: 'replace'
-      }
-    ])
+    ...htmlPartialsConfig, // Подключение Partials
   ],
   optimization: {
     minimizer: [new CssMinimizerPlugin()] // Минификация CSS

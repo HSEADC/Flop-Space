@@ -14,6 +14,7 @@ module.exports = {
   output: {
     filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'docs'),
+    publicPath: './',  // Путь для статических файлов
     clean: true
   },
   module: {

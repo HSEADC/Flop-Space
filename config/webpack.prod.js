@@ -6,7 +6,8 @@ module.exports = merge(common, {
   mode: 'production',
   output: {
     filename: '[name].[contenthash].js',
-    path: path.resolve(__dirname, '../docs'), // Папка для продакшн сборки
-    clean: true // Очистка директории перед каждой сборкой
+    path: path.resolve(__dirname, '../docs'),
+    publicPath: '/Startdown/', 
+    clean: true
   }
 });

@@ -1,40 +1,53 @@
 .nav {
+    color: rgb(255, 255, 255) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
     position: fixed;
-    top: 0.4rem;    /* Отступ сверху */
-    left: 1.5rem;   /* Отступ слева */
-    width: calc(100% - 4rem); /* Учитываем отступы */
-    background-color: rgba(240, 255, 255, 0.15);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.8rem 6.4rem 0.8rem 6.4rem;
-    border-radius: 1.2rem;
-    overflow: hidden;
+    z-index: 1000;
+
+    width: 100%; 
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: calc((100% - 90rem) / 2);
+    padding-right: calc((100% - 90rem) / 2);
+
+    background-color: rgba(0, 0, 0, 0.3);
+
     backdrop-filter: blur(50px);
-
-    p, a, li, ul {
-      font-weight: 600;
-      font-size: 0.8rem;
-      letter-spacing: 0rem;
-      white-space: nowrap;
-    }
-
-    li:hover {
-      color: rgba(255, 255, 255, 0.5) !important;
-      cursor: pointer !important;
-    }
   }
 
 .nav__list {
   display: flex;
+  flex-direction: row;
   gap: 2rem;
   margin-bottom: 0;
 }
 
-.nav__item {
-  text-align: center;
-  color: rgba(255, 255, 255,);
-  user-select: none;
+.unactive {
+  color: rgba(255, 255, 255, 0.179) !important;
+  -webkit-user-select: none;  
+  -moz-user-select: none;     
+  -ms-user-select: none;      
+  user-select: none;         
+}
+
+.description_block {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+   p {
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 40%;
+   }
+   .description {
+    color: rgb(255, 255, 255) !important;
+   }
 }
 
 

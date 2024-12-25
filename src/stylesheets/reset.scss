@@ -97,17 +97,3 @@ button {
   button:focus {
 	outline: none;          /* Убираем стандартную рамку фокуса */
   }
-
-  ::-webkit-scrollbar-track {
-	background: #000000 !important; /* Цвет фона скроллбара */
-  }
-  
-  ::-webkit-scrollbar-thumb {
-	background-color: #ffffff !important; /* Цвет ползунка */
-	border-radius: 12px !important; /* Скругление ползунка */
-	border: none !important; /* Внешняя рамка */
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-	background-color: #000000 !important; /* Ползунок темнеет при наведении */
-  }

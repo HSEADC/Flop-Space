@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const pages = [
   { template: './src/index.html', filename: './index.html' },
   { template: './src/cases/cases.html', filename: './cases.html' },
-  { template: './src/networking/networking.html', filename: './networking.html' },
+  { template: './src/styleguide/styleguide.html', filename: './styleguide.html' },
   { template: './src/tests/tests.html', filename: './tests.html' },
   { template: './src/media/media.html', filename: './media.html' },
   { template: './src/about/about.html', filename: './about.html' },

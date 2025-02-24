@@ -1,4 +1,5 @@
 @import 'stylesheets/reset.scss';
+
 @import 'stylesheets/fonts.scss';
 @import 'stylesheets/typography.scss';
 @import 'stylesheets/vars.scss';
@@ -6,3 +7,14 @@
 @import 'stylesheets/basics.scss';
 @import 'stylesheets/navigation.scss';
 @import 'stylesheets/footer.scss';
+
+@import 'stylesheets/_typography.scss';
+@import 'stylesheets/_variables.scss';
+
+@import 'stylesheets/components/00__design-system.scss';
+@import 'stylesheets/components/01__quarks.scss';
+@import 'stylesheets/components/02__wrappers.scss';
+@import 'stylesheets/components/03__atoms.scss';
+@import 'stylesheets/components/04__molecules.scss';
+@import 'stylesheets/components/05__organisms.scss';
+@import 'stylesheets/components/06__layouts.scss';

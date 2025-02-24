@@ -1,0 +1,31 @@
+.Q__divider {
+    width: 100%;
+    height: 1px;
+    background: var(--color-base-on-block);
+}
+
+.Q__nav-bar__item-icon {
+    display: flex;
+    width: 2.375rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch; 
+} 
+
+.Q__button__icon {
+    width: 1.125rem;
+    height: 1.125rem;
+}
+
+.Q__author-block__avatar {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.Q__article-card__image {
+    flex: 1 0 0;
+    align-self: stretch;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+

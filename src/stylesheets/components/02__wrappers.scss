@@ -1,0 +1,39 @@
+.W__nav-bar__list {
+    display: flex;
+    width: 10rem;
+    min-width: 10rem;
+    max-width: 10rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-m);
+}
+
+.W__nav-bar__list-info {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--spacing-m);
+}
+
+.W__nav-bar-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-m);
+}
+
+.W__author-block__info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.W__article-card__content {
+    display: flex;
+    padding: var(--spacing-xxl) var(--spacing-xxl) var(--spacing-xl) var(--spacing-xxl);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-s);
+    align-self: stretch;
+}

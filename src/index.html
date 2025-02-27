@@ -1,114 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlopSpace - Главная</title>
-
-    <!-- OpenGraph -->
-    <meta property="og:title" content="FlopSpace - Главная">
-    <meta property="og:description" content="FlopSpace - это медиа о провальных стартапах, руководствующееся философией - на ошибках можно научиться большему, нежели на успехах.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/HSEADC/Startdown/refs/heads/main/src/images/meta_image1.webp">
-    <meta property="og:type" content="website"> 
-    <meta property="og:url" content="https://flopspace.com">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image"> 
-    <meta name="twitter:title" content="FlopSpace - Главная">
-    <meta name="twitter:description" content="FlopSpace - это медиа о провальных стартапах, руководствующееся философией - на ошибках можно научиться большему, нежели на успехах.">
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/HSEADC/Startdown/refs/heads/main/src/images/meta_image1.webp">
-    <meta name="twitter:url" content="https://flopspace.com">
-
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    <navigation></navigation>
-   
-    <div class="main_cover"> 
-      <h3> Вдохновляем на успех </h3>
-      <h1> чужими провалами </h1>
-      <button> <p> Узнать о провалах </p> </button>
-    </div>
-
-    <main> 
-
-      <div class="content"> 
-
-        <div class="quote_block"> 
-
-          <div class="quote"> 
   
-          <div class="quot_mark">
-              
-              <svg width="127" height="69" viewBox="0 0 127 69" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M41.5587 20.5684H64.6537L53.6028 47.8851H30.5078L41.5587 20.5684ZM72.7245 20.5684H95.8195L84.7687 47.8851H61.6737L72.7245 20.5684Z" fill="white"/>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M27.6927 0H126.329L98.6366 68.4538H0L27.6927 0ZM53.6028 47.8851L64.6537 20.5684H41.5587L30.5078 47.8851H53.6028ZM61.6737 47.8851H84.7687L95.8195 20.5684H72.7245L61.6737 47.8851Z" fill="#FC4F00"/>
-                  </svg>
-          
-          </div> 
-  
-          <h2> 
-              
-            Разбираем ошибки стартапов чтобы твой бизнес не пошел ко дну!
-          
-          </h2>
-  
-          </div>
-  
-          <p class="description"> КОМАНДА FLOPSPACE // ДЕВИЗ СЕРВИСА </p>
-  
-      </div>
-    
-<div>
-        <h3> Узнавай о свежих Flop'ах первым! </h3>
-
-    <!-- modify this form HTML and place wherever you want your form -->
-<form id="my-form" action="https://formspree.io/f/mbljrpzp" method="POST">
-     <div class="input_form">  
-        <input type="email" name="email" class="email_input_field" placeholder="Ввести Email"/>
-        <button id="my-form-button" class="email_submit_button"> Подписаться </button>
-     </div>
-        <p id="my-form-status"></p>
-</form>
-</div> 
-  
-  <!-- Place this script at the end of the body tag -->
-  <script>
-    var form = document.getElementById("my-form");
-    
-    async function handleSubmit(event) {
-      event.preventDefault();
-      var status = document.getElementById("my-form-status");
-      var data = new FormData(event.target);
-      fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-            'Accept': 'application/json'
-        }
-      }).then(response => {
-        if (response.ok) {
-          status.innerHTML = "Жди от нас новостей! :)";
-          form.reset()
-        } else {
-          response.json().then(data => {
-            if (Object.hasOwn(data, 'errors')) {
-              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-            } else {
-              status.innerHTML = "Ой! Во время отправки случилась ошибка."
-            }
-          })
-        }
-      }).catch(error => {
-        status.innerHTML = "Ой! Во время отправки случилась ошибка."
-      });
-    }
-    form.addEventListener("submit", handleSubmit)
-  </script>
-  </div>
-  </main>
-
-  <footer></footer>
 </body>
 </html>

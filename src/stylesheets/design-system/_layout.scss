@@ -1,0 +1,73 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// Global
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: $color-brand-accent; // Цвет фона выделенного текста
+    color: $color-font-primary; // Цвет самого текста
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    overflow: hidden;
+    height: 100%;
+    background: $color-base-background;
+}
+
+// Page Layout
+
+.layout {
+
+    height: calc(100vh - $header-height);
+    display: flex;
+    flex-direction: row;
+
+    &__content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__body {
+        height: calc(100vh - ($header-height + $top-bar-height));
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: $spacing-xxxl;
+    }
+
+    &__feed {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-xl;
+        width: $feed-width;
+        overflow-y: auto;
+        height: 100%;
+    }
+
+    &__feed::-webkit-scrollbar {
+        display: none; /* Chrome, Safari */
+    }
+
+    &__side-bar {
+        background-color: $color-base-background;
+        width: $side-bar-width;
+        height: 100%;
+    }
+
+    &__top-bar {
+        background: $color-base-background;
+        min-height: $top-bar-height;
+    }
+
+}

@@ -1,6 +1,6 @@
 {
-  "name": "Startdown",
-  "version": "1.0.0",
+  "name": "FlopSpace",
+  "version": "0.3.0",
   "main": "index.js",
   "author": "Max Coch",
   "license": "MIT",
@@ -31,6 +31,8 @@
     "postcss-preset-env": "^10.0.3",
     "sass": "^1.78.0",
     "sass-loader": "^16.0.1",
+    "svg-sprite-loader": "^6.0.11",
+    "svgo-loader": "^4.0.0",
     "webpack": "^5.95.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0",

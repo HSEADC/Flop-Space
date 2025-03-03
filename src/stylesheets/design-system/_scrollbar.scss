@@ -1,0 +1,23 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// Styles for custom scrollbar
+
+.custom-scrollbar {
+    position: fixed;
+    top: 0;
+    right: 0px;
+    width: 4px;
+    height: 100vh;
+    background: $color-base-block; 
+}
+
+.custom-scrollbar-thumb {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50px; 
+    background: $color-brand-accent;
+    border-radius: 4px;
+    transition: top 0.1s linear;
+}

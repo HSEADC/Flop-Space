@@ -6,12 +6,20 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
-    static: './dev_build'
+    static: path.resolve(__dirname, '../dev_build'), // Исправленный путь
+    hot: true, // Включает горячую замену модулей (HMR)
+    open: true, // Автооткрытие браузера
+    port: 3000, // Указываем порт
+    historyApiFallback: true, // Для поддержки роутинга (SPA)
+    devMiddleware: {
+      writeToDisk: true, // Записывать файлы в dev_build/
+    }
   },
   output: {
-    filename: '[name].[contenthash].js',
-    path: path.resolve(__dirname, '../dev_build'), // Подняться на уровень выше
+    filename: '[name].js', // Убрали contenthash для dev-режима
+    path: path.resolve(__dirname, '../dev_build'), // Совпадает с devServer.static
     clean: true
   }
 });
+
 

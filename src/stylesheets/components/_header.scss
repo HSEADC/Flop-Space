@@ -1,0 +1,28 @@
+@use '../design-system/variables' as *;
+@use '../design-system/mixins' as *;
+
+.header {
+    min-height: $header-height;
+    display: flex;
+    @include outline(bottom);
+
+    &__left-side {
+        width: $nav-bar-width;
+        display: flex;
+        align-items: center;
+        padding-left: $spacing-xxxl;
+    }
+    
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    &__right-side {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+    }
+}
+

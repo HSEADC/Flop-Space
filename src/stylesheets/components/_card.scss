@@ -1,0 +1,58 @@
+@use '../design-system/variables' as *;
+@use '../design-system/mixins' as *;
+
+.container {
+    display: flex;
+    gap: 1rem;
+    border-radius: $border-radius-s;
+}
+
+.card {
+    background: $color-base-on-block;
+    padding: 3rem 3rem 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-grow: 1;
+    border-radius: $border-radius-s;
+}
+
+.side-container {
+    background: $color-base-block;
+    padding: 3rem 3rem 3rem 3rem;
+    width: auto;
+    border-radius: $border-radius-s;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background: $color-base-block;
+    border-radius: $border-radius-s;
+}
+
+.article-card {
+    background: $color-base-block;
+    display: flex;
+    flex-direction: column;
+    border-radius: $border-radius-s;
+    @include outline($side: all);
+
+    &__image {
+       height: 20rem;
+       background-image: url(./images/card-image.jpg);
+       border-radius: 0 0 $border-radius-s $border-radius-s;
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+    }
+
+    &__content {
+        padding: $spacing-xxl;
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-s;
+    }
+}

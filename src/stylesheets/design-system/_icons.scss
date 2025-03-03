@@ -1,0 +1,17 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.icon {
+    height: 18px;
+    width: 18px;
+    fill: currentColor;
+
+    &--muted {
+        fill: $color-font-hint;
+    }
+    
+    &--highlighted {
+        fill: $color-brand-accent;
+    }
+
+}

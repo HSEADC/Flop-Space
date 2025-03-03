@@ -1,4 +1,10 @@
-import './style.css'
+import "./style.scss";
+import "./scroll.js";
+import "./stylesheets/components/search-bar.js"
+
+// import './icons/icon-video.svg';
+import "./import-icons";
+
 
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';

@@ -1,0 +1,26 @@
+@use '../design-system/variables' as *;
+@use '../design-system/mixins' as *;
+
+.author-block {
+
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    width: fit-content;
+
+    &__avatar {
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: $border-radius-absolute;
+      background-image: url(./images/avatar.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &__text-block {
+      display: flex;
+      flex-direction: column;
+    }
+
+}

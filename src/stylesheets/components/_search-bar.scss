@@ -1,0 +1,55 @@
+@use '../design-system/variables' as *;
+@use '../design-system/mixins' as *;
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    height: 2.5rem;
+    width: $central-content-width;
+    background: $color-base-block;
+    border-radius: $border-radius-absolute;
+
+    &:hover {
+        cursor: pointer; /* Курсор-поинтер при наведении */
+        background: $color-base-border;
+    }
+
+    &--active {
+        cursor: text !important;
+        background: $color-base-block !important;
+    }
+
+    &__input-field {
+        min-width: fit-content; /* Чтобы не было слишком маленьким */
+        max-width: 80%; /* Ограничение по ширине */
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        caret-color: $color-brand-accent; /* Меняем цвет каретки на красный */
+
+        &::placeholder {
+            color: $color-font-hint;
+        }
+
+        &::selection {
+            background-color: $color-brand-accent; // Цвет фона выделенного текста
+            color: $color-font-primary; // Цвет самого текста
+        }
+      
+    }
+
+    &__text-measurer {
+        position: absolute;
+        visibility: hidden;
+        white-space: nowrap;
+    }
+
+    &__icon {
+        width: 1.3rem;
+        height: 1.3rem;
+        color: $color-font-hint;
+    }
+
+} 

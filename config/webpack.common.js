@@ -6,6 +6,7 @@ const htmlPagesConfig = require('./html-pages.config');
 const htmlPartialsConfig = require('./partials.config');
 const loader = require('sass-loader');
 const htmlPages = htmlPagesConfig;  // Подключение файла с настройками страниц
+const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
 module.exports = {
   entry: {
@@ -55,11 +56,31 @@ module.exports = {
         loader: 'html-loader'
       },
       {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'svg-sprite-loader', // штука для работы со спрайтами иконок
+            options: {
+              extract: false, 
+              spriteFilename: 'sprite.svg', 
+            }
+          },
+          {
+            loader: 'svgo-loader',
+      options: {
+        plugins: [
+          { name: 'removeAttrs', params: { attrs: ['fill', 'stroke'] } } // удаляет дефолтные атрибуты иконок для изменения в CSS
+        ]
+            }
+          }
+        ]
+      },
+      {
         resourceQuery: /raw/,
         type: 'asset/source'
       },
       {
-        test: /\.(png|jpeg|gif|svg)$/i,
+        test: /\.(png|jpeg|gif)$/i,
         loader: 'file-loader',
         options: {
           name: '[name].[hash:6].[ext]',
@@ -85,6 +106,7 @@ module.exports = {
     }),
     ...htmlPages, // Подключение всех страниц через массив из html-pages.config.js
     ...htmlPartialsConfig, // Подключение Partials
+    new SpriteLoaderPlugin(),
   ],
   optimization: {
     minimizer: [new CssMinimizerPlugin()] // Минификация CSS

@@ -1,0 +1,31 @@
+@use 'variables' as *;
+
+// Outline
+
+@mixin outline($side: all) {
+  @if $side == all {
+    border: $border-width solid $color-base-border;
+  } @else if $side == top {
+    border-top: $border-width solid $color-base-border;
+  } @else if $side == right {
+    border-right: $border-width solid $color-base-border;
+  } @else if $side == bottom {
+    border-bottom: $border-width solid $color-base-border;
+  } @else if $side == left {
+    border-left: $border-width solid $color-base-border;
+  }
+}
+
+// Typography
+
+@mixin heading-style($size, $weight, $line-height) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+}
+
+@mixin text-style($size, $weight, $line-height) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+}

@@ -68,6 +68,9 @@ body {
     &__top-bar {
         background: $color-base-background;
         min-height: $top-bar-height;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 }

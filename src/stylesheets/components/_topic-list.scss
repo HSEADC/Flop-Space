@@ -1,0 +1,48 @@
+@use '../design-system/variables' as *;
+@use '../design-system/mixins' as *;
+
+.topic-list {
+    width: $central-content-width;
+    display: flex;
+    flex-direction: row;
+    gap: $spacing-s;
+
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    scroll-snap-type: x mandatory; // Привязка прокрутки к элементам
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+        display: none; // Для Chrome, Safari и Edge
+      }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: $spacing-xl;
+        min-width: 10.625rem;
+        height: 2.5rem;
+        border-radius: $border-radius-s;
+        background-color: $color-base-block;
+        overflow: hidden;
+
+        user-select: none;
+
+        scroll-snap-align: start;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__image {
+        height: 100%;
+        width: 30%;
+        background-image: url(./images/card-image.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}

@@ -19,6 +19,7 @@
     &--active {
         cursor: text !important;
         background: $color-base-block !important;
+        @include outline($side: all);
     }
 
     &__input-field {

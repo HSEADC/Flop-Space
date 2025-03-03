@@ -34,4 +34,24 @@
         flex-direction: column;
         gap: $spacing-m;
     }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        user-select: none;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $color-base-block;
+            border-radius: $border-radius-s;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        height: 2.5rem;
+        width: 2.5rem;
+        justify-content: center;
+        align-items: center;
+    }
 }

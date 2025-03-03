@@ -18,7 +18,7 @@ html {
   &__header1 { @include heading-style(1.25rem, 600, 1.5rem); }
   &__subheader3 { @include heading-style(1.0625rem, 600, 1.5rem); }
   &__subheader2 { @include heading-style(0.9375rem, 600, 1.25rem); }
-  &__subheader1 { @include heading-style(1.125rem, 600, 1.125rem); }
+  &__subheader1 { @include heading-style(0.8125rem, 600, 1.125rem); }
   &__body2 { @include text-style(1rem, 400, 1.5rem); }
   &__body1 { @include text-style(0.8125rem, 400, 1.125rem); }
   &__body1-short { @include text-style(0.8125rem, 400, 1rem); }

@@ -28,4 +28,14 @@ html {
   &--muted { color: $color-font-secondary; }
   &--hint { color: $color-font-hint; }
   &--accent { color: $color-brand-accent; }
+
+  &--line-limit {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;  // Ограничение до двух строк
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    line-clamp: 2;  // Стандартная версия
+  }
 }

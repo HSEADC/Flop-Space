@@ -47,6 +47,11 @@
        background-size: cover;
        background-position: center;
        background-repeat: no-repeat;
+
+       &--medium {
+        height: 10rem;
+        border-radius: $border-radius-s $border-radius-s 0 0;
+       }
     }
 
     &__content {
@@ -55,4 +60,5 @@
         flex-direction: column;
         gap: $spacing-s;
     }
+    
 }

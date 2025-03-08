@@ -6,6 +6,8 @@ import "./stylesheets/components/topic-list.js"
 // import './icons/icon-video.svg';
 import "./import-icons";
 
+import "./create-cards.js"
+
 
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';

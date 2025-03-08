@@ -80,21 +80,17 @@ module.exports = {
         type: 'asset/source'
       },
       {
-        test: /\.(png|jpeg|gif)$/i,
-        loader: 'file-loader',
-        options: {
-          name: '[name].[hash:6].[ext]',
-          outputPath: 'images',
-          publicPath: 'images',
-          emitFile: true,
-          esModule: false,
-        }
+        test: /\.(png|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'images/[name].[hash:6][ext]',
+        },
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         type: 'asset/resource',
         generator: {
-          filename: './[name][hash][ext]'
+          filename: 'fonts/[name][hash][ext]'
         }
       }
     ]

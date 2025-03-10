@@ -1,0 +1,24 @@
+@use './design-system/variables' as *;
+@use './design-system/mixins' as *;
+
+@media (max-width: 1000px) {
+    .nav-bar, .search-bar, .layout__side-bar {
+      display: none !important;
+    }
+
+    .article-block {
+        flex-direction: column !important;
+    }
+
+    .topic-list {
+        width: calc($feed-width - ($spacing-xs * 2))!important;
+    }
+
+    .layout__target-content {
+        padding: $spacing-xs !important;
+    }
+    
+    .header__left-side {
+        padding-left: $spacing-xs;
+    }
+  }

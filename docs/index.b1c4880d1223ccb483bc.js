@@ -1,68 +1,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 530:
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-var requireAll = function requireAll(requireContext) {
-  return requireContext.keys().forEach(requireContext);
-};
-try {
-  requireAll(__webpack_require__(46));
-} catch (error) {
-  console.error("Ошибка при импорте SVG иконок:", error);
-}
-
-/***/ }),
-
-/***/ 445:
-/***/ (() => {
-
-/* document.addEventListener("wheel", function (event) {
-  const scrollable = document.querySelector(".layout__feed");
-  if (!scrollable) return;
-
-  event.preventDefault(); // Предотвращаем стандартный скролл
-
-  // Проверяем, можно ли скроллить
-  const canScrollDown = scrollable.scrollTop + scrollable.clientHeight < scrollable.scrollHeight;
-  const canScrollUp = scrollable.scrollTop > 0;
-
-  // Если контейнер можно скроллить, ускоряем пропорционально силе прокрутки
-  if (canScrollDown || canScrollUp) {
-      let speedFactor = Math.abs(event.deltaY) / 30; // Чем сильнее прокрутка, тем больше шаг
-      scrollable.scrollTop += event.deltaY * speedFactor; // Без smooth
-  }
-
-  
-}, { passive: true });
-*/
-
-// Создаём кастомный скроллбар
-var scrollbar = document.createElement("div");
-scrollbar.classList.add("custom-scrollbar");
-var thumb = document.createElement("div");
-thumb.classList.add("custom-scrollbar-thumb");
-scrollbar.appendChild(thumb);
-document.body.appendChild(scrollbar);
-
-// Находим основной контейнер со скроллом
-var scrollable = document.querySelector(".layout__feed");
-function updateCustomScrollbar() {
-  if (!scrollable) return;
-  var scrollHeight = scrollable.scrollHeight - scrollable.clientHeight;
-  var scrollProgress = scrollable.scrollTop / scrollHeight;
-
-  // Двигаем индикатор
-  var thumbHeight = Math.max(50, scrollable.clientHeight / scrollable.scrollHeight * 100); // Регулируем размер
-  thumb.style.height = "".concat(thumbHeight, "%");
-  thumb.style.top = "".concat(scrollProgress * (100 - thumbHeight), "%");
-}
-scrollable.addEventListener("scroll", updateCustomScrollbar);
-updateCustomScrollbar(); // Обновляем при загрузке
-
-/***/ }),
-
 /***/ 793:
 /***/ (() => {
 
@@ -126,6 +64,48 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+/***/ }),
+
+/***/ 92:
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+var requireAll = function requireAll(requireContext) {
+  return requireContext.keys().forEach(requireContext);
+};
+try {
+  requireAll(__webpack_require__(46));
+} catch (error) {
+  console.error("Ошибка при импорте SVG иконок:", error);
+}
+
+/***/ }),
+
+/***/ 775:
+/***/ (() => {
+
+// Создаём кастомный скроллбар
+var scrollbar = document.createElement("div");
+scrollbar.classList.add("custom-scrollbar");
+var thumb = document.createElement("div");
+thumb.classList.add("custom-scrollbar-thumb");
+scrollbar.appendChild(thumb);
+document.body.appendChild(scrollbar);
+
+// Находим основной контейнер со скроллом
+var scrollable = document.querySelector(".layout__feed");
+function updateCustomScrollbar() {
+  if (!scrollable) return;
+  var scrollHeight = scrollable.scrollHeight - scrollable.clientHeight;
+  var scrollProgress = scrollable.scrollTop / scrollHeight;
+
+  // Двигаем индикатор
+  var thumbHeight = Math.max(50, scrollable.clientHeight / scrollable.scrollHeight * 100); // Регулируем размер
+  thumb.style.height = "".concat(thumbHeight, "%");
+  thumb.style.top = "".concat(scrollProgress * (100 - thumbHeight), "%");
+}
+scrollable.addEventListener("scroll", updateCustomScrollbar);
+updateCustomScrollbar(); // Обновляем при загрузке
 
 /***/ }),
 
@@ -400,6 +380,31 @@ return BrowserSpriteSymbol;
 
 })));
 
+
+/***/ }),
+
+/***/ 321:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
+  "id": "error",
+  "use": "error-usage",
+  "viewBox": "0 0 600 600",
+  "content": "<symbol viewBox=\"0 0 600 600\" xmlns=\"http://www.w3.org/2000/svg\" id=\"error\"><path d=\"M300 0C135 0 0 135 0 300C0 465 135 600 300 600C465 600 600 465 600 300C600 135 465 0 300 0ZM300 66.6667C351.667 66.6667 400 85 440 113.333L113.333 440C85 400 66.6667 351.667 66.6667 300C66.6667 171.667 171.667 66.6667 300 66.6667ZM300 533.333C248.333 533.333 200 515 160 486.667L486.667 160C515 200 533.333 248.333 533.333 300C533.333 428.333 428.333 533.333 300 533.333Z\" /></symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
 
 /***/ }),
 
@@ -1771,6 +1776,7 @@ return sprite$1;
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
+	"./error.svg": 321,
 	"./icon-cases.svg": 890,
 	"./icon-fav.svg": 758,
 	"./icon-file.svg": 409,
@@ -1818,7 +1824,9 @@ var map = {
 	"./image1.jpeg": 171,
 	"./image2.jpg": 265,
 	"./image3.jpeg": 805,
-	"./image4.jpeg": 888
+	"./image4.jpeg": 888,
+	"./tomato.jpg": 852,
+	"./topic1.jpg": 920
 };
 
 
@@ -1888,6 +1896,22 @@ module.exports = __webpack_require__.p + "images/image3.84ec89.jpeg";
 
 "use strict";
 module.exports = __webpack_require__.p + "images/image4.b7b32a.jpeg";
+
+/***/ }),
+
+/***/ 852:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/tomato.976d82.jpg";
+
+/***/ }),
+
+/***/ 920:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/topic1.df765d.jpg";
 
 /***/ })
 
@@ -1981,73 +2005,110 @@ var __webpack_exports__ = {};
 (() => {
 "use strict";
 
-// EXTERNAL MODULE: ./src/scroll.js
-var src_scroll = __webpack_require__(445);
+// EXTERNAL MODULE: ./src/utils/scroll.js
+var utils_scroll = __webpack_require__(775);
 // EXTERNAL MODULE: ./src/stylesheets/components/search-bar.js
 var search_bar = __webpack_require__(793);
 // EXTERNAL MODULE: ./src/stylesheets/components/topic-list.js
 var topic_list = __webpack_require__(795);
-// EXTERNAL MODULE: ./src/import-icons.js
-var import_icons = __webpack_require__(530);
-;// ./src/content.json
-const content_namespaceObject = /*#__PURE__*/JSON.parse('[{"position":1,"type":"card-default","image":"card-image.jpg","title":"Как X-Startup сжёг $10M инвестиций и закрылся: Разбор ключевых ошибок","subtitle":"AI-маркетинг, дорогие подписки и раздутая команда — почему перспективный стартап провалился за 2 года?","author":"Моллаева Зухра Абдулхановна","authorTitle":"IT / 20.03.25","content":"AI-маркетинг, дорогие подписки и раздутая команда — почему перспективный стартап провалился за 2 года?","avatar":"avatar.jpg"},{"position":2,"type":"card-medium","image":"card-image.jpg","title":"Как X-Startup сжёг $10M инвестиций и закрылся: Разбор ключевых ошибок","subtitle":"AI-маркетинг, дорогие подписки и раздутая команда — почему перспективный стартап провалился за 2 года?","author":"Иван Петрович Хуйкин","authorTitle":"IT / 20.03.25","content":"AI-маркетинг, дорогие подписки и раздутая команда — почему перспективный стартап провалился за 2 года?","avatar":"avatar.jpg"},{"position":3,"type":"card-medium","image":"image4.jpeg","title":"Как X-Startup сжёг $10M инвестиций и закрылся: Разбор ключевых ошибок","subtitle":"AI-маркетинг, дорогие подписки и раздутая команда — почему перспективный стартап провалился за 2 года?","author":"Иван Петрович Хуйкин","authorTitle":"IT / 20.03.25","content":"AI-маркетинг, дорогие подписки и раздутая команда — почему перспективный стартап провалился за 2 года?","avatar":"avatar.jpg"},{"position":4,"type":"card-default","image":"image1.jpeg","title":"Как X-Startup сжёг $10M инвестиций и закрылся: Разбор ключевых ошибок","subtitle":"AI-маркетинг, дорогие подписки и раздутая команда — почему перспективный стартап провалился за 2 года?","author":"Иван Петрович Хуйкин","authorTitle":"IT / 20.03.25","content":"AI-маркетинг, дорогие подписки и раздутая команда — почему перспективный стартап провалился за 2 года?","avatar":"avatar.jpg"},{"position":5,"type":"card-medium","image":"image2.jpg","title":"Как X-Startup сжёг $10M инвестиций и закрылся: Разбор ключевых ошибок","subtitle":"AI-маркетинг, дорогие подписки и раздутая команда — почему перспективный стартап провалился за 2 года?","author":"Иван Петрович Хуйкин","authorTitle":"IT / 20.03.25","content":"AI-маркетинг, дорогие подписки и раздутая команда — почему перспективный стартап провалился за 2 года?","avatar":"avatar.jpg"},{"position":6,"type":"card-medium","image":"image3.jpeg","title":"Как X-Startup сжёг $10M инвестиций и закрылся: Разбор ключевых ошибок","subtitle":"AI-маркетинг, дорогие подписки и раздутая команда — почему перспективный стартап провалился за 2 года?","author":"Иван Петрович Хуйкин","authorTitle":"IT / 20.03.25","content":"AI-маркетинг, дорогие подписки и раздутая команда — почему перспективный стартап провалился за 2 года?","avatar":"avatar.jpg"}]');
-;// ./src/create-cards.js
- // Импортируем данные из JSON
+// EXTERNAL MODULE: ./src/utils/import-icons.js
+var import_icons = __webpack_require__(92);
+;// ./src/data/content.json
+const content_namespaceObject = /*#__PURE__*/JSON.parse('[{"position":1,"type":"card-default","image":"card-image.jpg","title":"Как новый стартап нарушил правила рынка и быстро достиг успеха","subtitle":"Как стартап с необычной моделью бизнеса привлёк внимание инвесторов и стал успешным?","author":"Анна Гречко","authorTitle":"Business / 21.03.25","content":"Новый подход в бизнесе, рискованные инвестиции и нестандартные решения — как стартап смог так быстро выйти на рынок?","avatar":"avatar.jpg","pagelink":"placeholder.html"},{"position":2,"type":"card-medium","image":"tomato.jpg","title":"Blue Tomato: Томаты, которые не стали синими. История провала стартапа","subtitle":"Как амбициозная идея о генетически модифицированных помидорах привела к краху компании.","author":"Максим Борисов","authorTitle":"Tech / 19.03.25","content":"Как амбициозная идея о генетически модифицированных помидорах привела к краху компании.","avatar":"avatar.jpg","pagelink":"article_blue_tomato.html"},{"position":3,"type":"card-medium","image":"image4.jpeg","title":"Будущее цифровых валют: как изменится финансовая система?","subtitle":"Почему криптовалюты будут доминировать в экономике через 10 лет?","author":"Дмитрий Федоров","authorTitle":"Finance / 18.03.25","content":"С ростом криптовалют и блокчейн-технологий многие задаются вопросом, как изменится финансовая система в будущем.","avatar":"avatar.jpg","pagelink":"placeholder.html"},{"position":4,"type":"card-default","image":"image1.jpeg","title":"Как создать успешный стартап в условиях кризиса?","subtitle":"Трудности и возможности для новых проектов в экономической нестабильности.","author":"Алексей Громов","authorTitle":"Startup / 22.03.25","content":"В условиях экономического кризиса многие стартапы сталкиваются с новыми вызовами. Какие стратегии позволят добиться успеха?","avatar":"avatar.jpg","pagelink":"placeholder.html"},{"position":5,"type":"card-medium","image":"image2.jpg","title":"Искусственный интеллект и будущее работы: угроза или шанс?","subtitle":"Как AI меняет рынок труда и какие профессии исчезнут в ближайшие годы?","author":"Ольга Симонова","authorTitle":"HR / 20.03.25","content":"AI уже оказывает влияние на большинство профессий. Какие навыки и профессии останутся востребованными, а какие уйдут в прошлое?","avatar":"avatar.jpg","pagelink":"placeholder.html"},{"position":6,"type":"card-medium","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением?","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html"},{"position":7,"type":"card-medium","image":"image2.jpg","title":"Искусственный интеллект и будущее работы: угроза или шанс?","subtitle":"Как AI меняет рынок труда и какие профессии исчезнут в ближайшие годы?","author":"Ольга Симонова","authorTitle":"HR / 20.03.25","content":"AI уже оказывает влияние на большинство профессий. Какие навыки и профессии останутся востребованными, а какие уйдут в прошлое?","avatar":"avatar.jpg","pagelink":"placeholder.html"},{"position":8,"type":"card-medium","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением?","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html"}]');
+;// ./src/utils/create-cards.js
+ // Импортируем данные из JSON как массив cardsData
 
-// Функция для создания карточки
 function createCard(card) {
-  var cardElement = document.createElement('div');
+  var cardElement = document.createElement('div'); // Cоздаем div с классом article-card и обработчиком клика, ожидаем передачу в переменную cardElement разметки
   cardElement.classList.add('article-card');
+  cardElement.addEventListener('click', function () {
+    window.location.href = "".concat(card.pagelink);
+  });
   var imagePath = __webpack_require__(907)("./".concat(card.image));
   var avatarPath = card.avatar ? __webpack_require__(907)("./".concat(card.avatar)) : '';
 
-  // Генерация разметки для дефолтной карточки
+  // Заполняем article-card разметкой в зависимости от того, что пришло в аргумент card
+
+  // Если пришла card-default
   if (card.type === 'card-default') {
     cardElement.innerHTML = "\n      <div class=\"article-card__content\">\n        <div class=\"author-block\">\n          <div class=\"author-block__avatar\" style=\"background-image: url(".concat(avatarPath, ")\"></div>\n          <div class=\"author-block__text-block\">\n            <p class=\"typography__caption2\">").concat(card.author, "</p>\n            <p class=\"typography__caption1 typography--muted\">").concat(card.authorTitle, "</p>\n          </div>\n        </div>\n        <h1 class=\"typography__display1 typography--line-limit\">").concat(card.title, "</h1>\n        <p class=\"typography__body2 typography--muted typography--line-limit\">").concat(card.content, "</p>\n      </div>\n      <div class=\"article-card__image\" style=\"background-image: url(").concat(imagePath, ")\"></div>\n    ");
   }
 
-  // Генерация разметки для медиумной карточки
+  // Если пришла card-medium
   if (card.type === 'card-medium') {
     cardElement.innerHTML = "\n      <div class=\"article-card__image article-card__image--medium\" style=\"background-image: url(".concat(imagePath, ")\"></div>\n      <div class=\"article-card__content\">\n        <div class=\"author-block\">\n          <div class=\"author-block__avatar\" style=\"background-image: url(").concat(avatarPath, ")\"></div>\n          <div class=\"author-block__text-block\">\n            <p class=\"typography__caption2\">").concat(card.author, "</p>\n            <p class=\"typography__caption1 typography--muted\">").concat(card.authorTitle, "</p>\n          </div>\n        </div>\n        <h1 class=\"typography__header2 typography--line-limit\">").concat(card.title, "</h1>\n        <p class=\"typography__body1 typography--muted typography--line-limit\">").concat(card.content, "</p>\n      </div>\n    ");
   }
-  return cardElement;
+  return cardElement; // Передаём разметку в переменную cardElement, после этого результат createCard передаётся в константу cardElement
 }
 
-// Функция для добавления карточек в контейнер с учётом позиции
+// Аргумент cards принимает массив сardsData как только renderCards вызвана в конце 
 function renderCards(cards) {
   var feedContainer = document.querySelector('.layout__feed');
   var currentBlock = null;
+
+  // Следующий блок выполняется только, если контейнер = layout__feed
+
   if (feedContainer) {
-    // Сортируем карточки по позиции
     cards.sort(function (a, b) {
       return a.position - b.position;
-    });
+    }); // Сортируем по position из json
+
+    // Достаем из массива cardData одну карточку и передаём данные из нее в аргумент card
     cards.forEach(function (card) {
-      // Если это медиумная карточка, добавляем новый блок с двумя карточками, если необходимо
       if (card.type === 'card-medium') {
         if (!currentBlock || currentBlock.children.length >= 2) {
           currentBlock = document.createElement('div');
           currentBlock.classList.add('article-block');
-          feedContainer.appendChild(currentBlock);
+          feedContainer.appendChild(currentBlock); // Если есть хотя бы одна карточка medium, а контейнер article-block не создан, либо cоздан и уже содержит 2 карточки, то создаем новый article-block
         }
       }
+      var cardElement = createCard(card); // Константа cardElement = результат createCard (в верху скрипта) с аргументом card
 
-      // Создаём карточку и добавляем её в текущий блок или в контейнер
-      var cardElement = createCard(card);
       if (card.type === 'card-medium') {
-        currentBlock.appendChild(cardElement); // Добавляем медиумную карточку в блок
+        currentBlock.appendChild(cardElement); // Если карточка medium, кидаем cодержимое cardElement в article-block
       } else {
-        feedContainer.appendChild(cardElement); // Добавляем дефолтную карточку в контейнер
+        feedContainer.appendChild(cardElement); // Если карточка default, кидаем cодержимое cardElement в layout__feed
       }
     });
   } else {
-    console.error('Контейнер .layout__feed не найден на странице');
+    console.error('Контейнер .layout__feed не найден на странице'); // Если главный контейнер не найден, выдаём ошибку
   }
 }
 
-// Ожидаем загрузки DOM, чтобы запустить рендеринг карточек
+// Проверяем на загрузку DOM и index.html (рендерим карточки только на ней), при успехе вызываем renderCards
 document.addEventListener('DOMContentLoaded', function () {
-  renderCards(content_namespaceObject); // Запуск рендеринга карточек
+  if (window.location.pathname === '/' || window.location.pathname.endsWith('index.html')) {
+    renderCards(content_namespaceObject);
+  }
+});
+;// ./src/data/topics.json
+const topics_namespaceObject = /*#__PURE__*/JSON.parse('[{"position":1,"image":"topic1.jpg","title":"Cтартапы","link":"placeholder.html"},{"position":2,"image":"topic1.jpg","title":"Митапы","link":"placeholder.html"},{"position":3,"image":"topic1.jpg","title":"Хуяпы","link":"placeholder.html"},{"position":4,"image":"topic1.jpg","title":"Митапы","link":"placeholder.html"},{"position":5,"image":"topic1.jpg","title":"Митапы","link":"placeholder.html"},{"position":6,"image":"topic1.jpg","title":"Митапы","link":"placeholder.html"},{"position":7,"image":"topic1.jpg","title":"Митапы","link":"placeholder.html"}]');
+;// ./src/utils/сreate-topics.js
+
+function createTopic(topic) {
+  var topicElement = document.createElement('div');
+  topicElement.classList.add('topic-list__item');
+  topicElement.addEventListener('click', function () {
+    window.location.href = "".concat(topic.link);
+  });
+  var imagePath = __webpack_require__(907)("./".concat(topic.image));
+  topicElement.innerHTML = "\n    <div class=\"topic-list__image\" style=\"background-image: url('".concat(imagePath, "')\"></div>\n    <p class=\"typography__subheader1 typography--muted\"> ").concat(topic.title, " </p>\n    ");
+  return topicElement;
+}
+function renderTopics(topics) {
+  var topicsContainer = document.querySelector('.topic-list');
+  if (topicsContainer) {
+    topics.sort(function (a, b) {
+      return a.position - b.position;
+    });
+    topics.forEach(function (topic) {
+      var topicElement = createTopic(topic);
+      topicsContainer.appendChild(topicElement);
+    });
+  }
+}
+document.addEventListener('DOMContentLoaded', function () {
+  renderTopics(topics_namespaceObject);
 });
 ;// ./node_modules/swiper/shared/ssr-window.esm.mjs
 /**
@@ -11523,15 +11584,7 @@ function EffectCards(_ref) {
 
 
 
-;// ./src/index.js
-
-
-
-
-
-// import './icons/icon-video.svg';
-
-
+;// ./src/utils/swiper-config.js
 
 
 // import Swiper and modules styles
@@ -11569,7 +11622,16 @@ var failslider = new Swiper('#failures_slider', {
     clickable: true
   }
 });
-console.log('Текст для консоли v2');
+;// ./src/index.js
+
+
+
+
+
+
+
+
+console.log('Всё работает и слава тебе господи');
 })();
 
 /******/ })()

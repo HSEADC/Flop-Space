@@ -1,24 +1,4 @@
-/* document.addEventListener("wheel", function (event) {
-  const scrollable = document.querySelector(".layout__feed");
-  if (!scrollable) return;
-
-  event.preventDefault(); // Предотвращаем стандартный скролл
-
-  // Проверяем, можно ли скроллить
-  const canScrollDown = scrollable.scrollTop + scrollable.clientHeight < scrollable.scrollHeight;
-  const canScrollUp = scrollable.scrollTop > 0;
-
-  // Если контейнер можно скроллить, ускоряем пропорционально силе прокрутки
-  if (canScrollDown || canScrollUp) {
-      let speedFactor = Math.abs(event.deltaY) / 30; // Чем сильнее прокрутка, тем больше шаг
-      scrollable.scrollTop += event.deltaY * speedFactor; // Без smooth
-  }
-
-  
-}, { passive: true });
-*/
-
-  // Создаём кастомный скроллбар
+ // Создаём кастомный скроллбар
 const scrollbar = document.createElement("div");
 scrollbar.classList.add("custom-scrollbar");
 const thumb = document.createElement("div");

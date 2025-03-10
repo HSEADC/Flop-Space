@@ -8,13 +8,14 @@
 }
 
 .card {
-    background: $color-base-on-block;
+    background: $color-base-block;
     padding: 3rem 3rem 3rem 3rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     flex-grow: 1;
     border-radius: $border-radius-s;
+    @include outline($side: all);
 }
 
 .side-container {
@@ -40,6 +41,14 @@
     border-radius: $border-radius-s;
     @include outline($side: all);
 
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover .article-card__image {
+        background-size: 120%;
+      }
+
     &__image {
        height: 20rem;
        background-image: url(./images/card-image.jpg);
@@ -47,6 +56,8 @@
        background-size: cover;
        background-position: center;
        background-repeat: no-repeat;
+
+       transition: background-size 0.5s;
 
        &--medium {
         height: 10rem;

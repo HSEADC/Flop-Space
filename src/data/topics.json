@@ -1,0 +1,44 @@
+[
+    {
+        "position": 1,
+        "image": "topic1.jpg",
+        "title": "Cтартапы",
+        "link": "placeholder.html"
+    },
+    {
+        "position": 2,
+        "image": "topic1.jpg",
+        "title": "Митапы",
+        "link": "placeholder.html"
+    },
+    {
+        "position": 3,
+        "image": "topic1.jpg",
+        "title": "Хуяпы",
+        "link": "placeholder.html"
+    },
+    {
+        "position": 4,
+        "image": "topic1.jpg",
+        "title": "Митапы",
+        "link": "placeholder.html"
+    },
+    {
+        "position": 5,
+        "image": "topic1.jpg",
+        "title": "Митапы",
+        "link": "placeholder.html"
+    },
+    {
+        "position": 6,
+        "image": "topic1.jpg",
+        "title": "Митапы",
+        "link": "placeholder.html"
+    },
+    {
+        "position": 7,
+        "image": "topic1.jpg",
+        "title": "Митапы",
+        "link": "placeholder.html"
+    }
+]

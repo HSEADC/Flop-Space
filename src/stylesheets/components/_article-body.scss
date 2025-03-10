@@ -1,0 +1,26 @@
+@use '../design-system/variables' as *;
+@use '../design-system/mixins' as *;
+
+.article-body {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xxxl;
+    background: $color-base-block;
+    padding: $spacing-xxl;
+    border-radius: $border-radius-s;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__image {
+        background-image: url(./images/tomato.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: $border-radius-s;
+        height: 22rem;
+    }
+}

@@ -8,7 +8,9 @@ const pages = [
   { template: './src/pages/tests/tests.html', filename: './tests.html' },
   { template: './src/pages/media/media.html', filename: './media.html' },
   { template: './src/pages/about/about.html', filename: './about.html' },
-  { template: './src/pages/media/articles/about_dead_startup.html', filename: './about_dead_startup.html' }
+  { template: './src/pages/media/articles/about_dead_startup.html', filename: './about_dead_startup.html' },
+  { template: './src/pages/placeholder.html', filename: './placeholder.html' },
+  { template: './src/pages/article_blue_tomato.html', filename: './article_blue_tomato.html' }
 ];
 
 // Генерация плагинов для каждой страницы

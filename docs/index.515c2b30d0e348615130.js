@@ -1,6 +1,2054 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
 
+/***/ 530:
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+var requireAll = function requireAll(requireContext) {
+  return requireContext.keys().forEach(requireContext);
+};
+try {
+  requireAll(__webpack_require__(46));
+} catch (error) {
+  console.error("Ошибка при импорте SVG иконок:", error);
+}
+
+/***/ }),
+
+/***/ 445:
+/***/ (() => {
+
+/* document.addEventListener("wheel", function (event) {
+  const scrollable = document.querySelector(".layout__feed");
+  if (!scrollable) return;
+
+  event.preventDefault(); // Предотвращаем стандартный скролл
+
+  // Проверяем, можно ли скроллить
+  const canScrollDown = scrollable.scrollTop + scrollable.clientHeight < scrollable.scrollHeight;
+  const canScrollUp = scrollable.scrollTop > 0;
+
+  // Если контейнер можно скроллить, ускоряем пропорционально силе прокрутки
+  if (canScrollDown || canScrollUp) {
+      let speedFactor = Math.abs(event.deltaY) / 30; // Чем сильнее прокрутка, тем больше шаг
+      scrollable.scrollTop += event.deltaY * speedFactor; // Без smooth
+  }
+
+  
+}, { passive: true });
+*/
+
+// Создаём кастомный скроллбар
+var scrollbar = document.createElement("div");
+scrollbar.classList.add("custom-scrollbar");
+var thumb = document.createElement("div");
+thumb.classList.add("custom-scrollbar-thumb");
+scrollbar.appendChild(thumb);
+document.body.appendChild(scrollbar);
+
+// Находим основной контейнер со скроллом
+var scrollable = document.querySelector(".layout__feed");
+function updateCustomScrollbar() {
+  if (!scrollable) return;
+  var scrollHeight = scrollable.scrollHeight - scrollable.clientHeight;
+  var scrollProgress = scrollable.scrollTop / scrollHeight;
+
+  // Двигаем индикатор
+  var thumbHeight = Math.max(50, scrollable.clientHeight / scrollable.scrollHeight * 100); // Регулируем размер
+  thumb.style.height = "".concat(thumbHeight, "%");
+  thumb.style.top = "".concat(scrollProgress * (100 - thumbHeight), "%");
+}
+scrollable.addEventListener("scroll", updateCustomScrollbar);
+updateCustomScrollbar(); // Обновляем при загрузке
+
+/***/ }),
+
+/***/ 793:
+/***/ (() => {
+
+document.addEventListener("DOMContentLoaded", function () {
+  var input = document.getElementById("search-bar__input-field");
+  var measurer = document.getElementById("search-bar__text-measurer");
+  var container = document.getElementById("search-bar");
+  if (!input || !measurer || !container) {
+    console.error("Ошибка: Один из элементов (input, measurer, container) не найден!");
+    return;
+  }
+
+  // Функция обновления ширины инпута
+  function adjustWidth() {
+    measurer.textContent = input.value || input.placeholder;
+    input.style.width = "".concat(measurer.offsetWidth + 20, "px"); // Запас в 20px
+  }
+
+  // Функция активации ввода (убирает hover)
+  function activateInput() {
+    container.classList.add("search-bar--active");
+  }
+
+  // Функция деактивации (если поле пустое)
+  function deactivateInput() {
+    if (input.value.trim() === "") {
+      container.classList.remove("search-bar--active"); // Убираем модификатор
+    }
+  }
+
+  // Навешиваем обработчики
+  container.addEventListener("click", function () {
+    return input.focus();
+  });
+  input.addEventListener("input", adjustWidth);
+  input.addEventListener("focus", activateInput);
+  input.addEventListener("blur", deactivateInput);
+
+  // Инициализация ширины
+  adjustWidth();
+});
+
+/***/ }),
+
+/***/ 795:
+/***/ (() => {
+
+document.addEventListener("DOMContentLoaded", function () {
+  var topicList = document.querySelector(".topic-list");
+  if (!topicList) return;
+
+  // Горизонтальная прокрутка колесиком мыши
+  topicList.addEventListener("wheel", function (e) {
+    if (e.deltaY !== 0) {
+      e.preventDefault();
+      topicList.scrollBy({
+        left: e.deltaY * 3,
+        // Увеличиваем отзывчивость
+        behavior: "smooth"
+      });
+    }
+  });
+});
+
+/***/ }),
+
+/***/ 897:
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+(function (global, factory) {
+	 true ? module.exports = factory() :
+	0;
+}(this, (function () { 'use strict';
+
+var SpriteSymbol = function SpriteSymbol(ref) {
+  var id = ref.id;
+  var viewBox = ref.viewBox;
+  var content = ref.content;
+
+  this.id = id;
+  this.viewBox = viewBox;
+  this.content = content;
+};
+
+/**
+ * @return {string}
+ */
+SpriteSymbol.prototype.stringify = function stringify () {
+  return this.content;
+};
+
+/**
+ * @return {string}
+ */
+SpriteSymbol.prototype.toString = function toString () {
+  return this.stringify();
+};
+
+SpriteSymbol.prototype.destroy = function destroy () {
+    var this$1 = this;
+
+  ['id', 'viewBox', 'content'].forEach(function (prop) { return delete this$1[prop]; });
+};
+
+/**
+ * @param {string} content
+ * @return {Element}
+ */
+var parse = function (content) {
+  var hasImportNode = !!document.importNode;
+  var doc = new DOMParser().parseFromString(content, 'image/svg+xml').documentElement;
+
+  /**
+   * Fix for browser which are throwing WrongDocumentError
+   * if you insert an element which is not part of the document
+   * @see http://stackoverflow.com/a/7986519/4624403
+   */
+  if (hasImportNode) {
+    return document.importNode(doc, true);
+  }
+
+  return doc;
+};
+
+var commonjsGlobal = typeof window !== 'undefined' ? window : typeof __webpack_require__.g !== 'undefined' ? __webpack_require__.g : typeof self !== 'undefined' ? self : {};
+
+
+
+
+
+function createCommonjsModule(fn, module) {
+	return module = { exports: {} }, fn(module, module.exports), module.exports;
+}
+
+var deepmerge = createCommonjsModule(function (module, exports) {
+(function (root, factory) {
+    if (false) {} else {
+        module.exports = factory();
+    }
+}(commonjsGlobal, function () {
+
+function isMergeableObject(val) {
+    var nonNullObject = val && typeof val === 'object';
+
+    return nonNullObject
+        && Object.prototype.toString.call(val) !== '[object RegExp]'
+        && Object.prototype.toString.call(val) !== '[object Date]'
+}
+
+function emptyTarget(val) {
+    return Array.isArray(val) ? [] : {}
+}
+
+function cloneIfNecessary(value, optionsArgument) {
+    var clone = optionsArgument && optionsArgument.clone === true;
+    return (clone && isMergeableObject(value)) ? deepmerge(emptyTarget(value), value, optionsArgument) : value
+}
+
+function defaultArrayMerge(target, source, optionsArgument) {
+    var destination = target.slice();
+    source.forEach(function(e, i) {
+        if (typeof destination[i] === 'undefined') {
+            destination[i] = cloneIfNecessary(e, optionsArgument);
+        } else if (isMergeableObject(e)) {
+            destination[i] = deepmerge(target[i], e, optionsArgument);
+        } else if (target.indexOf(e) === -1) {
+            destination.push(cloneIfNecessary(e, optionsArgument));
+        }
+    });
+    return destination
+}
+
+function mergeObject(target, source, optionsArgument) {
+    var destination = {};
+    if (isMergeableObject(target)) {
+        Object.keys(target).forEach(function (key) {
+            destination[key] = cloneIfNecessary(target[key], optionsArgument);
+        });
+    }
+    Object.keys(source).forEach(function (key) {
+        if (!isMergeableObject(source[key]) || !target[key]) {
+            destination[key] = cloneIfNecessary(source[key], optionsArgument);
+        } else {
+            destination[key] = deepmerge(target[key], source[key], optionsArgument);
+        }
+    });
+    return destination
+}
+
+function deepmerge(target, source, optionsArgument) {
+    var array = Array.isArray(source);
+    var options = optionsArgument || { arrayMerge: defaultArrayMerge };
+    var arrayMerge = options.arrayMerge || defaultArrayMerge;
+
+    if (array) {
+        return Array.isArray(target) ? arrayMerge(target, source, optionsArgument) : cloneIfNecessary(source, optionsArgument)
+    } else {
+        return mergeObject(target, source, optionsArgument)
+    }
+}
+
+deepmerge.all = function deepmergeAll(array, optionsArgument) {
+    if (!Array.isArray(array) || array.length < 2) {
+        throw new Error('first argument should be an array with at least two elements')
+    }
+
+    // we are sure there are at least 2 values, so it is safe to have no initial value
+    return array.reduce(function(prev, next) {
+        return deepmerge(prev, next, optionsArgument)
+    })
+};
+
+return deepmerge
+
+}));
+});
+
+var namespaces_1 = createCommonjsModule(function (module, exports) {
+var namespaces = {
+  svg: {
+    name: 'xmlns',
+    uri: 'http://www.w3.org/2000/svg'
+  },
+  xlink: {
+    name: 'xmlns:xlink',
+    uri: 'http://www.w3.org/1999/xlink'
+  }
+};
+
+exports.default = namespaces;
+module.exports = exports.default;
+});
+
+/**
+ * @param {Object} attrs
+ * @return {string}
+ */
+var objectToAttrsString = function (attrs) {
+  return Object.keys(attrs).map(function (attr) {
+    var value = attrs[attr].toString().replace(/"/g, '&quot;');
+    return (attr + "=\"" + value + "\"");
+  }).join(' ');
+};
+
+var svg = namespaces_1.svg;
+var xlink = namespaces_1.xlink;
+
+var defaultAttrs = {};
+defaultAttrs[svg.name] = svg.uri;
+defaultAttrs[xlink.name] = xlink.uri;
+
+/**
+ * @param {string} [content]
+ * @param {Object} [attributes]
+ * @return {string}
+ */
+var wrapInSvgString = function (content, attributes) {
+  if ( content === void 0 ) content = '';
+
+  var attrs = deepmerge(defaultAttrs, attributes || {});
+  var attrsRendered = objectToAttrsString(attrs);
+  return ("<svg " + attrsRendered + ">" + content + "</svg>");
+};
+
+var BrowserSpriteSymbol = (function (SpriteSymbol$$1) {
+  function BrowserSpriteSymbol () {
+    SpriteSymbol$$1.apply(this, arguments);
+  }
+
+  if ( SpriteSymbol$$1 ) BrowserSpriteSymbol.__proto__ = SpriteSymbol$$1;
+  BrowserSpriteSymbol.prototype = Object.create( SpriteSymbol$$1 && SpriteSymbol$$1.prototype );
+  BrowserSpriteSymbol.prototype.constructor = BrowserSpriteSymbol;
+
+  var prototypeAccessors = { isMounted: {} };
+
+  prototypeAccessors.isMounted.get = function () {
+    return !!this.node;
+  };
+
+  /**
+   * @param {Element} node
+   * @return {BrowserSpriteSymbol}
+   */
+  BrowserSpriteSymbol.createFromExistingNode = function createFromExistingNode (node) {
+    return new BrowserSpriteSymbol({
+      id: node.getAttribute('id'),
+      viewBox: node.getAttribute('viewBox'),
+      content: node.outerHTML
+    });
+  };
+
+  BrowserSpriteSymbol.prototype.destroy = function destroy () {
+    if (this.isMounted) {
+      this.unmount();
+    }
+    SpriteSymbol$$1.prototype.destroy.call(this);
+  };
+
+  /**
+   * @param {Element|string} target
+   * @return {Element}
+   */
+  BrowserSpriteSymbol.prototype.mount = function mount (target) {
+    if (this.isMounted) {
+      return this.node;
+    }
+
+    var mountTarget = typeof target === 'string' ? document.querySelector(target) : target;
+    var node = this.render();
+    this.node = node;
+
+    mountTarget.appendChild(node);
+
+    return node;
+  };
+
+  /**
+   * @return {Element}
+   */
+  BrowserSpriteSymbol.prototype.render = function render () {
+    var content = this.stringify();
+    return parse(wrapInSvgString(content)).childNodes[0];
+  };
+
+  BrowserSpriteSymbol.prototype.unmount = function unmount () {
+    this.node.parentNode.removeChild(this.node);
+  };
+
+  Object.defineProperties( BrowserSpriteSymbol.prototype, prototypeAccessors );
+
+  return BrowserSpriteSymbol;
+}(SpriteSymbol));
+
+return BrowserSpriteSymbol;
+
+})));
+
+
+/***/ }),
+
+/***/ 890:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
+  "id": "icon-cases",
+  "use": "icon-cases-usage",
+  "viewBox": "0 0 18 18",
+  "content": "<symbol viewBox=\"0 0 18 18\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-cases\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M13 3.5L6 3.5C5.17157 3.5 4.5 4.17157 4.5 5L4.5 12C4.5 12.8284 5.17157 13.5 6 13.5L9 13.5V11C9 9.34315 10.3431 8 12 8H14.5V5C14.5 4.17157 13.8284 3.5 13 3.5ZM14.3033 9.5C14.2375 9.61538 14.1562 9.72248 14.0607 9.81802L10.818 13.0607C10.7225 13.1562 10.6154 13.2375 10.5 13.3033V11C10.5 10.1716 11.1716 9.5 12 9.5H14.3033ZM15.1213 10.8787C15.6839 10.3161 16 9.55301 16 8.75736V5C16 3.34315 14.6569 2 13 2L6 2C4.34315 2 3 3.34315 3 5V12C3 13.6569 4.34315 15 6 15H9.75736C10.553 15 11.3161 14.6839 11.8787 14.1213L15.1213 10.8787Z\" /></symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
+
+/***/ }),
+
+/***/ 758:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
+  "id": "icon-fav",
+  "use": "icon-fav-usage",
+  "viewBox": "0 0 18 18",
+  "content": "<symbol viewBox=\"0 0 18 18\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-fav\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M9 10.0244L9.97619 10.8611L12.9636 13.4218C13.0225 13.4723 13.0975 13.5 13.1751 13.5C13.3545 13.5 13.5 13.3545 13.5 13.1751V5C13.5 4.17157 12.8284 3.5 12 3.5L6 3.5C5.17157 3.5 4.5 4.17157 4.5 5L4.5 13.1751C4.5 13.3545 4.64547 13.5 4.82492 13.5C4.90248 13.5 4.97748 13.4723 5.03637 13.4218L8.02381 10.8611L9 10.0244ZM15 5C15 3.34315 13.6569 2 12 2L6 2C4.34315 2 3 3.34315 3 5L3 13.1751C3 14.183 3.81704 15 4.82492 15C5.26055 15 5.68181 14.8442 6.01256 14.5607L9 12L11.9874 14.5607C12.3182 14.8442 12.7395 15 13.1751 15C14.183 15 15 14.183 15 13.1751V5Z\" /></symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
+
+/***/ }),
+
+/***/ 409:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
+  "id": "icon-file",
+  "use": "icon-file-usage",
+  "viewBox": "0 0 18 18",
+  "content": "<symbol viewBox=\"0 0 18 18\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-file\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M5.625 15.1875H12.375C13.307 15.1875 14.0625 14.432 14.0625 13.5V8.14797C14.0625 7.70042 13.8847 7.2712 13.5682 6.95473L9.92027 3.30676C9.6038 2.99029 9.17458 2.8125 8.72703 2.8125L5.625 2.8125C4.69302 2.8125 3.9375 3.56802 3.9375 4.5L3.9375 13.5C3.9375 14.432 4.69302 15.1875 5.625 15.1875ZM15.75 8.14797C15.75 7.25287 15.3944 6.39442 14.7615 5.76148L11.1135 2.11351C10.4806 1.48058 9.62214 1.125 8.72703 1.125H5.625C3.76104 1.125 2.25 2.63604 2.25 4.5V13.5C2.25 15.364 3.76104 16.875 5.625 16.875H12.375C14.239 16.875 15.75 15.364 15.75 13.5L15.75 8.14797ZM5.625 9.28125C5.625 8.81526 6.00276 8.4375 6.46875 8.4375H11.5312C11.9972 8.4375 12.375 8.81526 12.375 9.28125C12.375 9.74724 11.9972 10.125 11.5312 10.125H6.46875C6.00276 10.125 5.625 9.74724 5.625 9.28125ZM6.46875 11.8125C6.00276 11.8125 5.625 12.1903 5.625 12.6562C5.625 13.1222 6.00276 13.5 6.46875 13.5H9.28125C9.74724 13.5 10.125 13.1222 10.125 12.6562C10.125 12.1903 9.74724 11.8125 9.28125 11.8125H6.46875Z\" /></symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
+
+/***/ }),
+
+/***/ 752:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
+  "id": "icon-like-alt",
+  "use": "icon-like-alt-usage",
+  "viewBox": "0 0 18 18",
+  "content": "<symbol viewBox=\"0 0 18 18\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-like-alt\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M8.01393 2.67271C8.26817 2.25615 8.73477 2 9.23934 2C10.1425 2 10.8158 2.79596 10.6265 3.64004L9.89288 6.91227H10.4803H13.943C15.3025 6.91227 16.2877 8.15103 15.9238 9.40306L15.0209 12.5098C14.4783 14.377 12.5925 15.5873 10.5789 15.3609L5.34079 14.7719L4.82677 7.89472L8.01393 2.67271ZM3.53993 8.33345C3.5096 7.92754 3.14073 7.62199 2.71604 7.65098C2.29135 7.67998 1.97166 8.03254 2.00199 8.43845L2.51594 15.3156C2.54628 15.7215 2.91515 16.0271 3.33984 15.9981C3.76453 15.9691 4.08422 15.6165 4.05388 15.2106L3.53993 8.33345Z\" /></symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
+
+/***/ }),
+
+/***/ 298:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
+  "id": "icon-like",
+  "use": "icon-like-usage",
+  "viewBox": "0 0 18 18",
+  "content": "<symbol viewBox=\"0 0 18 18\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-like\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M4.82677 7.89472L7.84969 2.94182C8.20563 2.35861 8.85888 2 9.5653 2C10.8298 2 11.7723 3.11437 11.5074 4.29611L11.2512 5.43859L10.9208 6.91227H12.4977H13.943C15.3025 6.91227 16.2877 8.15103 15.9238 9.40306L15.0209 12.5098C14.4783 14.377 12.5925 15.5873 10.5789 15.3609L5.34079 14.7719L4.82677 7.89472ZM10.759 13.8973L6.78783 13.4508L6.39866 8.24393L9.1815 3.68437C9.26113 3.5539 9.40727 3.47368 9.5653 3.47368C9.84817 3.47368 10.059 3.72297 9.99975 3.98734L9.41321 6.60349L9.01359 8.38595H10.9208H13.943C14.2829 8.38595 14.5292 8.69564 14.4382 9.00865L13.5353 12.1154C13.1962 13.2823 12.0176 14.0388 10.759 13.8973ZM3.53993 8.33345C3.5096 7.92754 3.14073 7.62199 2.71604 7.65098C2.29135 7.67998 1.97166 8.03254 2.00199 8.43845L2.51594 15.3156C2.54628 15.7215 2.91515 16.0271 3.33984 15.9981C3.76453 15.9691 4.08422 15.6165 4.05388 15.2106L3.53993 8.33345Z\" /></symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
+
+/***/ }),
+
+/***/ 798:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
+  "id": "icon-lock",
+  "use": "icon-lock-usage",
+  "viewBox": "0 0 18 19",
+  "content": "<symbol viewBox=\"0 0 18 19\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-lock\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M11.8125 7.375V6.25C11.8125 4.6967 10.5533 3.4375 9 3.4375C7.4467 3.4375 6.1875 4.6967 6.1875 6.25V7.375H11.8125ZM4.5 6.25V7.375C2.63604 7.375 1.125 8.88604 1.125 10.75V14.125C1.125 15.989 2.63604 17.5 4.5 17.5H13.5C15.364 17.5 16.875 15.989 16.875 14.125V10.75C16.875 8.88604 15.364 7.375 13.5 7.375V6.25C13.5 3.76472 11.4853 1.75 9 1.75C6.51472 1.75 4.5 3.76472 4.5 6.25ZM11.8125 9.0625H13.5C14.432 9.0625 15.1875 9.81802 15.1875 10.75V14.125C15.1875 15.057 14.432 15.8125 13.5 15.8125H4.5C3.56802 15.8125 2.8125 15.057 2.8125 14.125V10.75C2.8125 9.81802 3.56802 9.0625 4.5 9.0625H6.1875H11.8125ZM9.84375 11.3125C9.84375 10.8465 9.46599 10.4687 9 10.4687C8.53401 10.4687 8.15625 10.8465 8.15625 11.3125V13.5625C8.15625 14.0285 8.53401 14.4062 9 14.4062C9.46599 14.4062 9.84375 14.0285 9.84375 13.5625V11.3125Z\" /></symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
+
+/***/ }),
+
+/***/ 642:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
+  "id": "icon-mail",
+  "use": "icon-mail-usage",
+  "viewBox": "0 0 18 18",
+  "content": "<symbol viewBox=\"0 0 18 18\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-mail\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3.9375 4.5H14.0625C14.3432 4.5 14.6079 4.56853 14.8407 4.68977L9.84375 8.4375C9.34375 8.8125 8.65625 8.8125 8.15625 8.4375L3.15928 4.68977C3.39213 4.56853 3.65681 4.5 3.9375 4.5ZM2.25139 6.11823C2.25047 6.14121 2.25 6.1643 2.25 6.1875V11.8125C2.25 12.7445 3.00552 13.5 3.9375 13.5H14.0625C14.9945 13.5 15.75 12.7445 15.75 11.8125V6.1875C15.75 6.1643 15.7495 6.14121 15.7486 6.11823L10.8563 9.7875C9.75625 10.6125 8.24375 10.6125 7.14375 9.7875L2.25139 6.11823ZM0.5625 6.1875C0.5625 4.32354 2.07354 2.8125 3.9375 2.8125H14.0625C15.9265 2.8125 17.4375 4.32354 17.4375 6.1875V11.8125C17.4375 13.6765 15.9265 15.1875 14.0625 15.1875H3.9375C2.07354 15.1875 0.5625 13.6765 0.5625 11.8125V6.1875Z\" /></symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
+
+/***/ }),
+
+/***/ 472:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
+  "id": "icon-main",
+  "use": "icon-main-usage",
+  "viewBox": "0 0 18 18",
+  "content": "<symbol viewBox=\"0 0 18 18\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-main\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12.1125 12.272C12.4871 13.0855 12.8257 13.1567 13 13.1567C13.1743 13.1567 13.5129 13.0855 13.8875 12.272C14.2635 11.4556 14.5 10.1945 14.5 8.65674C14.5 7.11895 14.2635 5.85789 13.8875 5.04151C13.5129 4.22797 13.1743 4.15674 13 4.15674C12.8257 4.15674 12.4871 4.22797 12.1125 5.04151C11.7365 5.85789 11.5 7.11895 11.5 8.65674C11.5 10.1945 11.7365 11.4556 12.1125 12.272ZM10 8.65674C10 10.1256 10.1965 11.4712 10.5895 12.5142L3.90297 9.967C3.35929 9.75988 3 9.23853 3 8.65674C3 8.07494 3.35929 7.55359 3.90297 7.34648L10.5895 4.79923C10.1965 5.84223 10 7.18784 10 8.65674ZM13 14.6567C15 14.6567 16 11.9704 16 8.65674C16 5.34303 15 2.65674 13 2.65674C12.3389 2.65674 11.6833 2.77738 11.0655 3.01273L3.36897 5.94475C2.24366 6.37344 1.5 7.45254 1.5 8.65674C1.5 9.86094 2.24366 10.94 3.36897 11.3687L4.19631 11.6839C4.0699 11.9829 4 12.3116 4 12.6567C4 14.0374 5.11929 15.1567 6.5 15.1567C7.59849 15.1567 8.53151 14.4482 8.86703 13.4632L11.0655 14.3007C11.6833 14.5361 12.3389 14.6567 13 14.6567ZM7.46268 12.9282L5.60066 12.2189C5.53618 12.3511 5.5 12.4997 5.5 12.6567C5.5 13.2089 5.94772 13.6567 6.5 13.6567C6.95816 13.6567 7.34435 13.3486 7.46268 12.9282Z\" /></symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
+
+/***/ }),
+
+/***/ 98:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
+  "id": "icon-news",
+  "use": "icon-news-usage",
+  "viewBox": "0 0 18 18",
+  "content": "<symbol viewBox=\"0 0 18 18\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-news\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M5.84321 11.6006L5.64863 13.9356C5.63871 14.0547 5.73264 14.1567 5.85208 14.1567C5.90208 14.1567 5.95034 14.1384 5.98772 14.1052L8.19716 12.1412L8.78654 12.1544C8.85725 12.1559 8.92841 12.1567 9 12.1567C10.6948 12.1567 12.0868 11.7163 13.0203 10.9794C13.9094 10.2775 14.5 9.22018 14.5 7.65674C14.5 6.0933 13.9094 5.03596 13.0203 4.33409C12.0868 3.59715 10.6948 3.15674 9 3.15674C7.30518 3.15674 5.9132 3.59715 4.97968 4.33409C4.09059 5.03596 3.5 6.0933 3.5 7.65674C3.5 9.30443 4.15593 10.3992 5.14751 11.1052L5.84321 11.6006ZM6.98426 15.2263L8.75309 13.654C8.83504 13.6558 8.91735 13.6567 9 13.6567C12.866 13.6567 16 11.6567 16 7.65674C16 3.65674 12.866 1.65674 9 1.65674C5.13401 1.65674 2 3.65674 2 7.65674C2 9.77374 2.87785 11.3305 4.27747 12.3271L4.15381 13.8111C4.07101 14.8046 4.85508 15.6567 5.85208 15.6567C6.26945 15.6567 6.67231 15.5036 6.98426 15.2263Z\" /></symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
+
+/***/ }),
+
+/***/ 563:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
+  "id": "icon-open",
+  "use": "icon-open-usage",
+  "viewBox": "0 0 18 19",
+  "content": "<symbol viewBox=\"0 0 18 19\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-open\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M11.8125 6C11.8125 4.4467 10.5533 3.1875 8.99996 3.1875C8.05799 3.1875 7.22418 3.65058 6.71376 4.36151C6.44189 4.74018 5.97252 4.99085 5.53028 4.84344C5.08813 4.69605 4.84266 4.21248 5.07025 3.80576C5.84008 2.43001 7.31141 1.5 8.99996 1.5C11.4852 1.5 13.5 3.51472 13.5 6V7.125H13.5C15.364 7.125 16.875 8.63604 16.875 10.5V13.875C16.875 15.739 15.364 17.25 13.5 17.25H4.5C2.63604 17.25 1.125 15.739 1.125 13.875V10.5C1.125 8.63604 2.63604 7.125 4.5 7.125H11.8125V6ZM12.6562 8.8125H4.5C3.56802 8.8125 2.8125 9.56802 2.8125 10.5V13.875C2.8125 14.807 3.56802 15.5625 4.5 15.5625H13.5C14.432 15.5625 15.1875 14.807 15.1875 13.875V10.5C15.1875 9.56802 14.432 8.8125 13.5 8.8125H12.6562ZM9 10.2187C9.46599 10.2187 9.84375 10.5965 9.84375 11.0625V13.3125C9.84375 13.7785 9.46599 14.1562 9 14.1562C8.53401 14.1562 8.15625 13.7785 8.15625 13.3125V11.0625C8.15625 10.5965 8.53401 10.2187 9 10.2187Z\" /></symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
+
+/***/ }),
+
+/***/ 25:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
+  "id": "icon-podcast",
+  "use": "icon-podcast-usage",
+  "viewBox": "0 0 18 18",
+  "content": "<symbol viewBox=\"0 0 18 18\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-podcast\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16 8.65674C16 4.79075 12.866 1.65674 9 1.65674C5.13401 1.65674 2 4.79075 2 8.65674V12.4067V12.6567H2.00947C2.13713 14.3349 3.53919 15.6567 5.25 15.6567H5.33333C6.25381 15.6567 7 14.9105 7 13.9901V10.8234C7 9.90293 6.25381 9.15674 5.33333 9.15674H5.25C4.60568 9.15674 4.00515 9.34424 3.5 9.66765V8.65674C3.5 5.61917 5.96243 3.15674 9 3.15674C12.0376 3.15674 14.5 5.61917 14.5 8.65674V9.66765C13.9949 9.34424 13.3943 9.15674 12.75 9.15674H12.6667C11.7462 9.15674 11 9.90293 11 10.8234V13.9901C11 14.9105 11.7462 15.6567 12.6667 15.6567H12.75C14.4608 15.6567 15.8629 14.3349 15.9905 12.6567H16V12.4067V8.65674ZM14.5 12.4067C14.5 11.4402 13.7165 10.6567 12.75 10.6567H12.6667C12.5746 10.6567 12.5 10.7314 12.5 10.8234V13.9901C12.5 14.0821 12.5746 14.1567 12.6667 14.1567H12.75C13.7165 14.1567 14.5 13.3732 14.5 12.4067ZM5.25 14.1567C4.2835 14.1567 3.5 13.3732 3.5 12.4067C3.5 11.4402 4.2835 10.6567 5.25 10.6567H5.33333C5.42538 10.6567 5.5 10.7314 5.5 10.8234V13.9901C5.5 14.0821 5.42538 14.1567 5.33333 14.1567H5.25Z\" fill-opacity=\"0.8\" /></symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
+
+/***/ }),
+
+/***/ 175:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
+  "id": "icon-sub",
+  "use": "icon-sub-usage",
+  "viewBox": "0 0 18 18",
+  "content": "<symbol viewBox=\"0 0 18 18\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-sub\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M6.51483 4.15686H7.13615L7.57549 3.71752L8.64656 2.64645C8.84182 2.45118 9.15841 2.45118 9.35367 2.64645L10.4247 3.71752L10.8641 4.15686H11.4854H13.0001C13.2763 4.15686 13.5001 4.38072 13.5001 4.65686V6.17157V6.79289L13.9395 7.23223L15.0105 8.3033C15.2058 8.49856 15.2058 8.81515 15.0105 9.01041L13.9395 10.0815L13.5001 10.5208V11.1421V12.6569C13.5001 12.933 13.2763 13.1569 13.0001 13.1569H11.4854H10.8641L10.4247 13.5962L9.35367 14.6673C9.15841 14.8625 8.84182 14.8625 8.64656 14.6673L7.5755 13.5962L7.13616 13.1569H6.51484H5.00012C4.72397 13.1569 4.50012 12.933 4.50012 12.6569V11.1421V10.5208L4.06078 10.0815L2.98971 9.01041C2.79445 8.81515 2.79445 8.49856 2.98971 8.3033L4.06078 7.23223L4.50012 6.79289V6.17157V4.65686C4.50012 4.38072 4.72397 4.15686 5.00012 4.15686H6.51483ZM10.4143 1.58579C9.63328 0.804738 8.36695 0.804738 7.5859 1.58579L6.51483 2.65686H5.00012C3.89555 2.65686 3.00012 3.55229 3.00012 4.65686V6.17157L1.92905 7.24264C1.148 8.02369 1.148 9.29002 1.92905 10.0711L3.00012 11.1421V12.6569C3.00012 13.7614 3.89555 14.6569 5.00012 14.6569H6.51484L7.5859 15.7279C8.36695 16.509 9.63328 16.509 10.4143 15.7279L11.4854 14.6569H13.0001C14.1047 14.6569 15.0001 13.7614 15.0001 12.6569V11.1421L16.0712 10.0711C16.8522 9.29002 16.8522 8.02369 16.0712 7.24264L15.0001 6.17157V4.65686C15.0001 3.55229 14.1047 2.65686 13.0001 2.65686H11.4854L10.4143 1.58579ZM12.1002 7.10686C12.3487 6.77549 12.2815 6.30539 11.9502 6.05686C11.6188 5.80833 11.1487 5.87549 10.9002 6.20686L8.41901 9.51505L7.03048 8.12653C6.73759 7.83364 6.26272 7.83364 5.96982 8.12653C5.67693 8.41942 5.67693 8.8943 5.96982 9.18719L7.96982 11.1872C8.12356 11.3409 8.33645 11.4204 8.55332 11.405C8.77019 11.3896 8.9697 11.2808 9.10015 11.1069L12.1002 7.10686Z\" /></symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
+
+/***/ }),
+
+/***/ 78:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
+  "id": "icon-tests",
+  "use": "icon-tests-usage",
+  "viewBox": "0 0 18 18",
+  "content": "<symbol viewBox=\"0 0 18 18\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-tests\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M5.17647 3.5H12.5882C13.4654 3.5 14.1765 4.17157 14.1765 5V12C14.1765 12.8284 13.4654 13.5 12.5882 13.5H5.17647C4.29931 13.5 3.58824 12.8284 3.58824 12V5C3.58824 4.17157 4.29931 3.5 5.17647 3.5ZM2 5C2 3.34315 3.42215 2 5.17647 2H12.5882C14.3426 2 15.7647 3.34315 15.7647 5V12C15.7647 13.6569 14.3426 15 12.5882 15H5.17647C3.42215 15 2 13.6569 2 12V5ZM5.97059 10.4982C5.53201 10.4982 5.17647 10.834 5.17647 11.2482C5.17647 11.6624 5.53201 11.9982 5.97059 11.9982H8.09022C8.52879 11.9982 8.88433 11.6624 8.88433 11.2482C8.88433 10.834 8.52879 10.4982 8.09022 10.4982H5.97059ZM5.17647 8.49997C5.17647 8.08576 5.53201 7.74997 5.97059 7.74997H11.7961C12.2347 7.74997 12.5902 8.08576 12.5902 8.49997C12.5902 8.91418 12.2347 9.24997 11.7961 9.24997H5.97059C5.53201 9.24997 5.17647 8.91418 5.17647 8.49997ZM5.97059 5.00183C5.53201 5.00183 5.17647 5.33762 5.17647 5.75183C5.17647 6.16604 5.53201 6.50183 5.97059 6.50183H9.67845C10.117 6.50183 10.4726 6.16604 10.4726 5.75183C10.4726 5.33762 10.117 5.00183 9.67845 5.00183H5.97059Z\" /></symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
+
+/***/ }),
+
+/***/ 388:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
+  "id": "icon-video",
+  "use": "icon-video-usage",
+  "viewBox": "0 0 18 18",
+  "content": "<symbol viewBox=\"0 0 18 18\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-video\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M4 5.5H9.5C10.3284 5.5 11 6.17157 11 7V7.5V10.5V11C11 11.8284 10.3284 12.5 9.5 12.5H4C3.17157 12.5 2.5 11.8284 2.5 11V7C2.5 6.17157 3.17157 5.5 4 5.5ZM12.452 11.5372C12.1989 12.9377 10.9735 14 9.5 14H4C2.34315 14 1 12.6569 1 11V7C1 5.34315 2.34315 4 4 4H9.5C10.9735 4 12.1989 5.0623 12.452 6.46283L14.0063 5.35265C14.3274 5.1233 14.7121 5 15.1067 5C16.1524 5 17 5.84765 17 6.89327V11.1067C17 12.1524 16.1524 13 15.1067 13C14.7121 13 14.3274 12.8767 14.0063 12.6473L12.452 11.5372ZM12.5 9.72807L14.8781 11.4267C14.9448 11.4744 15.0248 11.5 15.1067 11.5C15.3239 11.5 15.5 11.3239 15.5 11.1067V6.89327C15.5 6.67607 15.3239 6.5 15.1067 6.5C15.0248 6.5 14.9448 6.52561 14.8781 6.57325L12.5 8.27193V9.72807Z\" /></symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
+
+/***/ }),
+
+/***/ 42:
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+(function (global, factory) {
+	 true ? module.exports = factory() :
+	0;
+}(this, (function () { 'use strict';
+
+var commonjsGlobal = typeof window !== 'undefined' ? window : typeof __webpack_require__.g !== 'undefined' ? __webpack_require__.g : typeof self !== 'undefined' ? self : {};
+
+
+
+
+
+function createCommonjsModule(fn, module) {
+	return module = { exports: {} }, fn(module, module.exports), module.exports;
+}
+
+var deepmerge = createCommonjsModule(function (module, exports) {
+(function (root, factory) {
+    if (false) {} else {
+        module.exports = factory();
+    }
+}(commonjsGlobal, function () {
+
+function isMergeableObject(val) {
+    var nonNullObject = val && typeof val === 'object';
+
+    return nonNullObject
+        && Object.prototype.toString.call(val) !== '[object RegExp]'
+        && Object.prototype.toString.call(val) !== '[object Date]'
+}
+
+function emptyTarget(val) {
+    return Array.isArray(val) ? [] : {}
+}
+
+function cloneIfNecessary(value, optionsArgument) {
+    var clone = optionsArgument && optionsArgument.clone === true;
+    return (clone && isMergeableObject(value)) ? deepmerge(emptyTarget(value), value, optionsArgument) : value
+}
+
+function defaultArrayMerge(target, source, optionsArgument) {
+    var destination = target.slice();
+    source.forEach(function(e, i) {
+        if (typeof destination[i] === 'undefined') {
+            destination[i] = cloneIfNecessary(e, optionsArgument);
+        } else if (isMergeableObject(e)) {
+            destination[i] = deepmerge(target[i], e, optionsArgument);
+        } else if (target.indexOf(e) === -1) {
+            destination.push(cloneIfNecessary(e, optionsArgument));
+        }
+    });
+    return destination
+}
+
+function mergeObject(target, source, optionsArgument) {
+    var destination = {};
+    if (isMergeableObject(target)) {
+        Object.keys(target).forEach(function (key) {
+            destination[key] = cloneIfNecessary(target[key], optionsArgument);
+        });
+    }
+    Object.keys(source).forEach(function (key) {
+        if (!isMergeableObject(source[key]) || !target[key]) {
+            destination[key] = cloneIfNecessary(source[key], optionsArgument);
+        } else {
+            destination[key] = deepmerge(target[key], source[key], optionsArgument);
+        }
+    });
+    return destination
+}
+
+function deepmerge(target, source, optionsArgument) {
+    var array = Array.isArray(source);
+    var options = optionsArgument || { arrayMerge: defaultArrayMerge };
+    var arrayMerge = options.arrayMerge || defaultArrayMerge;
+
+    if (array) {
+        return Array.isArray(target) ? arrayMerge(target, source, optionsArgument) : cloneIfNecessary(source, optionsArgument)
+    } else {
+        return mergeObject(target, source, optionsArgument)
+    }
+}
+
+deepmerge.all = function deepmergeAll(array, optionsArgument) {
+    if (!Array.isArray(array) || array.length < 2) {
+        throw new Error('first argument should be an array with at least two elements')
+    }
+
+    // we are sure there are at least 2 values, so it is safe to have no initial value
+    return array.reduce(function(prev, next) {
+        return deepmerge(prev, next, optionsArgument)
+    })
+};
+
+return deepmerge
+
+}));
+});
+
+//      
+// An event handler can take an optional event argument
+// and should not return a value
+                                          
+// An array of all currently registered event handlers for a type
+                                            
+// A map of event types and their corresponding event handlers.
+                        
+                                   
+  
+
+/** Mitt: Tiny (~200b) functional event emitter / pubsub.
+ *  @name mitt
+ *  @returns {Mitt}
+ */
+function mitt(all                 ) {
+	all = all || Object.create(null);
+
+	return {
+		/**
+		 * Register an event handler for the given type.
+		 *
+		 * @param  {String} type	Type of event to listen for, or `"*"` for all events
+		 * @param  {Function} handler Function to call in response to given event
+		 * @memberOf mitt
+		 */
+		on: function on(type        , handler              ) {
+			(all[type] || (all[type] = [])).push(handler);
+		},
+
+		/**
+		 * Remove an event handler for the given type.
+		 *
+		 * @param  {String} type	Type of event to unregister `handler` from, or `"*"`
+		 * @param  {Function} handler Handler function to remove
+		 * @memberOf mitt
+		 */
+		off: function off(type        , handler              ) {
+			if (all[type]) {
+				all[type].splice(all[type].indexOf(handler) >>> 0, 1);
+			}
+		},
+
+		/**
+		 * Invoke all handlers for the given type.
+		 * If present, `"*"` handlers are invoked after type-matched handlers.
+		 *
+		 * @param {String} type  The event type to invoke
+		 * @param {Any} [evt]  Any value (object is recommended and powerful), passed to each handler
+		 * @memberof mitt
+		 */
+		emit: function emit(type        , evt     ) {
+			(all[type] || []).map(function (handler) { handler(evt); });
+			(all['*'] || []).map(function (handler) { handler(type, evt); });
+		}
+	};
+}
+
+var namespaces_1 = createCommonjsModule(function (module, exports) {
+var namespaces = {
+  svg: {
+    name: 'xmlns',
+    uri: 'http://www.w3.org/2000/svg'
+  },
+  xlink: {
+    name: 'xmlns:xlink',
+    uri: 'http://www.w3.org/1999/xlink'
+  }
+};
+
+exports.default = namespaces;
+module.exports = exports.default;
+});
+
+/**
+ * @param {Object} attrs
+ * @return {string}
+ */
+var objectToAttrsString = function (attrs) {
+  return Object.keys(attrs).map(function (attr) {
+    var value = attrs[attr].toString().replace(/"/g, '&quot;');
+    return (attr + "=\"" + value + "\"");
+  }).join(' ');
+};
+
+var svg = namespaces_1.svg;
+var xlink = namespaces_1.xlink;
+
+var defaultAttrs = {};
+defaultAttrs[svg.name] = svg.uri;
+defaultAttrs[xlink.name] = xlink.uri;
+
+/**
+ * @param {string} [content]
+ * @param {Object} [attributes]
+ * @return {string}
+ */
+var wrapInSvgString = function (content, attributes) {
+  if ( content === void 0 ) content = '';
+
+  var attrs = deepmerge(defaultAttrs, attributes || {});
+  var attrsRendered = objectToAttrsString(attrs);
+  return ("<svg " + attrsRendered + ">" + content + "</svg>");
+};
+
+var svg$1 = namespaces_1.svg;
+var xlink$1 = namespaces_1.xlink;
+
+var defaultConfig = {
+  attrs: ( obj = {
+    style: ['position: absolute', 'width: 0', 'height: 0'].join('; '),
+    'aria-hidden': 'true'
+  }, obj[svg$1.name] = svg$1.uri, obj[xlink$1.name] = xlink$1.uri, obj )
+};
+var obj;
+
+var Sprite = function Sprite(config) {
+  this.config = deepmerge(defaultConfig, config || {});
+  this.symbols = [];
+};
+
+/**
+ * Add new symbol. If symbol with the same id exists it will be replaced.
+ * @param {SpriteSymbol} symbol
+ * @return {boolean} `true` - symbol was added, `false` - replaced
+ */
+Sprite.prototype.add = function add (symbol) {
+  var ref = this;
+    var symbols = ref.symbols;
+  var existing = this.find(symbol.id);
+
+  if (existing) {
+    symbols[symbols.indexOf(existing)] = symbol;
+    return false;
+  }
+
+  symbols.push(symbol);
+  return true;
+};
+
+/**
+ * Remove symbol & destroy it
+ * @param {string} id
+ * @return {boolean} `true` - symbol was found & successfully destroyed, `false` - otherwise
+ */
+Sprite.prototype.remove = function remove (id) {
+  var ref = this;
+    var symbols = ref.symbols;
+  var symbol = this.find(id);
+
+  if (symbol) {
+    symbols.splice(symbols.indexOf(symbol), 1);
+    symbol.destroy();
+    return true;
+  }
+
+  return false;
+};
+
+/**
+ * @param {string} id
+ * @return {SpriteSymbol|null}
+ */
+Sprite.prototype.find = function find (id) {
+  return this.symbols.filter(function (s) { return s.id === id; })[0] || null;
+};
+
+/**
+ * @param {string} id
+ * @return {boolean}
+ */
+Sprite.prototype.has = function has (id) {
+  return this.find(id) !== null;
+};
+
+/**
+ * @return {string}
+ */
+Sprite.prototype.stringify = function stringify () {
+  var ref = this.config;
+    var attrs = ref.attrs;
+  var stringifiedSymbols = this.symbols.map(function (s) { return s.stringify(); }).join('');
+  return wrapInSvgString(stringifiedSymbols, attrs);
+};
+
+/**
+ * @return {string}
+ */
+Sprite.prototype.toString = function toString () {
+  return this.stringify();
+};
+
+Sprite.prototype.destroy = function destroy () {
+  this.symbols.forEach(function (s) { return s.destroy(); });
+};
+
+var SpriteSymbol = function SpriteSymbol(ref) {
+  var id = ref.id;
+  var viewBox = ref.viewBox;
+  var content = ref.content;
+
+  this.id = id;
+  this.viewBox = viewBox;
+  this.content = content;
+};
+
+/**
+ * @return {string}
+ */
+SpriteSymbol.prototype.stringify = function stringify () {
+  return this.content;
+};
+
+/**
+ * @return {string}
+ */
+SpriteSymbol.prototype.toString = function toString () {
+  return this.stringify();
+};
+
+SpriteSymbol.prototype.destroy = function destroy () {
+    var this$1 = this;
+
+  ['id', 'viewBox', 'content'].forEach(function (prop) { return delete this$1[prop]; });
+};
+
+/**
+ * @param {string} content
+ * @return {Element}
+ */
+var parse = function (content) {
+  var hasImportNode = !!document.importNode;
+  var doc = new DOMParser().parseFromString(content, 'image/svg+xml').documentElement;
+
+  /**
+   * Fix for browser which are throwing WrongDocumentError
+   * if you insert an element which is not part of the document
+   * @see http://stackoverflow.com/a/7986519/4624403
+   */
+  if (hasImportNode) {
+    return document.importNode(doc, true);
+  }
+
+  return doc;
+};
+
+var BrowserSpriteSymbol = (function (SpriteSymbol$$1) {
+  function BrowserSpriteSymbol () {
+    SpriteSymbol$$1.apply(this, arguments);
+  }
+
+  if ( SpriteSymbol$$1 ) BrowserSpriteSymbol.__proto__ = SpriteSymbol$$1;
+  BrowserSpriteSymbol.prototype = Object.create( SpriteSymbol$$1 && SpriteSymbol$$1.prototype );
+  BrowserSpriteSymbol.prototype.constructor = BrowserSpriteSymbol;
+
+  var prototypeAccessors = { isMounted: {} };
+
+  prototypeAccessors.isMounted.get = function () {
+    return !!this.node;
+  };
+
+  /**
+   * @param {Element} node
+   * @return {BrowserSpriteSymbol}
+   */
+  BrowserSpriteSymbol.createFromExistingNode = function createFromExistingNode (node) {
+    return new BrowserSpriteSymbol({
+      id: node.getAttribute('id'),
+      viewBox: node.getAttribute('viewBox'),
+      content: node.outerHTML
+    });
+  };
+
+  BrowserSpriteSymbol.prototype.destroy = function destroy () {
+    if (this.isMounted) {
+      this.unmount();
+    }
+    SpriteSymbol$$1.prototype.destroy.call(this);
+  };
+
+  /**
+   * @param {Element|string} target
+   * @return {Element}
+   */
+  BrowserSpriteSymbol.prototype.mount = function mount (target) {
+    if (this.isMounted) {
+      return this.node;
+    }
+
+    var mountTarget = typeof target === 'string' ? document.querySelector(target) : target;
+    var node = this.render();
+    this.node = node;
+
+    mountTarget.appendChild(node);
+
+    return node;
+  };
+
+  /**
+   * @return {Element}
+   */
+  BrowserSpriteSymbol.prototype.render = function render () {
+    var content = this.stringify();
+    return parse(wrapInSvgString(content)).childNodes[0];
+  };
+
+  BrowserSpriteSymbol.prototype.unmount = function unmount () {
+    this.node.parentNode.removeChild(this.node);
+  };
+
+  Object.defineProperties( BrowserSpriteSymbol.prototype, prototypeAccessors );
+
+  return BrowserSpriteSymbol;
+}(SpriteSymbol));
+
+var defaultConfig$1 = {
+  /**
+   * Should following options be automatically configured:
+   * - `syncUrlsWithBaseTag`
+   * - `locationChangeAngularEmitter`
+   * - `moveGradientsOutsideSymbol`
+   * @type {boolean}
+   */
+  autoConfigure: true,
+
+  /**
+   * Default mounting selector
+   * @type {string}
+   */
+  mountTo: 'body',
+
+  /**
+   * Fix disappearing SVG elements when <base href> exists.
+   * Executes when sprite mounted.
+   * @see http://stackoverflow.com/a/18265336/796152
+   * @see https://github.com/everdimension/angular-svg-base-fix
+   * @see https://github.com/angular/angular.js/issues/8934#issuecomment-56568466
+   * @type {boolean}
+   */
+  syncUrlsWithBaseTag: false,
+
+  /**
+   * Should sprite listen custom location change event
+   * @type {boolean}
+   */
+  listenLocationChangeEvent: true,
+
+  /**
+   * Custom window event name which should be emitted to update sprite urls
+   * @type {string}
+   */
+  locationChangeEvent: 'locationChange',
+
+  /**
+   * Emit location change event in Angular automatically
+   * @type {boolean}
+   */
+  locationChangeAngularEmitter: false,
+
+  /**
+   * Selector to find symbols usages when updating sprite urls
+   * @type {string}
+   */
+  usagesToUpdate: 'use[*|href]',
+
+  /**
+   * Fix Firefox bug when gradients and patterns don't work if they are within a symbol.
+   * Executes when sprite is rendered, but not mounted.
+   * @see https://bugzilla.mozilla.org/show_bug.cgi?id=306674
+   * @see https://bugzilla.mozilla.org/show_bug.cgi?id=353575
+   * @see https://bugzilla.mozilla.org/show_bug.cgi?id=1235364
+   * @type {boolean}
+   */
+  moveGradientsOutsideSymbol: false
+};
+
+/**
+ * @param {*} arrayLike
+ * @return {Array}
+ */
+var arrayFrom = function (arrayLike) {
+  return Array.prototype.slice.call(arrayLike, 0);
+};
+
+var browser = {
+  isChrome: function () { return /chrome/i.test(navigator.userAgent); },
+  isFirefox: function () { return /firefox/i.test(navigator.userAgent); },
+
+  // https://msdn.microsoft.com/en-us/library/ms537503(v=vs.85).aspx
+  isIE: function () { return /msie/i.test(navigator.userAgent) || /trident/i.test(navigator.userAgent); },
+  isEdge: function () { return /edge/i.test(navigator.userAgent); }
+};
+
+/**
+ * @param {string} name
+ * @param {*} data
+ */
+var dispatchEvent = function (name, data) {
+  var event = document.createEvent('CustomEvent');
+  event.initCustomEvent(name, false, false, data);
+  window.dispatchEvent(event);
+};
+
+/**
+ * IE doesn't evaluate <style> tags in SVGs that are dynamically added to the page.
+ * This trick will trigger IE to read and use any existing SVG <style> tags.
+ * @see https://github.com/iconic/SVGInjector/issues/23
+ * @see https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/10898469/
+ *
+ * @param {Element} node DOM Element to search <style> tags in
+ * @return {Array<HTMLStyleElement>}
+ */
+var evalStylesIEWorkaround = function (node) {
+  var updatedNodes = [];
+
+  arrayFrom(node.querySelectorAll('style'))
+    .forEach(function (style) {
+      style.textContent += '';
+      updatedNodes.push(style);
+    });
+
+  return updatedNodes;
+};
+
+/**
+ * @param {string} [url] If not provided - current URL will be used
+ * @return {string}
+ */
+var getUrlWithoutFragment = function (url) {
+  return (url || window.location.href).split('#')[0];
+};
+
+/* global angular */
+/**
+ * @param {string} eventName
+ */
+var locationChangeAngularEmitter = function (eventName) {
+  angular.module('ng').run(['$rootScope', function ($rootScope) {
+    $rootScope.$on('$locationChangeSuccess', function (e, newUrl, oldUrl) {
+      dispatchEvent(eventName, { oldUrl: oldUrl, newUrl: newUrl });
+    });
+  }]);
+};
+
+var defaultSelector = 'linearGradient, radialGradient, pattern, mask, clipPath';
+
+/**
+ * @param {Element} svg
+ * @param {string} [selector]
+ * @return {Element}
+ */
+var moveGradientsOutsideSymbol = function (svg, selector) {
+  if ( selector === void 0 ) selector = defaultSelector;
+
+  arrayFrom(svg.querySelectorAll('symbol')).forEach(function (symbol) {
+    arrayFrom(symbol.querySelectorAll(selector)).forEach(function (node) {
+      symbol.parentNode.insertBefore(node, symbol);
+    });
+  });
+  return svg;
+};
+
+/**
+ * @param {NodeList} nodes
+ * @param {Function} [matcher]
+ * @return {Attr[]}
+ */
+function selectAttributes(nodes, matcher) {
+  var attrs = arrayFrom(nodes).reduce(function (acc, node) {
+    if (!node.attributes) {
+      return acc;
+    }
+
+    var arrayfied = arrayFrom(node.attributes);
+    var matched = matcher ? arrayfied.filter(matcher) : arrayfied;
+    return acc.concat(matched);
+  }, []);
+
+  return attrs;
+}
+
+/**
+ * @param {NodeList|Node} nodes
+ * @param {boolean} [clone=true]
+ * @return {string}
+ */
+
+var xLinkNS = namespaces_1.xlink.uri;
+var xLinkAttrName = 'xlink:href';
+
+// eslint-disable-next-line no-useless-escape
+var specialUrlCharsPattern = /[{}|\\\^\[\]`"<>]/g;
+
+function encoder(url) {
+  return url.replace(specialUrlCharsPattern, function (match) {
+    return ("%" + (match[0].charCodeAt(0).toString(16).toUpperCase()));
+  });
+}
+
+function escapeRegExp(str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); // $& means the whole matched string
+}
+
+/**
+ * @param {NodeList} nodes
+ * @param {string} startsWith
+ * @param {string} replaceWith
+ * @return {NodeList}
+ */
+function updateReferences(nodes, startsWith, replaceWith) {
+  arrayFrom(nodes).forEach(function (node) {
+    var href = node.getAttribute(xLinkAttrName);
+    if (href && href.indexOf(startsWith) === 0) {
+      var newUrl = href.replace(startsWith, replaceWith);
+      node.setAttributeNS(xLinkNS, xLinkAttrName, newUrl);
+    }
+  });
+
+  return nodes;
+}
+
+/**
+ * List of SVG attributes to update url() target in them
+ */
+var attList = [
+  'clipPath',
+  'colorProfile',
+  'src',
+  'cursor',
+  'fill',
+  'filter',
+  'marker',
+  'markerStart',
+  'markerMid',
+  'markerEnd',
+  'mask',
+  'stroke',
+  'style'
+];
+
+var attSelector = attList.map(function (attr) { return ("[" + attr + "]"); }).join(',');
+
+/**
+ * Update URLs in svg image (like `fill="url(...)"`) and update referencing elements
+ * @param {Element} svg
+ * @param {NodeList} references
+ * @param {string|RegExp} startsWith
+ * @param {string} replaceWith
+ * @return {void}
+ *
+ * @example
+ * const sprite = document.querySelector('svg.sprite');
+ * const usages = document.querySelectorAll('use');
+ * updateUrls(sprite, usages, '#', 'prefix#');
+ */
+var updateUrls = function (svg, references, startsWith, replaceWith) {
+  var startsWithEncoded = encoder(startsWith);
+  var replaceWithEncoded = encoder(replaceWith);
+
+  var nodes = svg.querySelectorAll(attSelector);
+  var attrs = selectAttributes(nodes, function (ref) {
+    var localName = ref.localName;
+    var value = ref.value;
+
+    return attList.indexOf(localName) !== -1 && value.indexOf(("url(" + startsWithEncoded)) !== -1;
+  });
+
+  attrs.forEach(function (attr) { return attr.value = attr.value.replace(new RegExp(escapeRegExp(startsWithEncoded), 'g'), replaceWithEncoded); });
+  updateReferences(references, startsWithEncoded, replaceWithEncoded);
+};
+
+/**
+ * Internal emitter events
+ * @enum
+ * @private
+ */
+var Events = {
+  MOUNT: 'mount',
+  SYMBOL_MOUNT: 'symbol_mount'
+};
+
+var BrowserSprite = (function (Sprite$$1) {
+  function BrowserSprite(cfg) {
+    var this$1 = this;
+    if ( cfg === void 0 ) cfg = {};
+
+    Sprite$$1.call(this, deepmerge(defaultConfig$1, cfg));
+
+    var emitter = mitt();
+    this._emitter = emitter;
+    this.node = null;
+
+    var ref = this;
+    var config = ref.config;
+
+    if (config.autoConfigure) {
+      this._autoConfigure(cfg);
+    }
+
+    if (config.syncUrlsWithBaseTag) {
+      var baseUrl = document.getElementsByTagName('base')[0].getAttribute('href');
+      emitter.on(Events.MOUNT, function () { return this$1.updateUrls('#', baseUrl); });
+    }
+
+    var handleLocationChange = this._handleLocationChange.bind(this);
+    this._handleLocationChange = handleLocationChange;
+
+    // Provide way to update sprite urls externally via dispatching custom window event
+    if (config.listenLocationChangeEvent) {
+      window.addEventListener(config.locationChangeEvent, handleLocationChange);
+    }
+
+    // Emit location change event in Angular automatically
+    if (config.locationChangeAngularEmitter) {
+      locationChangeAngularEmitter(config.locationChangeEvent);
+    }
+
+    // After sprite mounted
+    emitter.on(Events.MOUNT, function (spriteNode) {
+      if (config.moveGradientsOutsideSymbol) {
+        moveGradientsOutsideSymbol(spriteNode);
+      }
+    });
+
+    // After symbol mounted into sprite
+    emitter.on(Events.SYMBOL_MOUNT, function (symbolNode) {
+      if (config.moveGradientsOutsideSymbol) {
+        moveGradientsOutsideSymbol(symbolNode.parentNode);
+      }
+
+      if (browser.isIE() || browser.isEdge()) {
+        evalStylesIEWorkaround(symbolNode);
+      }
+    });
+  }
+
+  if ( Sprite$$1 ) BrowserSprite.__proto__ = Sprite$$1;
+  BrowserSprite.prototype = Object.create( Sprite$$1 && Sprite$$1.prototype );
+  BrowserSprite.prototype.constructor = BrowserSprite;
+
+  var prototypeAccessors = { isMounted: {} };
+
+  /**
+   * @return {boolean}
+   */
+  prototypeAccessors.isMounted.get = function () {
+    return !!this.node;
+  };
+
+  /**
+   * Automatically configure following options
+   * - `syncUrlsWithBaseTag`
+   * - `locationChangeAngularEmitter`
+   * - `moveGradientsOutsideSymbol`
+   * @param {Object} cfg
+   * @private
+   */
+  BrowserSprite.prototype._autoConfigure = function _autoConfigure (cfg) {
+    var ref = this;
+    var config = ref.config;
+
+    if (typeof cfg.syncUrlsWithBaseTag === 'undefined') {
+      config.syncUrlsWithBaseTag = typeof document.getElementsByTagName('base')[0] !== 'undefined';
+    }
+
+    if (typeof cfg.locationChangeAngularEmitter === 'undefined') {
+        config.locationChangeAngularEmitter = typeof window.angular !== 'undefined';
+    }
+
+    if (typeof cfg.moveGradientsOutsideSymbol === 'undefined') {
+      config.moveGradientsOutsideSymbol = browser.isFirefox();
+    }
+  };
+
+  /**
+   * @param {Event} event
+   * @param {Object} event.detail
+   * @param {string} event.detail.oldUrl
+   * @param {string} event.detail.newUrl
+   * @private
+   */
+  BrowserSprite.prototype._handleLocationChange = function _handleLocationChange (event) {
+    var ref = event.detail;
+    var oldUrl = ref.oldUrl;
+    var newUrl = ref.newUrl;
+    this.updateUrls(oldUrl, newUrl);
+  };
+
+  /**
+   * Add new symbol. If symbol with the same id exists it will be replaced.
+   * If sprite already mounted - `symbol.mount(sprite.node)` will be called.
+   * @fires Events#SYMBOL_MOUNT
+   * @param {BrowserSpriteSymbol} symbol
+   * @return {boolean} `true` - symbol was added, `false` - replaced
+   */
+  BrowserSprite.prototype.add = function add (symbol) {
+    var sprite = this;
+    var isNewSymbol = Sprite$$1.prototype.add.call(this, symbol);
+
+    if (this.isMounted && isNewSymbol) {
+      symbol.mount(sprite.node);
+      this._emitter.emit(Events.SYMBOL_MOUNT, symbol.node);
+    }
+
+    return isNewSymbol;
+  };
+
+  /**
+   * Attach to existing DOM node
+   * @param {string|Element} target
+   * @return {Element|null} attached DOM Element. null if node to attach not found.
+   */
+  BrowserSprite.prototype.attach = function attach (target) {
+    var this$1 = this;
+
+    var sprite = this;
+
+    if (sprite.isMounted) {
+      return sprite.node;
+    }
+
+    /** @type Element */
+    var node = typeof target === 'string' ? document.querySelector(target) : target;
+    sprite.node = node;
+
+    // Already added symbols needs to be mounted
+    this.symbols.forEach(function (symbol) {
+      symbol.mount(sprite.node);
+      this$1._emitter.emit(Events.SYMBOL_MOUNT, symbol.node);
+    });
+
+    // Create symbols from existing DOM nodes, add and mount them
+    arrayFrom(node.querySelectorAll('symbol'))
+      .forEach(function (symbolNode) {
+        var symbol = BrowserSpriteSymbol.createFromExistingNode(symbolNode);
+        symbol.node = symbolNode; // hack to prevent symbol mounting to sprite when adding
+        sprite.add(symbol);
+      });
+
+    this._emitter.emit(Events.MOUNT, node);
+
+    return node;
+  };
+
+  BrowserSprite.prototype.destroy = function destroy () {
+    var ref = this;
+    var config = ref.config;
+    var symbols = ref.symbols;
+    var _emitter = ref._emitter;
+
+    symbols.forEach(function (s) { return s.destroy(); });
+
+    _emitter.off('*');
+    window.removeEventListener(config.locationChangeEvent, this._handleLocationChange);
+
+    if (this.isMounted) {
+      this.unmount();
+    }
+  };
+
+  /**
+   * @fires Events#MOUNT
+   * @param {string|Element} [target]
+   * @param {boolean} [prepend=false]
+   * @return {Element|null} rendered sprite node. null if mount node not found.
+   */
+  BrowserSprite.prototype.mount = function mount (target, prepend) {
+    if ( target === void 0 ) target = this.config.mountTo;
+    if ( prepend === void 0 ) prepend = false;
+
+    var sprite = this;
+
+    if (sprite.isMounted) {
+      return sprite.node;
+    }
+
+    var mountNode = typeof target === 'string' ? document.querySelector(target) : target;
+    var node = sprite.render();
+    this.node = node;
+
+    if (prepend && mountNode.childNodes[0]) {
+      mountNode.insertBefore(node, mountNode.childNodes[0]);
+    } else {
+      mountNode.appendChild(node);
+    }
+
+    this._emitter.emit(Events.MOUNT, node);
+
+    return node;
+  };
+
+  /**
+   * @return {Element}
+   */
+  BrowserSprite.prototype.render = function render () {
+    return parse(this.stringify());
+  };
+
+  /**
+   * Detach sprite from the DOM
+   */
+  BrowserSprite.prototype.unmount = function unmount () {
+    this.node.parentNode.removeChild(this.node);
+  };
+
+  /**
+   * Update URLs in sprite and usage elements
+   * @param {string} oldUrl
+   * @param {string} newUrl
+   * @return {boolean} `true` - URLs was updated, `false` - sprite is not mounted
+   */
+  BrowserSprite.prototype.updateUrls = function updateUrls$1 (oldUrl, newUrl) {
+    if (!this.isMounted) {
+      return false;
+    }
+
+    var usages = document.querySelectorAll(this.config.usagesToUpdate);
+
+    updateUrls(
+      this.node,
+      usages,
+      ((getUrlWithoutFragment(oldUrl)) + "#"),
+      ((getUrlWithoutFragment(newUrl)) + "#")
+    );
+
+    return true;
+  };
+
+  Object.defineProperties( BrowserSprite.prototype, prototypeAccessors );
+
+  return BrowserSprite;
+}(Sprite));
+
+var ready$1 = createCommonjsModule(function (module) {
+/*!
+  * domready (c) Dustin Diaz 2014 - License MIT
+  */
+!function (name, definition) {
+
+  { module.exports = definition(); }
+
+}('domready', function () {
+
+  var fns = [], listener
+    , doc = document
+    , hack = doc.documentElement.doScroll
+    , domContentLoaded = 'DOMContentLoaded'
+    , loaded = (hack ? /^loaded|^c/ : /^loaded|^i|^c/).test(doc.readyState);
+
+
+  if (!loaded)
+  { doc.addEventListener(domContentLoaded, listener = function () {
+    doc.removeEventListener(domContentLoaded, listener);
+    loaded = 1;
+    while (listener = fns.shift()) { listener(); }
+  }); }
+
+  return function (fn) {
+    loaded ? setTimeout(fn, 0) : fns.push(fn);
+  }
+
+});
+});
+
+var spriteNodeId = '__SVG_SPRITE_NODE__';
+var spriteGlobalVarName = '__SVG_SPRITE__';
+var isSpriteExists = !!window[spriteGlobalVarName];
+
+// eslint-disable-next-line import/no-mutable-exports
+var sprite;
+
+if (isSpriteExists) {
+  sprite = window[spriteGlobalVarName];
+} else {
+  sprite = new BrowserSprite({
+    attrs: {
+      id: spriteNodeId,
+      'aria-hidden': 'true'
+    }
+  });
+  window[spriteGlobalVarName] = sprite;
+}
+
+var loadSprite = function () {
+  /**
+   * Check for page already contains sprite node
+   * If found - attach to and reuse it's content
+   * If not - render and mount the new sprite
+   */
+  var existing = document.getElementById(spriteNodeId);
+
+  if (existing) {
+    sprite.attach(existing);
+  } else {
+    sprite.mount(document.body, true);
+  }
+};
+
+if (document.body) {
+  loadSprite();
+} else {
+  ready$1(loadSprite);
+}
+
+var sprite$1 = sprite;
+
+return sprite$1;
+
+})));
+
+
+/***/ }),
+
+/***/ 46:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var map = {
+	"./icon-cases.svg": 890,
+	"./icon-fav.svg": 758,
+	"./icon-file.svg": 409,
+	"./icon-like-alt.svg": 752,
+	"./icon-like.svg": 298,
+	"./icon-lock.svg": 798,
+	"./icon-mail.svg": 642,
+	"./icon-main.svg": 472,
+	"./icon-news.svg": 98,
+	"./icon-open.svg": 563,
+	"./icon-podcast.svg": 25,
+	"./icon-sub.svg": 175,
+	"./icon-tests.svg": 78,
+	"./icon-video.svg": 388
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 46;
+
+/***/ }),
+
+/***/ 907:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var map = {
+	"./avatar.jpg": 117,
+	"./card-image.jpg": 160,
+	"./image1.jpeg": 171,
+	"./image2.jpg": 265,
+	"./image3.jpeg": 805,
+	"./image4.jpeg": 888
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 907;
+
+/***/ }),
+
+/***/ 117:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/avatar.7c070b.jpg";
+
+/***/ }),
+
+/***/ 160:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/card-image.fefd1b.jpg";
+
+/***/ }),
+
+/***/ 171:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/image1.d727a5.jpeg";
+
+/***/ }),
+
+/***/ 265:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/image2.b4938a.jpg";
+
+/***/ }),
+
+/***/ 805:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/image3.84ec89.jpeg";
+
+/***/ }),
+
+/***/ 888:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/image4.b7b32a.jpeg";
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		__webpack_require__.p = "./";
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+(() => {
+"use strict";
+
+// EXTERNAL MODULE: ./src/scroll.js
+var src_scroll = __webpack_require__(445);
+// EXTERNAL MODULE: ./src/stylesheets/components/search-bar.js
+var search_bar = __webpack_require__(793);
+// EXTERNAL MODULE: ./src/stylesheets/components/topic-list.js
+var topic_list = __webpack_require__(795);
+// EXTERNAL MODULE: ./src/import-icons.js
+var import_icons = __webpack_require__(530);
+;// ./src/content.json
+const content_namespaceObject = /*#__PURE__*/JSON.parse('[{"position":1,"type":"card-default","image":"card-image.jpg","title":"Как X-Startup сжёг $10M инвестиций и закрылся: Разбор ключевых ошибок","subtitle":"AI-маркетинг, дорогие подписки и раздутая команда — почему перспективный стартап провалился за 2 года?","author":"Моллаева Зухра Абдулхановна","authorTitle":"IT / 20.03.25","content":"AI-маркетинг, дорогие подписки и раздутая команда — почему перспективный стартап провалился за 2 года?","avatar":"avatar.jpg"},{"position":2,"type":"card-medium","image":"card-image.jpg","title":"Как X-Startup сжёг $10M инвестиций и закрылся: Разбор ключевых ошибок","subtitle":"AI-маркетинг, дорогие подписки и раздутая команда — почему перспективный стартап провалился за 2 года?","author":"Иван Петрович Хуйкин","authorTitle":"IT / 20.03.25","content":"AI-маркетинг, дорогие подписки и раздутая команда — почему перспективный стартап провалился за 2 года?","avatar":"avatar.jpg"},{"position":3,"type":"card-medium","image":"image4.jpeg","title":"Как X-Startup сжёг $10M инвестиций и закрылся: Разбор ключевых ошибок","subtitle":"AI-маркетинг, дорогие подписки и раздутая команда — почему перспективный стартап провалился за 2 года?","author":"Иван Петрович Хуйкин","authorTitle":"IT / 20.03.25","content":"AI-маркетинг, дорогие подписки и раздутая команда — почему перспективный стартап провалился за 2 года?","avatar":"avatar.jpg"},{"position":4,"type":"card-default","image":"image1.jpeg","title":"Как X-Startup сжёг $10M инвестиций и закрылся: Разбор ключевых ошибок","subtitle":"AI-маркетинг, дорогие подписки и раздутая команда — почему перспективный стартап провалился за 2 года?","author":"Иван Петрович Хуйкин","authorTitle":"IT / 20.03.25","content":"AI-маркетинг, дорогие подписки и раздутая команда — почему перспективный стартап провалился за 2 года?","avatar":"avatar.jpg"},{"position":5,"type":"card-medium","image":"image2.jpg","title":"Как X-Startup сжёг $10M инвестиций и закрылся: Разбор ключевых ошибок","subtitle":"AI-маркетинг, дорогие подписки и раздутая команда — почему перспективный стартап провалился за 2 года?","author":"Иван Петрович Хуйкин","authorTitle":"IT / 20.03.25","content":"AI-маркетинг, дорогие подписки и раздутая команда — почему перспективный стартап провалился за 2 года?","avatar":"avatar.jpg"},{"position":6,"type":"card-medium","image":"image3.jpeg","title":"Как X-Startup сжёг $10M инвестиций и закрылся: Разбор ключевых ошибок","subtitle":"AI-маркетинг, дорогие подписки и раздутая команда — почему перспективный стартап провалился за 2 года?","author":"Иван Петрович Хуйкин","authorTitle":"IT / 20.03.25","content":"AI-маркетинг, дорогие подписки и раздутая команда — почему перспективный стартап провалился за 2 года?","avatar":"avatar.jpg"}]');
+;// ./src/create-cards.js
+ // Импортируем данные из JSON
+
+// Функция для создания карточки
+function createCard(card) {
+  var cardElement = document.createElement('div');
+  cardElement.classList.add('article-card');
+  var imagePath = __webpack_require__(907)("./".concat(card.image));
+  var avatarPath = card.avatar ? __webpack_require__(907)("./".concat(card.avatar)) : '';
+
+  // Генерация разметки для дефолтной карточки
+  if (card.type === 'card-default') {
+    cardElement.innerHTML = "\n      <div class=\"article-card__content\">\n        <div class=\"author-block\">\n          <div class=\"author-block__avatar\" style=\"background-image: url(".concat(avatarPath, ")\"></div>\n          <div class=\"author-block__text-block\">\n            <p class=\"typography__caption2\">").concat(card.author, "</p>\n            <p class=\"typography__caption1 typography--muted\">").concat(card.authorTitle, "</p>\n          </div>\n        </div>\n        <h1 class=\"typography__display1 typography--line-limit\">").concat(card.title, "</h1>\n        <p class=\"typography__body2 typography--muted typography--line-limit\">").concat(card.content, "</p>\n      </div>\n      <div class=\"article-card__image\" style=\"background-image: url(").concat(imagePath, ")\"></div>\n    ");
+  }
+
+  // Генерация разметки для медиумной карточки
+  if (card.type === 'card-medium') {
+    cardElement.innerHTML = "\n      <div class=\"article-card__image article-card__image--medium\" style=\"background-image: url(".concat(imagePath, ")\"></div>\n      <div class=\"article-card__content\">\n        <div class=\"author-block\">\n          <div class=\"author-block__avatar\" style=\"background-image: url(").concat(avatarPath, ")\"></div>\n          <div class=\"author-block__text-block\">\n            <p class=\"typography__caption2\">").concat(card.author, "</p>\n            <p class=\"typography__caption1 typography--muted\">").concat(card.authorTitle, "</p>\n          </div>\n        </div>\n        <h1 class=\"typography__header2 typography--line-limit\">").concat(card.title, "</h1>\n        <p class=\"typography__body1 typography--muted typography--line-limit\">").concat(card.content, "</p>\n      </div>\n    ");
+  }
+  return cardElement;
+}
+
+// Функция для добавления карточек в контейнер с учётом позиции
+function renderCards(cards) {
+  var feedContainer = document.querySelector('.layout__feed');
+  var currentBlock = null;
+  if (feedContainer) {
+    // Сортируем карточки по позиции
+    cards.sort(function (a, b) {
+      return a.position - b.position;
+    });
+    cards.forEach(function (card) {
+      // Если это медиумная карточка, добавляем новый блок с двумя карточками, если необходимо
+      if (card.type === 'card-medium') {
+        if (!currentBlock || currentBlock.children.length >= 2) {
+          currentBlock = document.createElement('div');
+          currentBlock.classList.add('article-block');
+          feedContainer.appendChild(currentBlock);
+        }
+      }
+
+      // Создаём карточку и добавляем её в текущий блок или в контейнер
+      var cardElement = createCard(card);
+      if (card.type === 'card-medium') {
+        currentBlock.appendChild(cardElement); // Добавляем медиумную карточку в блок
+      } else {
+        feedContainer.appendChild(cardElement); // Добавляем дефолтную карточку в контейнер
+      }
+    });
+  } else {
+    console.error('Контейнер .layout__feed не найден на странице');
+  }
+}
+
+// Ожидаем загрузки DOM, чтобы запустить рендеринг карточек
+document.addEventListener('DOMContentLoaded', function () {
+  renderCards(content_namespaceObject); // Запуск рендеринга карточек
+});
 ;// ./node_modules/swiper/shared/ssr-window.esm.mjs
 /**
  * SSR Window 4.0.2
@@ -9479,6 +11527,13 @@ function EffectCards(_ref) {
 
 
 
+
+
+// import './icons/icon-video.svg';
+
+
+
+
 // import Swiper and modules styles
 
 
@@ -9515,5 +11570,7 @@ var failslider = new Swiper('#failures_slider', {
   }
 });
 console.log('Текст для консоли v2');
+})();
+
 /******/ })()
 ;

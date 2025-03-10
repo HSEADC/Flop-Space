@@ -20,9 +20,24 @@
 
 .side-container {
     background: $color-base-block;
-    padding: 3rem 3rem 3rem 3rem;
+    padding: $spacing-xxl;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xxl;
     width: auto;
     border-radius: $border-radius-s;
+    @include outline($side: all);
+
+    section {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-l;
+
+     p {
+        cursor: pointer;
+        user-select: none;
+     }
+    }
 }
 
 .wrap {
@@ -32,6 +47,7 @@
     padding: 1rem;
     background: $color-base-block;
     border-radius: $border-radius-s;
+    @include outline($side: all);
 }
 
 .article-card {

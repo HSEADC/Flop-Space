@@ -46,16 +46,17 @@ body {
         gap: $spacing-xxxl;
     }
 
-    &__feed {
+    &__target-content {
         display: flex;
         flex-direction: column;
         gap: $spacing-xl;
         width: $feed-width;
         overflow-y: auto;
         height: 100%;
+        padding-top: $spacing-xl;
     }
 
-    &__feed::-webkit-scrollbar {
+    &__target-content::-webkit-scrollbar {
         display: none; /* Chrome, Safari */
     }
 
@@ -63,6 +64,7 @@ body {
         background-color: $color-base-background;
         width: $side-bar-width;
         height: 100%;
+        padding-top: $spacing-xl;
     }
 
     &__top-bar {

@@ -7,7 +7,7 @@ scrollbar.appendChild(thumb);
 document.body.appendChild(scrollbar);
 
 // Находим основной контейнер со скроллом
-const scrollable = document.querySelector(".layout__feed");
+const scrollable = document.querySelector(".layout__target-content");
 
 function updateCustomScrollbar() {
   if (!scrollable) return;

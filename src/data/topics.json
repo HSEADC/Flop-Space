@@ -2,43 +2,43 @@
     {
         "position": 1,
         "image": "topic1.jpg",
-        "title": "Cтартапы",
+        "title": "Образование",
         "link": "placeholder.html"
     },
     {
         "position": 2,
         "image": "topic1.jpg",
-        "title": "Митапы",
+        "title": "Финансы",
         "link": "placeholder.html"
     },
     {
         "position": 3,
         "image": "topic1.jpg",
-        "title": "Хуяпы",
+        "title": "Медицина",
         "link": "placeholder.html"
     },
     {
         "position": 4,
         "image": "topic1.jpg",
-        "title": "Митапы",
+        "title": "Экология",
         "link": "placeholder.html"
     },
     {
         "position": 5,
         "image": "topic1.jpg",
-        "title": "Митапы",
+        "title": "Развлечения",
         "link": "placeholder.html"
     },
     {
         "position": 6,
         "image": "topic1.jpg",
-        "title": "Митапы",
+        "title": "Логистика",
         "link": "placeholder.html"
     },
     {
         "position": 7,
         "image": "topic1.jpg",
-        "title": "Митапы",
+        "title": "Пищепром",
         "link": "placeholder.html"
     }
 ]

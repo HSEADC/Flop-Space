@@ -93,7 +93,7 @@ scrollbar.appendChild(thumb);
 document.body.appendChild(scrollbar);
 
 // Находим основной контейнер со скроллом
-var scrollable = document.querySelector(".layout__feed");
+var scrollable = document.querySelector(".layout__target-content");
 function updateCustomScrollbar() {
   if (!scrollable) return;
   var scrollHeight = scrollable.scrollHeight - scrollable.clientHeight;
@@ -2077,12 +2077,10 @@ function renderCards(cards) {
 
 // Проверяем на загрузку DOM и index.html (рендерим карточки только на ней), при успехе вызываем renderCards
 document.addEventListener('DOMContentLoaded', function () {
-  if (window.location.pathname === '/' || window.location.pathname.endsWith('index.html')) {
-    renderCards(content_namespaceObject);
-  }
+  renderCards(content_namespaceObject);
 });
 ;// ./src/data/topics.json
-const topics_namespaceObject = /*#__PURE__*/JSON.parse('[{"position":1,"image":"topic1.jpg","title":"Cтартапы","link":"placeholder.html"},{"position":2,"image":"topic1.jpg","title":"Митапы","link":"placeholder.html"},{"position":3,"image":"topic1.jpg","title":"Хуяпы","link":"placeholder.html"},{"position":4,"image":"topic1.jpg","title":"Митапы","link":"placeholder.html"},{"position":5,"image":"topic1.jpg","title":"Митапы","link":"placeholder.html"},{"position":6,"image":"topic1.jpg","title":"Митапы","link":"placeholder.html"},{"position":7,"image":"topic1.jpg","title":"Митапы","link":"placeholder.html"}]');
+const topics_namespaceObject = /*#__PURE__*/JSON.parse('[{"position":1,"image":"topic1.jpg","title":"Образование","link":"placeholder.html"},{"position":2,"image":"topic1.jpg","title":"Финансы","link":"placeholder.html"},{"position":3,"image":"topic1.jpg","title":"Медицина","link":"placeholder.html"},{"position":4,"image":"topic1.jpg","title":"Экология","link":"placeholder.html"},{"position":5,"image":"topic1.jpg","title":"Развлечения","link":"placeholder.html"},{"position":6,"image":"topic1.jpg","title":"Логистика","link":"placeholder.html"},{"position":7,"image":"topic1.jpg","title":"Пищепром","link":"placeholder.html"}]');
 ;// ./src/utils/сreate-topics.js
 
 function createTopic(topic) {

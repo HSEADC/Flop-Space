@@ -87,7 +87,5 @@ function renderCards(cards) {
 
 // Проверяем на загрузку DOM и index.html (рендерим карточки только на ней), при успехе вызываем renderCards
 document.addEventListener('DOMContentLoaded', () => {
-  if (window.location.pathname === '/' || window.location.pathname.endsWith('index.html')) { 
     renderCards(cardsData); 
-  }
 });

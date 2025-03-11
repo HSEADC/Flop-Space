@@ -1,0 +1,14 @@
+@use '../design-system/variables' as *;
+@use '../design-system/mixins' as *;
+
+.mobile-menu {
+    height: 40px;
+    width: 40px;
+
+    @include control-item;
+
+    .icon {
+        height: 1.7rem;
+        width: 1.7rem;
+    }
+}

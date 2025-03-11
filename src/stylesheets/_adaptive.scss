@@ -1,24 +1,49 @@
 @use './design-system/variables' as *;
 @use './design-system/mixins' as *;
 
-@media (max-width: 1000px) {
-    .nav-bar, .search-bar, .layout__side-bar {
-      display: none !important;
+@media (max-width: 1340px) {
+    @include narrow-nav;
+
+    .search-bar, .topic-list {
+        width: $feed-width !important;
     }
+
+    @include hide-elements('.layout__side-bar');
+}
+
+@media (max-width: 860px) {
+
+    @include hide-elements('.nav-bar', '.search-bar', '.layout__side-bar', '.wrap');
+
+    @include show-elements('.mobile-search', '.mobile-menu', '.mobile-navigation');
 
     .article-block {
         flex-direction: column !important;
     }
 
+    .layout__top-bar {
+        padding: 0 $spacing-xs 0 $spacing-xs !important;
+    }
+
     .topic-list {
-        width: calc($feed-width - ($spacing-xs * 2))!important;
+        width: 100% !important;
     }
 
     .layout__target-content {
         padding: $spacing-xs !important;
+        width: 100% !important;
+        padding-bottom: calc(5rem + $spacing-xs) !important;
     }
-    
+
     .header__left-side {
-        padding-left: $spacing-xs;
+        padding-left: $spacing-xs !important;
     }
-  }
+
+    .header__right-side {
+        padding-right: $spacing-xs !important;
+        justify-content: flex-end;
+        gap: $spacing-xs;
+    }
+
+    
+}

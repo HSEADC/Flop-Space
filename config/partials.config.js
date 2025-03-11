@@ -12,6 +12,11 @@ const partials = [
     location: 'navigation', 
     template_filename: '*', 
   },
+  { 
+    path: path.join(__dirname, '../src/partials/mobile-navigation.html'),
+    location: 'mobile-navigation', 
+    template_filename: '*', 
+  },
 ];
 
 module.exports = partials.map(partial => new HtmlWebpackPartialsPlugin({

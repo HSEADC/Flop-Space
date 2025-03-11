@@ -408,6 +408,31 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 
 /***/ }),
 
+/***/ 792:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
+  "id": "icon-burger-menu",
+  "use": "icon-burger-menu-usage",
+  "viewBox": "0 0 16 16",
+  "content": "<symbol viewBox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-burger-menu\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M1.25 3.25C1.25 2.83579 1.58579 2.5 2 2.5H14C14.4142 2.5 14.75 2.83579 14.75 3.25C14.75 3.66421 14.4142 4 14 4H2C1.58579 4 1.25 3.66421 1.25 3.25ZM1.25 8C1.25 7.58579 1.58579 7.25 2 7.25H14C14.4142 7.25 14.75 7.58579 14.75 8C14.75 8.41421 14.4142 8.75 14 8.75H2C1.58579 8.75 1.25 8.41421 1.25 8ZM2 12C1.58579 12 1.25 12.3358 1.25 12.75C1.25 13.1642 1.58579 13.5 2 13.5H14C14.4142 13.5 14.75 13.1642 14.75 12.75C14.75 12.3358 14.4142 12 14 12H2Z\" /></symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
+
+/***/ }),
+
 /***/ 890:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -677,6 +702,31 @@ var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMP
   "use": "icon-podcast-usage",
   "viewBox": "0 0 18 18",
   "content": "<symbol viewBox=\"0 0 18 18\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-podcast\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16 8.65674C16 4.79075 12.866 1.65674 9 1.65674C5.13401 1.65674 2 4.79075 2 8.65674V12.4067V12.6567H2.00947C2.13713 14.3349 3.53919 15.6567 5.25 15.6567H5.33333C6.25381 15.6567 7 14.9105 7 13.9901V10.8234C7 9.90293 6.25381 9.15674 5.33333 9.15674H5.25C4.60568 9.15674 4.00515 9.34424 3.5 9.66765V8.65674C3.5 5.61917 5.96243 3.15674 9 3.15674C12.0376 3.15674 14.5 5.61917 14.5 8.65674V9.66765C13.9949 9.34424 13.3943 9.15674 12.75 9.15674H12.6667C11.7462 9.15674 11 9.90293 11 10.8234V13.9901C11 14.9105 11.7462 15.6567 12.6667 15.6567H12.75C14.4608 15.6567 15.8629 14.3349 15.9905 12.6567H16V12.4067V8.65674ZM14.5 12.4067C14.5 11.4402 13.7165 10.6567 12.75 10.6567H12.6667C12.5746 10.6567 12.5 10.7314 12.5 10.8234V13.9901C12.5 14.0821 12.5746 14.1567 12.6667 14.1567H12.75C13.7165 14.1567 14.5 13.3732 14.5 12.4067ZM5.25 14.1567C4.2835 14.1567 3.5 13.3732 3.5 12.4067C3.5 11.4402 4.2835 10.6567 5.25 10.6567H5.33333C5.42538 10.6567 5.5 10.7314 5.5 10.8234V13.9901C5.5 14.0821 5.42538 14.1567 5.33333 14.1567H5.25Z\" fill-opacity=\"0.8\" /></symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
+
+/***/ }),
+
+/***/ 907:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
+  "id": "icon-search",
+  "use": "icon-search-usage",
+  "viewBox": "0 0 16 16",
+  "content": "<symbol viewBox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-search\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M11.5 7C11.5 9.48528 9.48528 11.5 7 11.5C4.51472 11.5 2.5 9.48528 2.5 7C2.5 4.51472 4.51472 2.5 7 2.5C9.48528 2.5 11.5 4.51472 11.5 7ZM10.6792 11.7399C9.66322 12.5297 8.38653 13 7 13C3.68629 13 1 10.3137 1 7C1 3.68629 3.68629 1 7 1C10.3137 1 13 3.68629 13 7C13 8.38653 12.5297 9.66322 11.7399 10.6792L14.5303 13.4697C14.8232 13.7626 14.8232 14.2374 14.5303 14.5303C14.2374 14.8232 13.7626 14.8232 13.4697 14.5303L10.6792 11.7399Z\" /></symbol>"
 });
 var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
@@ -1777,6 +1827,7 @@ return sprite$1;
 
 var map = {
 	"./error.svg": 321,
+	"./icon-burger-menu.svg": 792,
 	"./icon-cases.svg": 890,
 	"./icon-fav.svg": 758,
 	"./icon-file.svg": 409,
@@ -1788,6 +1839,7 @@ var map = {
 	"./icon-news.svg": 98,
 	"./icon-open.svg": 563,
 	"./icon-podcast.svg": 25,
+	"./icon-search.svg": 907,
 	"./icon-sub.svg": 175,
 	"./icon-tests.svg": 78,
 	"./icon-video.svg": 388
@@ -1815,7 +1867,7 @@ webpackContext.id = 46;
 
 /***/ }),
 
-/***/ 907:
+/***/ 288:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
@@ -1847,7 +1899,7 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 907;
+webpackContext.id = 288;
 
 /***/ }),
 
@@ -2024,8 +2076,8 @@ function createCard(card) {
   cardElement.addEventListener('click', function () {
     window.location.href = "".concat(card.pagelink);
   });
-  var imagePath = __webpack_require__(907)("./".concat(card.image));
-  var avatarPath = card.avatar ? __webpack_require__(907)("./".concat(card.avatar)) : '';
+  var imagePath = __webpack_require__(288)("./".concat(card.image));
+  var avatarPath = card.avatar ? __webpack_require__(288)("./".concat(card.avatar)) : '';
 
   // Заполняем article-card разметкой в зависимости от того, что пришло в аргумент card
 
@@ -2089,7 +2141,7 @@ function createTopic(topic) {
   topicElement.addEventListener('click', function () {
     window.location.href = "".concat(topic.link);
   });
-  var imagePath = __webpack_require__(907)("./".concat(topic.image));
+  var imagePath = __webpack_require__(288)("./".concat(topic.image));
   topicElement.innerHTML = "\n    <div class=\"topic-list__image\" style=\"background-image: url('".concat(imagePath, "')\"></div>\n    <p class=\"typography__subheader1 typography--muted\"> ").concat(topic.title, " </p>\n    ");
   return topicElement;
 }

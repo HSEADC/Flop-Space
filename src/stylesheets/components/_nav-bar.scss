@@ -40,11 +40,7 @@
         align-items: center;
         user-select: none;
 
-        &:hover {
-            cursor: pointer;
-            background-color: $color-base-block;
-            border-radius: $border-radius-s;
-        }
+        @include control-item;
     }
 
     &__icon {

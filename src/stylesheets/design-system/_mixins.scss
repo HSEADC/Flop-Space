@@ -29,3 +29,51 @@
   font-weight: $weight;
   line-height: $line-height;
 }
+
+// Interractive 
+
+@mixin control-item {
+  &:hover {
+      cursor: pointer;
+      background-color: $color-base-block;
+      border-radius: $border-radius-s;
+  }
+}
+
+// Responsive 
+
+@mixin hide-elements($elements...) {
+  @each $element in $elements {
+      #{$element} {
+          display: none !important;
+      }
+  }
+}
+
+@mixin show-elements($elements...) {
+  @each $element in $elements {
+    #{$element} {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@mixin narrow-nav {
+  .nav-bar {
+      max-width: 5rem !important;
+      min-width: 5rem !important;
+      padding: $spacing-xs !important;
+      
+      .typography__body1, 
+      .typography__body2 {
+          display: none !important;
+      }
+  }
+  
+  .header__left-side {
+      width: 5rem !important;
+      padding-left: $spacing-xs !important;
+  }
+}

@@ -22,7 +22,7 @@
     }
 
     .layout__top-bar {
-        padding: 0 $spacing-xs 0 $spacing-xs !important;
+        padding: 0 0 0 $spacing-xs !important;
     }
 
     .topic-list {
@@ -45,5 +45,8 @@
         gap: $spacing-xs;
     }
 
+    .card {
+        padding: $spacing-xs;
+    }
     
 }

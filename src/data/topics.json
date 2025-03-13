@@ -3,42 +3,49 @@
         "position": 1,
         "image": "topic1.jpg",
         "title": "Образование",
-        "link": "placeholder.html"
+        "link": "placeholder.html",
+        "id": "edu"
     },
     {
         "position": 2,
         "image": "topic1.jpg",
         "title": "Финансы",
-        "link": "placeholder.html"
+        "link": "placeholder.html",
+        "id": "fin"
     },
     {
         "position": 3,
         "image": "topic1.jpg",
         "title": "Медицина",
-        "link": "placeholder.html"
+        "link": "placeholder.html",
+        "id": "med"
     },
     {
         "position": 4,
         "image": "topic1.jpg",
         "title": "Экология",
-        "link": "placeholder.html"
+        "link": "placeholder.html",
+        "id": "eco"
     },
     {
         "position": 5,
         "image": "topic1.jpg",
         "title": "Развлечения",
-        "link": "placeholder.html"
+        "link": "placeholder.html",
+        "id": "fun"
     },
     {
         "position": 6,
         "image": "topic1.jpg",
         "title": "Логистика",
-        "link": "placeholder.html"
+        "link": "placeholder.html",
+        "id": "log"
     },
     {
         "position": 7,
-        "image": "topic1.jpg",
+        "image": "image4.jpeg",
         "title": "Пищепром",
-        "link": "placeholder.html"
+        "link": "placeholder.html",
+        "id": "food"
     }
 ]

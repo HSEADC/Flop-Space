@@ -1,0 +1,48 @@
+@use '../design-system/variables' as *;
+@use '../design-system/mixins' as *;
+
+.topic-header {
+    position: relative;
+    height: 15rem;
+    padding-bottom: 8rem;
+    background-color: $color-base-background;
+    display: none;
+
+    &__cover {
+        height: 10.25rem;
+        background-image: url(./images/card-image.jpg);
+        border-radius: $border-radius-s;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &__content {
+        position: absolute;
+        bottom: 0rem;
+        padding: 0 $spacing-xxl 0 $spacing-xxl;
+        display: flex;
+        align-items: flex-end;
+        gap: $spacing-l;
+    }
+
+    &__image {
+       height: 6.25rem;
+       width: 6.25rem;
+       background-image: url(./images/card-image.jpg);
+       border-radius: $border-radius-m;
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+
+       border: 0.5rem solid $color-base-background;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-xxs;
+        height: fit-content;
+    }
+
+}

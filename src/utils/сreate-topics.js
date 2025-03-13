@@ -1,10 +1,13 @@
+import { filterCards } from './create-cards.js';
 import topics from '../data/topics.json';
 
 function createTopic(topic) {
     let topicElement = document.createElement('div');
     topicElement.classList.add('topic-list__item');
-    topicElement.addEventListener('click', () => {
-        window.location.href = `${topic.link}`;
+
+    topicElement.addEventListener('click', (event) => {
+        event.preventDefault(); // Отменяем стандартный переход
+        filterCards(topic.id, topic.title); // Фильтруем карточки по категории
     });
 
     let imagePath = require(`../images/${topic.image}`);

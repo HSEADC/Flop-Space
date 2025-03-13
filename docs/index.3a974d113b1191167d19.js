@@ -81,6 +81,26 @@ try {
 
 /***/ }),
 
+/***/ 207:
+/***/ (() => {
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('#main').addEventListener('click', function () {
+    window.location.href = 'index.html';
+  });
+  document.querySelector('#goToAbout').addEventListener('click', function () {
+    window.location.href = 'about.html';
+  });
+  document.querySelector('#goToServices').addEventListener('click', function () {
+    window.location.href = 'services.html';
+  });
+  document.querySelector('#goToContacts').addEventListener('click', function () {
+    window.location.href = 'contacts.html';
+  });
+});
+
+/***/ }),
+
 /***/ 775:
 /***/ (() => {
 
@@ -2066,13 +2086,16 @@ var topic_list = __webpack_require__(795);
 // EXTERNAL MODULE: ./src/utils/import-icons.js
 var import_icons = __webpack_require__(92);
 ;// ./src/data/content.json
-const content_namespaceObject = /*#__PURE__*/JSON.parse('[{"position":1,"type":"card-default","image":"card-image.jpg","title":"Как новый стартап нарушил правила рынка и быстро достиг успеха","subtitle":"Как стартап с необычной моделью бизнеса привлёк внимание инвесторов и стал успешным?","author":"Анна Гречко","authorTitle":"Business / 21.03.25","content":"Новый подход в бизнесе, рискованные инвестиции и нестандартные решения — как стартап смог так быстро выйти на рынок?","avatar":"avatar.jpg","pagelink":"placeholder.html"},{"position":2,"type":"card-medium","image":"tomato.jpg","title":"Blue Tomato: Томаты, которые не стали синими. История провала стартапа","subtitle":"Как амбициозная идея о генетически модифицированных помидорах привела к краху компании.","author":"Максим Борисов","authorTitle":"Tech / 19.03.25","content":"Как амбициозная идея о генетически модифицированных помидорах привела к краху компании.","avatar":"avatar.jpg","pagelink":"article_blue_tomato.html"},{"position":3,"type":"card-medium","image":"image4.jpeg","title":"Будущее цифровых валют: как изменится финансовая система?","subtitle":"Почему криптовалюты будут доминировать в экономике через 10 лет?","author":"Дмитрий Федоров","authorTitle":"Finance / 18.03.25","content":"С ростом криптовалют и блокчейн-технологий многие задаются вопросом, как изменится финансовая система в будущем.","avatar":"avatar.jpg","pagelink":"placeholder.html"},{"position":4,"type":"card-default","image":"image1.jpeg","title":"Как создать успешный стартап в условиях кризиса?","subtitle":"Трудности и возможности для новых проектов в экономической нестабильности.","author":"Алексей Громов","authorTitle":"Startup / 22.03.25","content":"В условиях экономического кризиса многие стартапы сталкиваются с новыми вызовами. Какие стратегии позволят добиться успеха?","avatar":"avatar.jpg","pagelink":"placeholder.html"},{"position":5,"type":"card-medium","image":"image2.jpg","title":"Искусственный интеллект и будущее работы: угроза или шанс?","subtitle":"Как AI меняет рынок труда и какие профессии исчезнут в ближайшие годы?","author":"Ольга Симонова","authorTitle":"HR / 20.03.25","content":"AI уже оказывает влияние на большинство профессий. Какие навыки и профессии останутся востребованными, а какие уйдут в прошлое?","avatar":"avatar.jpg","pagelink":"placeholder.html"},{"position":6,"type":"card-medium","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением?","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html"},{"position":7,"type":"card-medium","image":"image2.jpg","title":"Искусственный интеллект и будущее работы: угроза или шанс?","subtitle":"Как AI меняет рынок труда и какие профессии исчезнут в ближайшие годы?","author":"Ольга Симонова","authorTitle":"HR / 20.03.25","content":"AI уже оказывает влияние на большинство профессий. Какие навыки и профессии останутся востребованными, а какие уйдут в прошлое?","avatar":"avatar.jpg","pagelink":"placeholder.html"},{"position":8,"type":"card-medium","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением?","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html"}]');
+const content_namespaceObject = /*#__PURE__*/JSON.parse('[{"position":1,"type":"card-default","image":"card-image.jpg","title":"Как новый стартап нарушил правила рынка и быстро достиг успеха","subtitle":"Как стартап с необычной моделью бизнеса привлёк внимание инвесторов и стал успешным?","author":"Анна Гречко","authorTitle":"Business / 21.03.25","content":"Новый подход в бизнесе, рискованные инвестиции и нестандартные решения — как стартап смог так быстро выйти на рынок?","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"med"},{"position":2,"type":"card-medium","image":"tomato.jpg","title":"Blue Tomato: Томаты, которые не стали синими. История провала стартапа","subtitle":"Как амбициозная идея о генетически модифицированных помидорах привела к краху компании.","author":"Максим Борисов","authorTitle":"Tech / 19.03.25","content":"Как амбициозная идея о генетически модифицированных помидорах привела к краху компании.","avatar":"avatar.jpg","pagelink":"article_blue_tomato.html","category":"med"},{"position":3,"type":"card-medium","image":"image4.jpeg","title":"Будущее цифровых валют: как изменится финансовая система?","subtitle":"Почему криптовалюты будут доминировать в экономике через 10 лет?","author":"Дмитрий Федоров","authorTitle":"Finance / 18.03.25","content":"С ростом криптовалют и блокчейн-технологий многие задаются вопросом, как изменится финансовая система в будущем.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"med"},{"position":4,"type":"card-default","image":"image1.jpeg","title":"Как создать успешный стартап в условиях кризиса?","subtitle":"Трудности и возможности для новых проектов в экономической нестабильности.","author":"Алексей Громов","authorTitle":"Startup / 22.03.25","content":"В условиях экономического кризиса многие стартапы сталкиваются с новыми вызовами. Какие стратегии позволят добиться успеха?","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food"},{"position":5,"type":"card-medium","image":"image2.jpg","title":"Искусственный интеллект и будущее работы: угроза или шанс?","subtitle":"Как AI меняет рынок труда и какие профессии исчезнут в ближайшие годы?","author":"Ольга Симонова","authorTitle":"HR / 20.03.25","content":"AI уже оказывает влияние на большинство профессий. Какие навыки и профессии останутся востребованными, а какие уйдут в прошлое?","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food"},{"position":6,"type":"card-medium","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением?","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food"},{"position":7,"type":"card-medium","image":"image2.jpg","title":"Искусственный интеллект и будущее работы: угроза или шанс?","subtitle":"Как AI меняет рынок труда и какие профессии исчезнут в ближайшие годы?","author":"Ольга Симонова","authorTitle":"HR / 20.03.25","content":"AI уже оказывает влияние на большинство профессий. Какие навыки и профессии останутся востребованными, а какие уйдут в прошлое?","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food"},{"position":8,"type":"card-medium","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением?","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food"}]');
+;// ./src/data/topics.json
+const topics_namespaceObject = /*#__PURE__*/JSON.parse('[{"position":1,"image":"topic1.jpg","title":"Образование","link":"placeholder.html","id":"edu"},{"position":2,"image":"topic1.jpg","title":"Финансы","link":"placeholder.html","id":"fin"},{"position":3,"image":"topic1.jpg","title":"Медицина","link":"placeholder.html","id":"med"},{"position":4,"image":"topic1.jpg","title":"Экология","link":"placeholder.html","id":"eco"},{"position":5,"image":"topic1.jpg","title":"Развлечения","link":"placeholder.html","id":"fun"},{"position":6,"image":"topic1.jpg","title":"Логистика","link":"placeholder.html","id":"log"},{"position":7,"image":"image4.jpeg","title":"Пищепром","link":"placeholder.html","id":"food"}]');
 ;// ./src/utils/create-cards.js
  // Импортируем данные из JSON как массив cardsData
 
 function createCard(card) {
   var cardElement = document.createElement('div'); // Cоздаем div с классом article-card и обработчиком клика, ожидаем передачу в переменную cardElement разметки
   cardElement.classList.add('article-card');
+  cardElement.setAttribute('data-category', card.category);
   cardElement.addEventListener('click', function () {
     window.location.href = "".concat(card.pagelink);
   });
@@ -2126,20 +2149,72 @@ function renderCards(cards) {
     console.error('Контейнер .layout__feed не найден на странице'); // Если главный контейнер не найден, выдаём ошибку
   }
 }
+function filterCards(category, categoryTitle) {
+  var cards = document.querySelectorAll('.article-card');
+  var articleBlocks = document.querySelectorAll('.article-block');
+  var categoryHeader = document.querySelector('.category-header');
+  var topicHeader = document.querySelector('.topic-header');
+  var topicImage1 = document.querySelector('.topic-header__cover');
+  var topicImage2 = document.querySelector('.topic-header__image');
+  if (topicHeader) {
+    if (category === 'all') {
+      topicHeader.style.display = 'none'; // Скрываем весь контейнер заголовка
+    } else {
+      topicHeader.style.display = 'block'; // Показываем весь контейнер заголовка
+      categoryHeader.textContent = categoryTitle; // Обновляем текст заголовка
+
+      // Находим текущий топик в данных
+      var currentTopic = topics_namespaceObject.find(function (topic) {
+        return topic.id === category;
+      });
+      if (currentTopic) {
+        var imagePath1 = __webpack_require__(288)("./".concat(currentTopic.image));
+        var imagePath2 = __webpack_require__(288)("./".concat(currentTopic.image));
+        topicImage1.style.backgroundImage = "url('".concat(imagePath1, "')");
+        topicImage2.style.backgroundImage = "url('".concat(imagePath2, "')");
+      }
+    }
+  }
+  if (category === 'all') {
+    cards.forEach(function (card) {
+      card.style.display = 'flex'; // Показываем все карточки
+    });
+  } else {
+    cards.forEach(function (card) {
+      if (card.dataset.category === category) {
+        card.style.display = 'flex'; // Показываем только нужные
+      } else {
+        card.style.display = 'none'; // Скрываем остальные
+      }
+    });
+  }
+
+  // Проверяем article-block, остались ли в нем видимые карточки
+  articleBlocks.forEach(function (block) {
+    var hasVisibleCards = Array.from(block.children).some(function (card) {
+      return card.style.display === 'flex';
+    });
+    if (!hasVisibleCards) {
+      block.style.display = 'none'; // Скрываем пустые article-block
+    } else {
+      block.style.display = 'flex'; // Показываем, если есть видимые карточки
+    }
+  });
+}
 
 // Проверяем на загрузку DOM и index.html (рендерим карточки только на ней), при успехе вызываем renderCards
 document.addEventListener('DOMContentLoaded', function () {
   renderCards(content_namespaceObject);
 });
-;// ./src/data/topics.json
-const topics_namespaceObject = /*#__PURE__*/JSON.parse('[{"position":1,"image":"topic1.jpg","title":"Образование","link":"placeholder.html"},{"position":2,"image":"topic1.jpg","title":"Финансы","link":"placeholder.html"},{"position":3,"image":"topic1.jpg","title":"Медицина","link":"placeholder.html"},{"position":4,"image":"topic1.jpg","title":"Экология","link":"placeholder.html"},{"position":5,"image":"topic1.jpg","title":"Развлечения","link":"placeholder.html"},{"position":6,"image":"topic1.jpg","title":"Логистика","link":"placeholder.html"},{"position":7,"image":"topic1.jpg","title":"Пищепром","link":"placeholder.html"}]');
 ;// ./src/utils/сreate-topics.js
+
 
 function createTopic(topic) {
   var topicElement = document.createElement('div');
   topicElement.classList.add('topic-list__item');
-  topicElement.addEventListener('click', function () {
-    window.location.href = "".concat(topic.link);
+  topicElement.addEventListener('click', function (event) {
+    event.preventDefault(); // Отменяем стандартный переход
+    filterCards(topic.id, topic.title); // Фильтруем карточки по категории
   });
   var imagePath = __webpack_require__(288)("./".concat(topic.image));
   topicElement.innerHTML = "\n    <div class=\"topic-list__image\" style=\"background-image: url('".concat(imagePath, "')\"></div>\n    <p class=\"typography__subheader1 typography--muted\"> ").concat(topic.title, " </p>\n    ");
@@ -2160,6 +2235,8 @@ function renderTopics(topics) {
 document.addEventListener('DOMContentLoaded', function () {
   renderTopics(topics_namespaceObject);
 });
+// EXTERNAL MODULE: ./src/utils/router.js
+var router = __webpack_require__(207);
 ;// ./node_modules/swiper/shared/ssr-window.esm.mjs
 /**
  * SSR Window 4.0.2
@@ -11673,6 +11750,7 @@ var failslider = new Swiper('#failures_slider', {
   }
 });
 ;// ./src/index.js
+
 
 
 

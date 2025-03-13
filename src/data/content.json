@@ -9,7 +9,8 @@
     "authorTitle": "Business / 21.03.25",
     "content": "Новый подход в бизнесе, рискованные инвестиции и нестандартные решения — как стартап смог так быстро выйти на рынок?",
     "avatar": "avatar.jpg",
-    "pagelink": "placeholder.html"
+    "pagelink": "placeholder.html",
+    "category": "med"
   },
   {
     "position": 2,
@@ -21,7 +22,8 @@
     "authorTitle": "Tech / 19.03.25",
     "content": "Как амбициозная идея о генетически модифицированных помидорах привела к краху компании.",
     "avatar": "avatar.jpg",
-    "pagelink": "article_blue_tomato.html"
+    "pagelink": "article_blue_tomato.html",
+    "category": "med"
   },
   {
     "position": 3,
@@ -33,7 +35,8 @@
     "authorTitle": "Finance / 18.03.25",
     "content": "С ростом криптовалют и блокчейн-технологий многие задаются вопросом, как изменится финансовая система в будущем.",
     "avatar": "avatar.jpg",
-    "pagelink": "placeholder.html"
+    "pagelink": "placeholder.html",
+    "category": "med"
   },
   {
     "position": 4,
@@ -45,7 +48,8 @@
     "authorTitle": "Startup / 22.03.25",
     "content": "В условиях экономического кризиса многие стартапы сталкиваются с новыми вызовами. Какие стратегии позволят добиться успеха?",
     "avatar": "avatar.jpg",
-    "pagelink": "placeholder.html"
+    "pagelink": "placeholder.html",
+    "category": "food"
   },
   {
     "position": 5,
@@ -57,7 +61,8 @@
     "authorTitle": "HR / 20.03.25",
     "content": "AI уже оказывает влияние на большинство профессий. Какие навыки и профессии останутся востребованными, а какие уйдут в прошлое?",
     "avatar": "avatar.jpg",
-    "pagelink": "placeholder.html"
+    "pagelink": "placeholder.html",
+    "category": "food"
   },
   {
     "position": 6,
@@ -69,7 +74,8 @@
     "authorTitle": "Business / 23.03.25",
     "content": "Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.",
     "avatar": "avatar.jpg",
-    "pagelink": "placeholder.html"
+    "pagelink": "placeholder.html",
+    "category": "food"
   },
   {
     "position": 7,
@@ -81,7 +87,8 @@
     "authorTitle": "HR / 20.03.25",
     "content": "AI уже оказывает влияние на большинство профессий. Какие навыки и профессии останутся востребованными, а какие уйдут в прошлое?",
     "avatar": "avatar.jpg",
-    "pagelink": "placeholder.html"
+    "pagelink": "placeholder.html",
+    "category": "food"
   },
   {
     "position": 8,
@@ -93,6 +100,7 @@
     "authorTitle": "Business / 23.03.25",
     "content": "Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.",
     "avatar": "avatar.jpg",
-    "pagelink": "placeholder.html"
+    "pagelink": "placeholder.html",
+    "category": "food"
   }
 ]

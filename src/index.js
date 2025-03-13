@@ -8,6 +8,8 @@ import "./utils/import-icons.js";
 import "./utils/create-cards.js";
 import "./utils/сreate-topics.js";
 
+import "./utils/router.js";
+
 import "./utils/swiper-config.js"
 
 console.log('Всё работает и слава тебе господи')

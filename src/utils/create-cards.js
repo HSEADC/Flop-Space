@@ -1,8 +1,10 @@
 import cardsData from '../data/content.json'; // Импортируем данные из JSON как массив cardsData
+import topics from '../data/topics.json';
 
 function createCard(card) {
   let cardElement = document.createElement('div');  // Cоздаем div с классом article-card и обработчиком клика, ожидаем передачу в переменную cardElement разметки
   cardElement.classList.add('article-card');
+  cardElement.setAttribute('data-category', card.category);
   cardElement.addEventListener('click', () => {
     window.location.href = `${card.pagelink}`; 
 });
@@ -83,6 +85,60 @@ function renderCards(cards) {
   } else {
     console.error('Контейнер .layout__feed не найден на странице'); // Если главный контейнер не найден, выдаём ошибку
   }
+}
+
+export function filterCards(category, categoryTitle) {
+
+  const cards = document.querySelectorAll('.article-card');
+  const articleBlocks = document.querySelectorAll('.article-block');
+  const categoryHeader = document.querySelector('.category-header');
+  const topicHeader = document.querySelector('.topic-header');
+  const topicImage1 = document.querySelector('.topic-header__cover'); 
+  const topicImage2 = document.querySelector('.topic-header__image');
+
+  if (topicHeader) {
+    if (category === 'all') {
+        topicHeader.style.display = 'none'; // Скрываем весь контейнер заголовка
+    } else {
+        topicHeader.style.display = 'block'; // Показываем весь контейнер заголовка
+        categoryHeader.textContent = categoryTitle; // Обновляем текст заголовка
+
+         // Находим текущий топик в данных
+      const currentTopic = topics.find(topic => topic.id === category);
+      if (currentTopic) {
+        const imagePath1 = require(`../images/${currentTopic.image}`);
+        const imagePath2 = require(`../images/${currentTopic.image}`);
+
+        topicImage1.style.backgroundImage = `url('${imagePath1}')`;
+        topicImage2.style.backgroundImage = `url('${imagePath2}')`;
+      }
+    }
+}
+
+  if (category === 'all') {
+      cards.forEach(card => {
+          card.style.display = 'flex'; // Показываем все карточки
+      });
+  } else {
+      cards.forEach(card => {
+          if (card.dataset.category === category) {
+              card.style.display = 'flex'; // Показываем только нужные
+          } else {
+              card.style.display = 'none'; // Скрываем остальные
+          }
+      });
+  }
+
+   // Проверяем article-block, остались ли в нем видимые карточки
+   articleBlocks.forEach(block => {
+    const hasVisibleCards = Array.from(block.children).some(card => card.style.display === 'flex');
+
+    if (!hasVisibleCards) {
+        block.style.display = 'none'; // Скрываем пустые article-block
+    } else {
+        block.style.display = 'flex'; // Показываем, если есть видимые карточки
+    }
+});
 }
 
 // Проверяем на загрузку DOM и index.html (рендерим карточки только на ней), при успехе вызываем renderCards

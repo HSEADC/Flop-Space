@@ -35,7 +35,7 @@
 @mixin control-item {
   &:hover {
       cursor: pointer;
-      background-color: $color-base-block;
+      background-color: $color-base-background;
       border-radius: $border-radius-s;
   }
 }

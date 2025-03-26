@@ -10,16 +10,17 @@ $spacing-xxl: 1.5rem;
 $spacing-xxxl: 2.5rem;
 
 // Colors / Font
-$color-font-primary: rgba(255, 255, 255, 1);
-$color-font-complementary: rgba(255, 255, 255, 0.8);
-$color-font-secondary: rgba(255, 255, 255, 0.6);
-$color-font-hint: rgba(255, 255, 255, 0.3);
+$color-font-primary: rgba(27, 27, 30, 1);
+$color-font-complementary: rgba(27, 27, 30, 0.6);
+$color-font-secondary: rgba(27, 27, 30, 0.6);
+$color-font-hint: rgba(27, 27, 30, 0.3);
 
 // Colors / Base
-$color-base-background: #0F1011;
-$color-base-block: #1C1E20;
-$color-base-border: #363A45;
-$color-base-on-block: #323339;
+$color-base-background: #EEEEEE;
+$color-base-block: #F6F6F6;
+$color-base-border: #D8D8D8;
+$color-base-on-block: #E5E5E5;
+$color-base-input: #ECECEC;
 
 // Colors / Brand
 $color-brand-accent: #FC631E;

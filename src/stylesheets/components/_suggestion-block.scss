@@ -1,0 +1,19 @@
+@use '../design-system/variables' as *;
+@use '../design-system/mixins' as *;
+
+.suggestion-block {
+    display: flex;
+    flex-direction: column;
+    padding: $spacing-xxl;
+    gap: $spacing-xxl;
+    background: $color-base-block;
+    border-radius: $border-radius-s;
+    @include outline($side: all);
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        gap: $spacing-xxl;
+        min-height: 10.3125rem;
+    }
+}

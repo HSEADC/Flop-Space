@@ -4,6 +4,7 @@
 .nav-bar {
     max-width: $nav-bar-width;
     min-width: $nav-bar-width;
+    background: $color-base-block;
     display: flex;
     justify-content: space-between;
     flex-direction: column;

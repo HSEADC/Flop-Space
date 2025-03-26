@@ -37,5 +37,10 @@ html {
     text-overflow: ellipsis;
 
     line-clamp: 2;  // Стандартная версия
+
+    &-5 {
+      -webkit-line-clamp: 5;
+      line-clamp: 5;  // Стандартная версия
+    }
   }
 }

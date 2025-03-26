@@ -1,0 +1,74 @@
+@use '../design-system/variables' as *;
+@use '../design-system/mixins' as *;
+
+.test-widget {
+
+    padding: $spacing-xxxl $spacing-xxl $spacing-xxxl $spacing-xxl;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xxl;
+    @include outline($side: all);
+    border-radius: $border-radius-s;
+
+    &__header {
+        display: flex;
+        gap: $spacing-xxl;
+        height: 8.75rem;
+    }
+
+    &__counter {
+        max-width: 6rem !important;
+        min-width: 6rem !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        background: $color-base-input;
+        height: fit-content;
+        padding: $spacing-m $spacing-xxl $spacing-m $spacing-xxl;
+        border-radius: $border-radius-s;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-s;
+    }
+
+    &__options {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-l;
+    }
+
+    &__option {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-l;
+        padding: $spacing-m;
+        @include outline($side: all);
+        border-radius: $border-radius-s;
+        cursor: pointer;
+        user-select: none;
+
+        &:hover {
+            background: $color-base-input;
+        }
+
+        &--highlighted {
+            background: $color-brand-accent;
+            color: $color-base-block !important;
+
+            &:hover {
+                background: $color-brand-accent !important;
+            }
+        }
+        
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}

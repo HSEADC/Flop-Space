@@ -88,14 +88,26 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('#main').addEventListener('click', function () {
     window.location.href = 'index.html';
   });
-  document.querySelector('#goToAbout').addEventListener('click', function () {
-    window.location.href = 'about.html';
+  document.querySelector('#home').addEventListener('click', function () {
+    window.location.href = 'index.html';
   });
-  document.querySelector('#goToServices').addEventListener('click', function () {
-    window.location.href = 'services.html';
+  document.querySelector('#podcasts').addEventListener('click', function () {
+    window.location.href = 'podcasts.html';
   });
-  document.querySelector('#goToContacts').addEventListener('click', function () {
-    window.location.href = 'contacts.html';
+  document.querySelector('#videos').addEventListener('click', function () {
+    window.location.href = 'videos.html';
+  });
+  document.querySelector('#tests').addEventListener('click', function () {
+    window.location.href = 'tests.html';
+  });
+  document.querySelector('#network').addEventListener('click', function () {
+    window.location.href = 'network.html';
+  });
+  document.querySelector('#fav').addEventListener('click', function () {
+    window.location.href = 'fav.html';
+  });
+  document.querySelector('#cases').addEventListener('click', function () {
+    window.location.href = 'cases.html';
   });
 });
 
@@ -470,8 +482,8 @@ __webpack_require__.r(__webpack_exports__);
 var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
   "id": "icon-cases",
   "use": "icon-cases-usage",
-  "viewBox": "0 0 18 18",
-  "content": "<symbol viewBox=\"0 0 18 18\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-cases\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M13 3.5L6 3.5C5.17157 3.5 4.5 4.17157 4.5 5L4.5 12C4.5 12.8284 5.17157 13.5 6 13.5L9 13.5V11C9 9.34315 10.3431 8 12 8H14.5V5C14.5 4.17157 13.8284 3.5 13 3.5ZM14.3033 9.5C14.2375 9.61538 14.1562 9.72248 14.0607 9.81802L10.818 13.0607C10.7225 13.1562 10.6154 13.2375 10.5 13.3033V11C10.5 10.1716 11.1716 9.5 12 9.5H14.3033ZM15.1213 10.8787C15.6839 10.3161 16 9.55301 16 8.75736V5C16 3.34315 14.6569 2 13 2L6 2C4.34315 2 3 3.34315 3 5V12C3 13.6569 4.34315 15 6 15H9.75736C10.553 15 11.3161 14.6839 11.8787 14.1213L15.1213 10.8787Z\" /></symbol>"
+  "viewBox": "0 0 24 24",
+  "content": "<symbol viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-cases\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M11.0273 4.53577H16.1786V8.07148H21.2977L12.9727 19.9643H7.82144V16.4286H2.70233L11.0273 4.53577ZM10.8214 16.9643H11.4107L15.5357 11.0715H13.1786V7.53577H12.5893L8.4643 13.4286H10.8214V16.9643Z\" /><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M20 4H3V21H20V4ZM0 1V24H23V1H0Z\" /></symbol>"
 });
 var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
@@ -495,8 +507,8 @@ __webpack_require__.r(__webpack_exports__);
 var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
   "id": "icon-fav",
   "use": "icon-fav-usage",
-  "viewBox": "0 0 18 18",
-  "content": "<symbol viewBox=\"0 0 18 18\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-fav\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M9 10.0244L9.97619 10.8611L12.9636 13.4218C13.0225 13.4723 13.0975 13.5 13.1751 13.5C13.3545 13.5 13.5 13.3545 13.5 13.1751V5C13.5 4.17157 12.8284 3.5 12 3.5L6 3.5C5.17157 3.5 4.5 4.17157 4.5 5L4.5 13.1751C4.5 13.3545 4.64547 13.5 4.82492 13.5C4.90248 13.5 4.97748 13.4723 5.03637 13.4218L8.02381 10.8611L9 10.0244ZM15 5C15 3.34315 13.6569 2 12 2L6 2C4.34315 2 3 3.34315 3 5L3 13.1751C3 14.183 3.81704 15 4.82492 15C5.26055 15 5.68181 14.8442 6.01256 14.5607L9 12L11.9874 14.5607C12.3182 14.8442 12.7395 15 13.1751 15C14.183 15 15 14.183 15 13.1751V5Z\" /></symbol>"
+  "viewBox": "0 0 24 24",
+  "content": "<symbol viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-fav\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M19 23L12 19.4329L5 23V2H19V23ZM16.375 18.7049V4.63762H7.625V18.7049L12 16.4755L16.375 18.7049ZM14.625 6.56954H9.375V15.6853L12 14.3484L14.625 15.6853V6.56954Z\" /></symbol>"
 });
 var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
@@ -603,6 +615,31 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 
 /***/ }),
 
+/***/ 417:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
+  "id": "icon-logo",
+  "use": "icon-logo-usage",
+  "viewBox": "0 0 30 31",
+  "content": "<symbol viewBox=\"0 0 30 31\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-logo\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M0 30.5V11.7144L11.2759 0.5H30V19.2856L18.8793 30.5H0ZM19.0837 9.76105V7.75176H23.9863V3.73317H19.5615L15.0537 8.23125V13.7568H19.9562V15.7661H16.4455V19.7619H19.4577L23.9863 15.241V9.76105H19.0837ZM10.0289 17.3424V14.2371H14.0174V10.2185H10.5274L5.99882 14.7394V27.2975H10.0289V19.7627H14.0174V15.7441H11.6284L10.0289 17.3424Z\" /></symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
+
+/***/ }),
+
 /***/ 642:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -645,8 +682,8 @@ __webpack_require__.r(__webpack_exports__);
 var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
   "id": "icon-main",
   "use": "icon-main-usage",
-  "viewBox": "0 0 18 18",
-  "content": "<symbol viewBox=\"0 0 18 18\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-main\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12.1125 12.272C12.4871 13.0855 12.8257 13.1567 13 13.1567C13.1743 13.1567 13.5129 13.0855 13.8875 12.272C14.2635 11.4556 14.5 10.1945 14.5 8.65674C14.5 7.11895 14.2635 5.85789 13.8875 5.04151C13.5129 4.22797 13.1743 4.15674 13 4.15674C12.8257 4.15674 12.4871 4.22797 12.1125 5.04151C11.7365 5.85789 11.5 7.11895 11.5 8.65674C11.5 10.1945 11.7365 11.4556 12.1125 12.272ZM10 8.65674C10 10.1256 10.1965 11.4712 10.5895 12.5142L3.90297 9.967C3.35929 9.75988 3 9.23853 3 8.65674C3 8.07494 3.35929 7.55359 3.90297 7.34648L10.5895 4.79923C10.1965 5.84223 10 7.18784 10 8.65674ZM13 14.6567C15 14.6567 16 11.9704 16 8.65674C16 5.34303 15 2.65674 13 2.65674C12.3389 2.65674 11.6833 2.77738 11.0655 3.01273L3.36897 5.94475C2.24366 6.37344 1.5 7.45254 1.5 8.65674C1.5 9.86094 2.24366 10.94 3.36897 11.3687L4.19631 11.6839C4.0699 11.9829 4 12.3116 4 12.6567C4 14.0374 5.11929 15.1567 6.5 15.1567C7.59849 15.1567 8.53151 14.4482 8.86703 13.4632L11.0655 14.3007C11.6833 14.5361 12.3389 14.6567 13 14.6567ZM7.46268 12.9282L5.60066 12.2189C5.53618 12.3511 5.5 12.4997 5.5 12.6567C5.5 13.2089 5.94772 13.6567 6.5 13.6567C6.95816 13.6567 7.34435 13.3486 7.46268 12.9282Z\" /></symbol>"
+  "viewBox": "0 0 24 24",
+  "content": "<symbol viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-main\"><g clip-path=\"url(#icon-main_clip0_817_1314)\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M17 8.33986V15.3231L14.87 14.2236C14.5951 14.0819 14.3016 13.9851 14 13.9356C13.8458 13.9104 13.6896 13.8975 13.5326 13.8974C13.5318 13.8974 13.531 13.8974 13.5303 13.8974C13.5295 13.8974 13.5287 13.8974 13.528 13.8974C13.5277 13.8974 13.5283 13.8974 13.528 13.8974H11V9.7677H13.528C13.5287 9.7677 13.5295 9.7677 13.5303 9.7677C13.6881 9.76751 13.8451 9.75447 14 9.72892C14.3013 9.67923 14.5944 9.58222 14.869 9.44042L14.87 9.44145L17 8.33986ZM19 4.99999V9.52404C19.614 10.0908 20 10.9157 20 11.8325C20 12.7504 19.614 13.5732 19 14.141V18.6651L13.975 16.0716C13.9598 16.0638 13.9444 16.0563 13.9288 16.0493C13.9285 16.0491 13.9281 16.0489 13.9278 16.0488C13.8022 15.992 13.6664 15.9625 13.529 15.9622C13.5286 15.9622 13.5293 15.9622 13.529 15.9622L9.45998 15.9622L6.10799 20L4.58998 18.6568L6.82998 15.957C6.46507 15.9357 6.11054 15.8459 5.7824 15.6954C5.42904 15.5334 5.10629 15.3011 4.83415 15.0079C4.82923 15.0026 4.82433 14.9973 4.81945 14.992C4.62185 14.7761 4.45711 14.5339 4.32841 14.2738C4.11437 13.8412 4.00001 13.3589 3.99998 12.865V10.8001C3.99998 10.0006 4.29938 9.23304 4.83406 8.65707C4.84875 8.64124 4.86362 8.62556 4.87866 8.61002C5.44127 8.02918 6.20434 7.70286 6.99998 7.70286H13.5271C13.6644 7.70271 13.8009 7.67338 13.9264 7.61691C13.9262 7.61701 13.9266 7.61682 13.9264 7.61691C13.9425 7.60963 13.9592 7.6016 13.975 7.59342L19 4.99999ZM22 8.4613V0.0756836L13.0344 4.70286H6.99998C5.37724 4.70286 3.84109 5.36928 2.72378 6.52281C1.60963 7.67308 0.999985 9.21336 0.999985 10.8001V12.865C1.00007 14.2496 1.46438 15.6004 2.32559 16.6877L0.425537 18.9778L6.43867 24.2984L10.8685 18.9622H13.0344L22 23.5894V15.2035C22.6342 14.2332 23 13.0715 23 11.8325C23 10.5957 22.6349 9.43292 22 8.4613ZM5.99998 12.865C5.99998 13.1388 6.10534 13.4014 6.29288 13.595C6.30119 13.6036 6.30964 13.612 6.31822 13.6202C6.491 13.7865 6.71515 13.8841 6.95075 13.8961C6.96711 13.8969 6.98353 13.8974 6.99998 13.8974H8.99998V9.7677H6.99998C6.75613 9.7677 6.52146 9.85965 6.33947 10.025C6.32352 10.0394 6.30798 10.0545 6.29288 10.0701C6.10534 10.2637 5.99998 10.5263 5.99998 10.8001V12.865Z\" /></g><defs><clipPath id=\"icon-main_clip0_817_1314\"><rect width=\"24\" height=\"24\" /></clipPath></defs></symbol>"
 });
 var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
@@ -670,8 +707,8 @@ __webpack_require__.r(__webpack_exports__);
 var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
   "id": "icon-news",
   "use": "icon-news-usage",
-  "viewBox": "0 0 18 18",
-  "content": "<symbol viewBox=\"0 0 18 18\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-news\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M5.84321 11.6006L5.64863 13.9356C5.63871 14.0547 5.73264 14.1567 5.85208 14.1567C5.90208 14.1567 5.95034 14.1384 5.98772 14.1052L8.19716 12.1412L8.78654 12.1544C8.85725 12.1559 8.92841 12.1567 9 12.1567C10.6948 12.1567 12.0868 11.7163 13.0203 10.9794C13.9094 10.2775 14.5 9.22018 14.5 7.65674C14.5 6.0933 13.9094 5.03596 13.0203 4.33409C12.0868 3.59715 10.6948 3.15674 9 3.15674C7.30518 3.15674 5.9132 3.59715 4.97968 4.33409C4.09059 5.03596 3.5 6.0933 3.5 7.65674C3.5 9.30443 4.15593 10.3992 5.14751 11.1052L5.84321 11.6006ZM6.98426 15.2263L8.75309 13.654C8.83504 13.6558 8.91735 13.6567 9 13.6567C12.866 13.6567 16 11.6567 16 7.65674C16 3.65674 12.866 1.65674 9 1.65674C5.13401 1.65674 2 3.65674 2 7.65674C2 9.77374 2.87785 11.3305 4.27747 12.3271L4.15381 13.8111C4.07101 14.8046 4.85508 15.6567 5.85208 15.6567C6.26945 15.6567 6.67231 15.5036 6.98426 15.2263Z\" /></symbol>"
+  "viewBox": "0 0 24 24",
+  "content": "<symbol viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-news\"><g clip-path=\"url(#icon-news_clip0_817_1323)\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M24.3155 1V20.7366H13.8743L9.86826 24.7426L5.86227 20.7366H-6.10352e-05V1H24.3155ZM9.86826 20.5L12.6316 17.7366H21.3155V4H2.99994V17.7366H7.10491L9.86826 20.5ZM9.86826 17.2627L11.6838 15.4472H19.026V6.28944H5.28938V15.4472H8.05274L9.86826 17.2627ZM9.86826 13.0201L9.29538 12.4472H8.28938V9.28944H16.026V12.4472H10.4411L9.86826 13.0201Z\" /></g><defs><clipPath id=\"icon-news_clip0_817_1323\"><rect width=\"24\" height=\"24\" /></clipPath></defs></symbol>"
 });
 var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
@@ -720,8 +757,8 @@ __webpack_require__.r(__webpack_exports__);
 var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
   "id": "icon-podcast",
   "use": "icon-podcast-usage",
-  "viewBox": "0 0 18 18",
-  "content": "<symbol viewBox=\"0 0 18 18\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-podcast\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16 8.65674C16 4.79075 12.866 1.65674 9 1.65674C5.13401 1.65674 2 4.79075 2 8.65674V12.4067V12.6567H2.00947C2.13713 14.3349 3.53919 15.6567 5.25 15.6567H5.33333C6.25381 15.6567 7 14.9105 7 13.9901V10.8234C7 9.90293 6.25381 9.15674 5.33333 9.15674H5.25C4.60568 9.15674 4.00515 9.34424 3.5 9.66765V8.65674C3.5 5.61917 5.96243 3.15674 9 3.15674C12.0376 3.15674 14.5 5.61917 14.5 8.65674V9.66765C13.9949 9.34424 13.3943 9.15674 12.75 9.15674H12.6667C11.7462 9.15674 11 9.90293 11 10.8234V13.9901C11 14.9105 11.7462 15.6567 12.6667 15.6567H12.75C14.4608 15.6567 15.8629 14.3349 15.9905 12.6567H16V12.4067V8.65674ZM14.5 12.4067C14.5 11.4402 13.7165 10.6567 12.75 10.6567H12.6667C12.5746 10.6567 12.5 10.7314 12.5 10.8234V13.9901C12.5 14.0821 12.5746 14.1567 12.6667 14.1567H12.75C13.7165 14.1567 14.5 13.3732 14.5 12.4067ZM5.25 14.1567C4.2835 14.1567 3.5 13.3732 3.5 12.4067C3.5 11.4402 4.2835 10.6567 5.25 10.6567H5.33333C5.42538 10.6567 5.5 10.7314 5.5 10.8234V13.9901C5.5 14.0821 5.42538 14.1567 5.33333 14.1567H5.25Z\" fill-opacity=\"0.8\" /></symbol>"
+  "viewBox": "0 0 24 24",
+  "content": "<symbol viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-podcast\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M23.0001 23H16.0001C14.674 23 13.4023 22.4732 12.4646 21.5355C12.2963 21.3673 12.1413 21.1882 12.0001 21C11.859 21.1882 11.7039 21.3673 11.5357 21.5355C10.598 22.4732 9.32621 23 8.00012 23H1.00012L1.00012 12C1.00012 9.08262 2.15905 6.28473 4.22195 4.22183C6.28485 2.15893 9.08274 1 12.0001 1C14.9175 1 17.7154 2.15893 19.7783 4.22183C21.8412 6.28473 23.0001 9.08262 23.0001 12V23ZM4.00012 20H8.00012C8.53056 20 9.03926 19.7893 9.41434 19.4142C9.78941 19.0391 10.0001 18.5304 10.0001 18V14C10.0001 13.4696 9.78941 12.9609 9.41434 12.5858C9.03926 12.2107 8.53056 12 8.00012 12H6.00012C6.00012 11.6627 6.02853 11.3283 6.08402 11C6.20328 10.2944 6.44764 9.6172 6.80395 9C7.06391 8.54971 7.38345 8.13139 7.75748 7.75736C8.8827 6.63214 10.4088 6 12.0001 6C13.5914 6 15.1175 6.63214 16.2428 7.75736C16.6168 8.13139 16.9363 8.54971 17.1963 9C17.5526 9.6172 17.797 10.2944 17.9162 11C17.9717 11.3283 18.0001 11.6627 18.0001 12H16.0001C15.4697 12 14.961 12.2107 14.5859 12.5858C14.2108 12.9609 14.0001 13.4696 14.0001 14V18C14.0001 18.5304 14.2108 19.0391 14.5859 19.4142C14.961 19.7893 15.4697 20 16.0001 20H20.0001V12C20.0001 11.6639 19.979 11.33 19.9374 11C19.7166 9.247 18.9196 7.60577 17.657 6.34315C16.1567 4.84285 14.1219 4 12.0001 4C9.87839 4 7.84356 4.84285 6.34327 6.34315C5.08064 7.60577 4.28366 9.247 4.06284 11C4.02127 11.33 4.00012 11.6639 4.00012 12V20ZM18.0001 14H16.0001V18H18.0001V14ZM12.0001 11C12.1413 10.8118 12.2963 10.6327 12.4646 10.4645C12.8382 10.0909 13.2648 9.78251 13.7268 9.54669C13.2247 9.19332 12.6224 9 12.0001 9C11.3779 9 10.7756 9.19332 10.2735 9.54669C10.7354 9.7825 11.1621 10.0909 11.5357 10.4645C11.7039 10.6327 11.859 10.8118 12.0001 11ZM6.00012 18H8.00012V14H6.00012L6.00012 18Z\" /></symbol>"
 });
 var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
@@ -770,8 +807,8 @@ __webpack_require__.r(__webpack_exports__);
 var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
   "id": "icon-sub",
   "use": "icon-sub-usage",
-  "viewBox": "0 0 18 18",
-  "content": "<symbol viewBox=\"0 0 18 18\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-sub\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M6.51483 4.15686H7.13615L7.57549 3.71752L8.64656 2.64645C8.84182 2.45118 9.15841 2.45118 9.35367 2.64645L10.4247 3.71752L10.8641 4.15686H11.4854H13.0001C13.2763 4.15686 13.5001 4.38072 13.5001 4.65686V6.17157V6.79289L13.9395 7.23223L15.0105 8.3033C15.2058 8.49856 15.2058 8.81515 15.0105 9.01041L13.9395 10.0815L13.5001 10.5208V11.1421V12.6569C13.5001 12.933 13.2763 13.1569 13.0001 13.1569H11.4854H10.8641L10.4247 13.5962L9.35367 14.6673C9.15841 14.8625 8.84182 14.8625 8.64656 14.6673L7.5755 13.5962L7.13616 13.1569H6.51484H5.00012C4.72397 13.1569 4.50012 12.933 4.50012 12.6569V11.1421V10.5208L4.06078 10.0815L2.98971 9.01041C2.79445 8.81515 2.79445 8.49856 2.98971 8.3033L4.06078 7.23223L4.50012 6.79289V6.17157V4.65686C4.50012 4.38072 4.72397 4.15686 5.00012 4.15686H6.51483ZM10.4143 1.58579C9.63328 0.804738 8.36695 0.804738 7.5859 1.58579L6.51483 2.65686H5.00012C3.89555 2.65686 3.00012 3.55229 3.00012 4.65686V6.17157L1.92905 7.24264C1.148 8.02369 1.148 9.29002 1.92905 10.0711L3.00012 11.1421V12.6569C3.00012 13.7614 3.89555 14.6569 5.00012 14.6569H6.51484L7.5859 15.7279C8.36695 16.509 9.63328 16.509 10.4143 15.7279L11.4854 14.6569H13.0001C14.1047 14.6569 15.0001 13.7614 15.0001 12.6569V11.1421L16.0712 10.0711C16.8522 9.29002 16.8522 8.02369 16.0712 7.24264L15.0001 6.17157V4.65686C15.0001 3.55229 14.1047 2.65686 13.0001 2.65686H11.4854L10.4143 1.58579ZM12.1002 7.10686C12.3487 6.77549 12.2815 6.30539 11.9502 6.05686C11.6188 5.80833 11.1487 5.87549 10.9002 6.20686L8.41901 9.51505L7.03048 8.12653C6.73759 7.83364 6.26272 7.83364 5.96982 8.12653C5.67693 8.41942 5.67693 8.8943 5.96982 9.18719L7.96982 11.1872C8.12356 11.3409 8.33645 11.4204 8.55332 11.405C8.77019 11.3896 8.9697 11.2808 9.10015 11.1069L12.1002 7.10686Z\" /></symbol>"
+  "viewBox": "0 0 24 24",
+  "content": "<symbol viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-sub\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M7.45892 4H17.3603V7.53936H20.8192V17.0586H17.3603V20.598H7.45892V17.0586H4V7.53936H7.45892V4ZM10.4589 7V10.5394H7V14.0586H10.4589V17.598H14.3603V14.0586H17.8192V10.5394H14.3603V7H10.4589Z\" /></symbol>"
 });
 var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
@@ -795,8 +832,8 @@ __webpack_require__.r(__webpack_exports__);
 var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
   "id": "icon-tests",
   "use": "icon-tests-usage",
-  "viewBox": "0 0 18 18",
-  "content": "<symbol viewBox=\"0 0 18 18\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-tests\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M5.17647 3.5H12.5882C13.4654 3.5 14.1765 4.17157 14.1765 5V12C14.1765 12.8284 13.4654 13.5 12.5882 13.5H5.17647C4.29931 13.5 3.58824 12.8284 3.58824 12V5C3.58824 4.17157 4.29931 3.5 5.17647 3.5ZM2 5C2 3.34315 3.42215 2 5.17647 2H12.5882C14.3426 2 15.7647 3.34315 15.7647 5V12C15.7647 13.6569 14.3426 15 12.5882 15H5.17647C3.42215 15 2 13.6569 2 12V5ZM5.97059 10.4982C5.53201 10.4982 5.17647 10.834 5.17647 11.2482C5.17647 11.6624 5.53201 11.9982 5.97059 11.9982H8.09022C8.52879 11.9982 8.88433 11.6624 8.88433 11.2482C8.88433 10.834 8.52879 10.4982 8.09022 10.4982H5.97059ZM5.17647 8.49997C5.17647 8.08576 5.53201 7.74997 5.97059 7.74997H11.7961C12.2347 7.74997 12.5902 8.08576 12.5902 8.49997C12.5902 8.91418 12.2347 9.24997 11.7961 9.24997H5.97059C5.53201 9.24997 5.17647 8.91418 5.17647 8.49997ZM5.97059 5.00183C5.53201 5.00183 5.17647 5.33762 5.17647 5.75183C5.17647 6.16604 5.53201 6.50183 5.97059 6.50183H9.67845C10.117 6.50183 10.4726 6.16604 10.4726 5.75183C10.4726 5.33762 10.117 5.00183 9.67845 5.00183H5.97059Z\" /></symbol>"
+  "viewBox": "0 0 24 24",
+  "content": "<symbol viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-tests\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M23.5714 2V16.3929C23.5714 18.0126 22.928 19.5659 21.7827 20.7113C20.6374 21.8566 19.084 22.5 17.4643 22.5H7.10714C5.48743 22.5 3.93405 21.8566 2.78874 20.7113C1.64343 19.5659 1 18.0126 1 16.3929V4.07143H5.14286V2H23.5714ZM6.1801 19.3585C6.47749 19.4515 6.78981 19.5 7.10714 19.5H17.4643C18.2884 19.5 19.0787 19.1726 19.6614 18.5899C20.2441 18.0072 20.5714 17.2169 20.5714 16.3929V5H8.14286V7.07143H4V16.3929C4 17.2169 4.32736 18.0072 4.91006 18.5899C5.26838 18.9483 5.7052 19.21 6.1801 19.3585ZM6.07143 16.3929C6.07143 16.6675 6.18055 16.931 6.37478 17.1252C6.51164 17.2621 6.68286 17.3567 6.86816 17.4006C6.94585 17.4191 7.026 17.4286 7.10714 17.4286C7.38183 17.4286 7.64527 17.3195 7.8395 17.1252C7.94897 17.0158 8.0314 16.8843 8.0825 16.7413C8.11021 16.6637 8.1287 16.5827 8.1373 16.5C8.14099 16.4646 8.14286 16.4288 8.14286 16.3929V9.14286H6.07143V16.3929ZM10.2143 16.3929C10.2143 16.4287 10.2137 16.4644 10.2125 16.5C10.2015 16.8242 10.1409 17.1365 10.0382 17.4286H17.4643C17.739 17.4286 18.0024 17.3195 18.1966 17.1252C18.3909 16.931 18.5 16.6675 18.5 16.3929V7.07143H10.2143V16.3929ZM13.2143 14.4286V10.0714H15.5V14.4286H13.2143Z\" /></symbol>"
 });
 var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
@@ -820,8 +857,8 @@ __webpack_require__.r(__webpack_exports__);
 var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
   "id": "icon-video",
   "use": "icon-video-usage",
-  "viewBox": "0 0 18 18",
-  "content": "<symbol viewBox=\"0 0 18 18\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-video\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M4 5.5H9.5C10.3284 5.5 11 6.17157 11 7V7.5V10.5V11C11 11.8284 10.3284 12.5 9.5 12.5H4C3.17157 12.5 2.5 11.8284 2.5 11V7C2.5 6.17157 3.17157 5.5 4 5.5ZM12.452 11.5372C12.1989 12.9377 10.9735 14 9.5 14H4C2.34315 14 1 12.6569 1 11V7C1 5.34315 2.34315 4 4 4H9.5C10.9735 4 12.1989 5.0623 12.452 6.46283L14.0063 5.35265C14.3274 5.1233 14.7121 5 15.1067 5C16.1524 5 17 5.84765 17 6.89327V11.1067C17 12.1524 16.1524 13 15.1067 13C14.7121 13 14.3274 12.8767 14.0063 12.6473L12.452 11.5372ZM12.5 9.72807L14.8781 11.4267C14.9448 11.4744 15.0248 11.5 15.1067 11.5C15.3239 11.5 15.5 11.3239 15.5 11.1067V6.89327C15.5 6.67607 15.3239 6.5 15.1067 6.5C15.0248 6.5 14.9448 6.52561 14.8781 6.57325L12.5 8.27193V9.72807Z\" /></symbol>"
+  "viewBox": "0 0 24 24",
+  "content": "<symbol viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" id=\"icon-video\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M1 3L19 3V4.96865L23 4.46865V19.5313L19 19.0313V21H1L1 3ZM16 18V15.633L20 16.133V7.867L16 8.367V6H4L4 18H16ZM14 16V13.367L18 13.867V10.133L14 10.633V8H6V16H14ZM11 13V11H9V13H11Z\" /></symbol>"
 });
 var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
@@ -1854,6 +1891,7 @@ var map = {
 	"./icon-like-alt.svg": 752,
 	"./icon-like.svg": 298,
 	"./icon-lock.svg": 798,
+	"./icon-logo.svg": 417,
 	"./icon-mail.svg": 642,
 	"./icon-main.svg": 472,
 	"./icon-news.svg": 98,
@@ -1893,6 +1931,7 @@ webpackContext.id = 46;
 var map = {
 	"./avatar.jpg": 117,
 	"./card-image.jpg": 160,
+	"./cases/quibi.jpg": 686,
 	"./image1.jpeg": 171,
 	"./image2.jpg": 265,
 	"./image3.jpeg": 805,
@@ -1936,6 +1975,14 @@ module.exports = __webpack_require__.p + "images/avatar.7c070b.jpg";
 
 "use strict";
 module.exports = __webpack_require__.p + "images/card-image.fefd1b.jpg";
+
+/***/ }),
+
+/***/ 686:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/quibi.4e32c6.jpg";
 
 /***/ }),
 
@@ -2086,14 +2133,14 @@ var topic_list = __webpack_require__(795);
 // EXTERNAL MODULE: ./src/utils/import-icons.js
 var import_icons = __webpack_require__(92);
 ;// ./src/data/content.json
-const content_namespaceObject = /*#__PURE__*/JSON.parse('[{"position":1,"type":"card-default","image":"card-image.jpg","title":"Как новый стартап нарушил правила рынка и быстро достиг успеха","subtitle":"Как стартап с необычной моделью бизнеса привлёк внимание инвесторов и стал успешным?","author":"Анна Гречко","authorTitle":"Business / 21.03.25","content":"Новый подход в бизнесе, рискованные инвестиции и нестандартные решения — как стартап смог так быстро выйти на рынок?","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"med"},{"position":2,"type":"card-medium","image":"tomato.jpg","title":"Blue Tomato: Томаты, которые не стали синими. История провала стартапа","subtitle":"Как амбициозная идея о генетически модифицированных помидорах привела к краху компании.","author":"Максим Борисов","authorTitle":"Tech / 19.03.25","content":"Как амбициозная идея о генетически модифицированных помидорах привела к краху компании.","avatar":"avatar.jpg","pagelink":"article_blue_tomato.html","category":"med"},{"position":3,"type":"card-medium","image":"image4.jpeg","title":"Будущее цифровых валют: как изменится финансовая система?","subtitle":"Почему криптовалюты будут доминировать в экономике через 10 лет?","author":"Дмитрий Федоров","authorTitle":"Finance / 18.03.25","content":"С ростом криптовалют и блокчейн-технологий многие задаются вопросом, как изменится финансовая система в будущем.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"med"},{"position":4,"type":"card-default","image":"image1.jpeg","title":"Как создать успешный стартап в условиях кризиса?","subtitle":"Трудности и возможности для новых проектов в экономической нестабильности.","author":"Алексей Громов","authorTitle":"Startup / 22.03.25","content":"В условиях экономического кризиса многие стартапы сталкиваются с новыми вызовами. Какие стратегии позволят добиться успеха?","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food"},{"position":5,"type":"card-medium","image":"image2.jpg","title":"Искусственный интеллект и будущее работы: угроза или шанс?","subtitle":"Как AI меняет рынок труда и какие профессии исчезнут в ближайшие годы?","author":"Ольга Симонова","authorTitle":"HR / 20.03.25","content":"AI уже оказывает влияние на большинство профессий. Какие навыки и профессии останутся востребованными, а какие уйдут в прошлое?","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food"},{"position":6,"type":"card-medium","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением?","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food"},{"position":7,"type":"card-medium","image":"image2.jpg","title":"Искусственный интеллект и будущее работы: угроза или шанс?","subtitle":"Как AI меняет рынок труда и какие профессии исчезнут в ближайшие годы?","author":"Ольга Симонова","authorTitle":"HR / 20.03.25","content":"AI уже оказывает влияние на большинство профессий. Какие навыки и профессии останутся востребованными, а какие уйдут в прошлое?","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food"},{"position":8,"type":"card-medium","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением?","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food"}]');
+const content_namespaceObject = /*#__PURE__*/JSON.parse('[{"position":1,"type":"card-small","image":"card-image.jpg","title":"Как новый стартап нарушил правила рынка и быстро достиг успеха","subtitle":"Как стартап с необычной моделью бизнеса привлёк внимание инвесторов и стал успешным?","author":"Анна Гречко","authorTitle":"Business / 21.03.25","content":"Новый подход в бизнесе, рискованные инвестиции и нестандартные решения — как стартап смог так быстро выйти на рынок?","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"med","suggestionTitle":"Выбор сообщества"},{"position":2,"type":"card-small","image":"tomato.jpg","title":"Blue Tomato: Томаты, которые не стали синими. История провала стартапа","subtitle":"Как амбициозная идея о генетически модифицированных помидорах привела к краху компании.","author":"Максим Борисов","authorTitle":"Tech / 19.03.25","content":"Как амбициозная идея о генетически модифицированных помидорах привела к краху компании.","avatar":"avatar.jpg","pagelink":"article_blue_tomato.html","category":"med","suggestionTitle":"Выбор сообщества"},{"position":3,"type":"card-small","image":"image4.jpeg","title":"Будущее цифровых валют: как изменится финансовая система?","subtitle":"Почему криптовалюты будут доминировать в экономике через 10 лет?","author":"Дмитрий Федоров","authorTitle":"Finance / 18.03.25","content":"С ростом криптовалют и блокчейн-технологий многие задаются вопросом, как изменится финансовая система в будущем.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"med","suggestionTitle":"Выбор сообщества"},{"position":4,"type":"card-small","image":"image1.jpeg","title":"Как создать успешный стартап в условиях кризиса?","subtitle":"Трудности и возможности для новых проектов в экономической нестабильности.","author":"Алексей Громов","authorTitle":"Startup / 22.03.25","content":"В условиях экономического кризиса многие стартапы сталкиваются с новыми вызовами. Какие стратегии позволят добиться успеха?","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Выбор сообщества"},{"position":5,"type":"card-small","image":"image2.jpg","title":"Искусственный интеллект и будущее работы: угроза или шанс?","subtitle":"Как AI меняет рынок труда и какие профессии исчезнут в ближайшие годы?","author":"Ольга Симонова","authorTitle":"HR / 20.03.25","content":"AI уже оказывает влияние на большинство профессий. Какие навыки и профессии останутся востребованными, а какие уйдут в прошлое?","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Выбор сообщества"},{"position":6,"type":"card-small","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением?","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Выбор сообщества"},{"position":7,"type":"card-medium","image":"image2.jpg","title":"Искусственный интеллект и будущее работы: угроза или шанс?","subtitle":"Как AI меняет рынок труда и какие профессии исчезнут в ближайшие годы?","author":"Ольга Симонова","authorTitle":"HR / 20.03.25","content":"AI уже оказывает влияние на большинство профессий. Какие навыки и профессии останутся востребованными, а какие уйдут в прошлое?","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food"},{"position":8,"type":"card-medium","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением?","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food"},{"position":9,"type":"card-small","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением? Частые ошибки при масштабировании бизнеса и способы их избежать.","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Выбор сообщества"},{"position":10,"type":"card-small","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением? Частые ошибки при масштабировании бизнеса и способы их избежать.","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Выбор сообщества"},{"position":11,"type":"card-small","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением? Частые ошибки при масштабировании бизнеса и способы их избежать.","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Выбор сообщества"},{"position":12,"type":"card-small","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением? Частые ошибки при масштабировании бизнеса и способы их избежать.","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Выбор сообщества"},{"position":13,"type":"card-small","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением? Частые ошибки при масштабировании бизнеса и способы их избежать.","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Выбор сообщества"},{"position":14,"type":"card-small","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением? Частые ошибки при масштабировании бизнеса и способы их избежать.","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Выбор сообщества"},{"position":15,"type":"card-small","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением? Частые ошибки при масштабировании бизнеса и способы их избежать.","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Говно дня"},{"position":16,"type":"card-small","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением? Частые ошибки при масштабировании бизнеса и способы их избежать.","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Говно дня"},{"position":17,"type":"card-small","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением? Частые ошибки при масштабировании бизнеса и способы их избежать.","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Говно дня"}]');
 ;// ./src/data/topics.json
 const topics_namespaceObject = /*#__PURE__*/JSON.parse('[{"position":1,"image":"topic1.jpg","title":"Образование","link":"placeholder.html","id":"edu"},{"position":2,"image":"topic1.jpg","title":"Финансы","link":"placeholder.html","id":"fin"},{"position":3,"image":"topic1.jpg","title":"Медицина","link":"placeholder.html","id":"med"},{"position":4,"image":"topic1.jpg","title":"Экология","link":"placeholder.html","id":"eco"},{"position":5,"image":"topic1.jpg","title":"Развлечения","link":"placeholder.html","id":"fun"},{"position":6,"image":"topic1.jpg","title":"Логистика","link":"placeholder.html","id":"log"},{"position":7,"image":"image4.jpeg","title":"Пищепром","link":"placeholder.html","id":"food"}]');
 ;// ./src/utils/create-cards.js
- // Импортируем данные из JSON как массив cardsData
+
 
 function createCard(card) {
-  var cardElement = document.createElement('div'); // Cоздаем div с классом article-card и обработчиком клика, ожидаем передачу в переменную cardElement разметки
+  var cardElement = document.createElement('div');
   cardElement.classList.add('article-card');
   cardElement.setAttribute('data-category', card.category);
   cardElement.addEventListener('click', function () {
@@ -2101,57 +2148,74 @@ function createCard(card) {
   });
   var imagePath = __webpack_require__(288)("./".concat(card.image));
   var avatarPath = card.avatar ? __webpack_require__(288)("./".concat(card.avatar)) : '';
-
-  // Заполняем article-card разметкой в зависимости от того, что пришло в аргумент card
-
-  // Если пришла card-default
   if (card.type === 'card-default') {
     cardElement.innerHTML = "\n      <div class=\"article-card__content\">\n        <div class=\"author-block\">\n          <div class=\"author-block__avatar\" style=\"background-image: url(".concat(avatarPath, ")\"></div>\n          <div class=\"author-block__text-block\">\n            <p class=\"typography__caption2\">").concat(card.author, "</p>\n            <p class=\"typography__caption1 typography--muted\">").concat(card.authorTitle, "</p>\n          </div>\n        </div>\n        <h1 class=\"typography__display1 typography--line-limit\">").concat(card.title, "</h1>\n        <p class=\"typography__body2 typography--muted typography--line-limit\">").concat(card.content, "</p>\n      </div>\n      <div class=\"article-card__image\" style=\"background-image: url(").concat(imagePath, ")\"></div>\n    ");
   }
-
-  // Если пришла card-medium
   if (card.type === 'card-medium') {
     cardElement.innerHTML = "\n      <div class=\"article-card__image article-card__image--medium\" style=\"background-image: url(".concat(imagePath, ")\"></div>\n      <div class=\"article-card__content\">\n        <div class=\"author-block\">\n          <div class=\"author-block__avatar\" style=\"background-image: url(").concat(avatarPath, ")\"></div>\n          <div class=\"author-block__text-block\">\n            <p class=\"typography__caption2\">").concat(card.author, "</p>\n            <p class=\"typography__caption1 typography--muted\">").concat(card.authorTitle, "</p>\n          </div>\n        </div>\n        <h1 class=\"typography__header2 typography--line-limit\">").concat(card.title, "</h1>\n        <p class=\"typography__body1 typography--muted typography--line-limit\">").concat(card.content, "</p>\n      </div>\n    ");
   }
-  return cardElement; // Передаём разметку в переменную cardElement, после этого результат createCard передаётся в константу cardElement
+  if (card.type === 'card-small') {
+    cardElement.classList.add('article-card--small');
+    cardElement.innerHTML = "\n      <div class=\"article-card__content\">\n        <div class=\"author-block\">\n          <div class=\"author-block__avatar\" style=\"background-image: url(".concat(avatarPath, ")\"></div>\n          <div class=\"author-block__text-block\">\n            <p class=\"typography__caption2\">").concat(card.author, "</p>\n            <p class=\"typography__caption1 typography--muted\">").concat(card.authorTitle, "</p>\n          </div>\n        </div>\n        <p class=\"typography__body2 typography--line-limit typography--line-limit-5\">").concat(card.title, "/ ").concat(card.content, "</p>\n      </div>\n    ");
+  }
+  return cardElement;
 }
-
-// Аргумент cards принимает массив сardsData как только renderCards вызвана в конце 
 function renderCards(cards) {
   var feedContainer = document.querySelector('.layout__feed');
   var currentBlock = null;
-
-  // Следующий блок выполняется только, если контейнер = layout__feed
-
+  var suggestionBlock = null;
+  var suggestionRow = null;
+  var suggestionCount = 0;
+  var currentCategory = '';
   if (feedContainer) {
     cards.sort(function (a, b) {
       return a.position - b.position;
-    }); // Сортируем по position из json
-
-    // Достаем из массива cardData одну карточку и передаём данные из нее в аргумент card
+    });
     cards.forEach(function (card) {
-      if (card.type === 'card-medium') {
-        if (!currentBlock || currentBlock.children.length >= 2) {
-          currentBlock = document.createElement('div');
-          currentBlock.classList.add('article-block');
-          feedContainer.appendChild(currentBlock); // Если есть хотя бы одна карточка medium, а контейнер article-block не создан, либо cоздан и уже содержит 2 карточки, то создаем новый article-block
+      if (card.type === 'card-small') {
+        if (!suggestionBlock || suggestionCount >= 6 || card.suggestionTitle !== currentCategory) {
+          suggestionBlock = document.createElement('div');
+          suggestionBlock.classList.add('suggestion-block');
+          feedContainer.appendChild(suggestionBlock);
+          var title = document.createElement('h1');
+          title.textContent = card.suggestionTitle;
+          title.classList.add('typography__header1');
+          suggestionBlock.appendChild(title);
+          suggestionCount = 0;
+          currentCategory = card.suggestionTitle;
         }
-      }
-      var cardElement = createCard(card); // Константа cardElement = результат createCard (в верху скрипта) с аргументом card
-
-      if (card.type === 'card-medium') {
-        currentBlock.appendChild(cardElement); // Если карточка medium, кидаем cодержимое cardElement в article-block
+        if (!suggestionRow || suggestionCount % 3 === 0) {
+          suggestionRow = document.createElement('div');
+          suggestionRow.classList.add('suggestion-block__row');
+          suggestionBlock.appendChild(suggestionRow);
+        }
+        var cardElement = createCard(card);
+        suggestionRow.appendChild(cardElement);
+        suggestionCount++;
       } else {
-        feedContainer.appendChild(cardElement); // Если карточка default, кидаем cодержимое cardElement в layout__feed
+        if (card.type === 'card-medium') {
+          if (!currentBlock || currentBlock.children.length >= 2) {
+            currentBlock = document.createElement('div');
+            currentBlock.classList.add('article-block');
+            feedContainer.appendChild(currentBlock);
+          }
+        }
+        var _cardElement = createCard(card);
+        if (card.type === 'card-medium') {
+          currentBlock.appendChild(_cardElement);
+        } else {
+          feedContainer.appendChild(_cardElement);
+        }
       }
     });
   } else {
-    console.error('Контейнер .layout__feed не найден на странице'); // Если главный контейнер не найден, выдаём ошибку
+    console.error('Контейнер .layout__feed не найден на странице');
   }
 }
 function filterCards(category, categoryTitle) {
   var cards = document.querySelectorAll('.article-card');
   var articleBlocks = document.querySelectorAll('.article-block');
+  var suggestionBlocks = document.querySelectorAll('.suggestion-block'); // Добавляем выборку suggestion-block
   var categoryHeader = document.querySelector('.category-header');
   var topicHeader = document.querySelector('.topic-header');
   var topicImage1 = document.querySelector('.topic-header__cover');
@@ -2200,6 +2264,33 @@ function filterCards(category, categoryTitle) {
       block.style.display = 'flex'; // Показываем, если есть видимые карточки
     }
   });
+
+  // Проверяем suggestion-block, остались ли в нем видимые карточки
+  suggestionBlocks.forEach(function (block) {
+    var rows = Array.from(block.querySelectorAll('.suggestion-block__row')); // Ищем все строки в блоке
+    var totalCardsInBlock = 0;
+    rows.forEach(function (row) {
+      // эта часть пока не работает 
+      var cardsInRow = Array.from(row.querySelectorAll('.article-card--small')).filter(function (card) {
+        return card.style.display !== 'none';
+      }); // Оставляем только видимые карточки
+      var visibleCardsInRow = cardsInRow.length; // Количество видимых карточек в ряду
+
+      if (visibleCardsInRow === 3) {
+        row.style.display = 'flex'; // Показываем строку только если в ней ровно 3 карточки
+        totalCardsInBlock += visibleCardsInRow; // Добавляем карточки в общий счётчик
+      } else {
+        row.style.display = 'none'; // Скрываем строку, если карточек не 3
+      }
+    });
+
+    // Если количество видимых карточек равно 6 или 3, показываем блок, иначе скрываем
+    if (totalCardsInBlock === 6 || totalCardsInBlock === 3) {
+      block.style.display = 'flex';
+    } else {
+      block.style.display = 'none';
+    }
+  });
 }
 
 // Проверяем на загрузку DOM и index.html (рендерим карточки только на ней), при успехе вызываем renderCards
@@ -2217,7 +2308,7 @@ function createTopic(topic) {
     filterCards(topic.id, topic.title); // Фильтруем карточки по категории
   });
   var imagePath = __webpack_require__(288)("./".concat(topic.image));
-  topicElement.innerHTML = "\n    <div class=\"topic-list__image\" style=\"background-image: url('".concat(imagePath, "')\"></div>\n    <p class=\"typography__subheader1 typography--muted\"> ").concat(topic.title, " </p>\n    ");
+  topicElement.innerHTML = "\n    <div class=\"topic-list__image\" style=\"background-image: url('".concat(imagePath, "')\"></div>\n    <p class=\"typography__subheader1\"> ").concat(topic.title, " </p>\n    ");
   return topicElement;
 }
 function renderTopics(topics) {
@@ -2234,6 +2325,171 @@ function renderTopics(topics) {
 }
 document.addEventListener('DOMContentLoaded', function () {
   renderTopics(topics_namespaceObject);
+});
+;// ./src/data/test-data.json
+const test_data_namespaceObject = /*#__PURE__*/JSON.parse('{"a":[{"title":"Что обещала Theranos?","description":"Theranos утверждала, что разработала революционную технологию для анализа крови, способную проводить тесты с помощью всего нескольких капель крови.","options":["Новые методы диагностики болезней","Простую диагностику с помощью мочи","Технологию анализа крови на основе нескольких капель","Создание персонализированных медицинских приборов"],"correctAnswerIndex":1},{"title":"Что привело к провалу Theranos?","description":"Компания использовала ненадежные технологии и фальсифицировала результаты анализов, что привело к падению доверия и закрытию бизнеса.","options":["Нехватка финансирования","Недостоверность технологий и обман инвесторов","Проблемы с маркетинговой стратегией","Проблемы с патентами и авторскими правами"],"correctAnswerIndex":1},{"title":"Что разрушило репутацию Theranos?","description":"Когда стало известно, что технологии компании не работали должным образом, а данные о тестах были фальсифицированы, начались судебные разбирательства.","options":["Уход основателей компании","Признание технологий неработающими и попытки фальсификации","Отказ от публичных заявлений","Изменение бизнес-модели компании"],"correctAnswerIndex":2},{"title":"Что предъявили Холмс?","description":"Элизабету Холмс обвиняли в мошенничестве и обмане инвесторов, а также в предоставлении ложной информации о функциональности технологий.","options":["Мошенничество и обман инвесторов","Нарушение законов о безопасности данных","Незаконное использование технологий других компаний","Плагиат и нарушение авторских прав"],"correctAnswerIndex":3},{"title":"Какое было финансирование?","description":"Theranos привлекала миллионы долларов инвестиций от крупных венчурных капиталистов, таких как Rupert Murdoch и Larry Ellison.","options":["Несколько миллиардов долларов инвестиций","Ограниченные инвестиции от небольших компаний","Государственное финансирование","Минимальные частные вложения"],"correctAnswerIndex":4}]}');
+;// ./src/utils/test.js
+
+var currentQuestionIndex = 0;
+var selectedAnswerIndex = null;
+var totalQuestions = test_data_namespaceObject.a.length;
+var correctAnswers = 0; // Переменная для подсчёта правильных ответов
+
+document.addEventListener('DOMContentLoaded', function () {
+  var questionElement = document.querySelector('.test-widget__info h1');
+  var descriptionElement = document.querySelector('.test-widget__info p');
+  var optionsElement = document.querySelector('.test-widget__options');
+  var nextButton = document.querySelector('.button--unactive');
+  var prevButton = document.querySelector('.button--primary');
+  var testWidget = document.querySelector('.test-widget');
+  var counterElement = document.querySelector('.test-widget__counter');
+
+  // Проверяем, что все элементы найдены
+  if (!questionElement || !descriptionElement || !optionsElement || !nextButton || !prevButton || !testWidget || !counterElement) {
+    console.error('Не все элементы DOM были найдены');
+    return;
+  }
+
+  // Инициализация
+  updateQuestion();
+
+  // Функция для обновления вопроса
+  // Функция для обновления вопроса
+  function updateQuestion() {
+    var currentQuestion = test_data_namespaceObject.a[currentQuestionIndex];
+
+    // Обновляем заголовок и описание
+    questionElement.textContent = currentQuestion.title;
+    descriptionElement.textContent = currentQuestion.description;
+
+    // Обновляем счётчик с нужными стилями
+    counterElement.innerHTML = "\n      <span class=\"typography__header2\">".concat(currentQuestionIndex + 1, " /&nbsp</span> \n      <span class=\"typography__header2 typography--muted\">").concat(totalQuestions, "</span>\n    ");
+
+    // Обновляем варианты ответов
+    optionsElement.innerHTML = '';
+    currentQuestion.options.forEach(function (option, index) {
+      var li = document.createElement('li');
+      li.classList.add('test-widget__option');
+      li.classList.add('typography--muted'); // Добавляем класс typography--muted
+      li.classList.add('typography__body2'); // Добавляем класс typography__body2
+      li.textContent = option;
+      li.dataset.index = index;
+
+      // Если вариант выбран, добавляем активный класс
+      if (index === selectedAnswerIndex) {
+        li.classList.add('test-widget__option--highlighted');
+      }
+      li.addEventListener('click', function () {
+        return selectAnswer(index, li);
+      });
+      optionsElement.appendChild(li);
+    });
+
+    // Обновляем кнопки
+    updateButtons();
+  }
+
+  // Функция для обновления кнопок
+  function updateButtons() {
+    var backButton = prevButton; // Уже определено выше
+    var nextButton = nextButton; // Уже определено выше
+
+    // Проверка на наличие кнопок перед выполнением
+    if (!backButton || !nextButton) {
+      console.error('Кнопки не найдены!');
+      return;
+    }
+
+    // Проверяем, есть ли выбранный вариант
+    var selectedOption = document.querySelector('.test-widget__option--highlighted');
+
+    // Если выбран вариант, активируем кнопку "Следующий вопрос"
+    if (selectedOption) {
+      nextButton.classList.remove('button--unactive');
+      nextButton.classList.add('button--accent');
+      nextButton.removeEventListener('click', preventNext); // Убираем предыдущее блокирование
+      nextButton.addEventListener('click', goToNextQuestion); // Активируем переход
+    } else {
+      nextButton.classList.add('button--unactive');
+      nextButton.classList.remove('button--accent');
+      nextButton.removeEventListener('click', goToNextQuestion); // Убираем переход
+      nextButton.addEventListener('click', preventNext); // Добавляем блокировку
+    }
+
+    // Если это первый вопрос, кнопка "Назад" имеет только класс button--unactive
+    if (currentQuestionIndex === 0) {
+      backButton.classList.add('button--unactive');
+      backButton.classList.remove('button--primary');
+    } else {
+      backButton.classList.remove('button--unactive');
+      backButton.classList.add('button--primary');
+    }
+  }
+
+  // Функция для блокировки клика по кнопке "Следующий вопрос"
+  function preventNext(event) {
+    event.preventDefault(); // Отменяет действие по умолчанию (переход к следующему вопросу)
+    event.stopPropagation(); // Останавливает дальнейшее распространение события
+  }
+
+  // Функция для выбора ответа
+  function selectAnswer(index, li) {
+    var options = optionsElement.querySelectorAll('.test-widget__option');
+
+    // Убираем выделение с предыдущего выбранного варианта
+    var previousSelected = optionsElement.querySelector('.test-widget__option--highlighted');
+    if (previousSelected) {
+      previousSelected.classList.remove('test-widget__option--highlighted');
+    }
+
+    // Добавляем выделение на новый вариант
+    li.classList.add('test-widget__option--highlighted');
+    selectedAnswerIndex = index;
+
+    // Активируем кнопку "Следующий вопрос"
+    nextButton.classList.remove('button--unactive');
+    nextButton.classList.add('button--accent');
+  }
+
+  // Функция для перехода к следующему вопросу
+  function goToNextQuestion() {
+    var currentQuestion = test_data_namespaceObject.a[currentQuestionIndex];
+    var selectedOption = document.querySelector('.test-widget__option--highlighted');
+
+    // Проверка на правильность ответа (если есть правильный ответ в данных)
+    if (selectedOption && selectedOption.dataset.index == currentQuestion.correctAnswerIndex) {
+      correctAnswers++;
+    }
+    if (currentQuestionIndex < totalQuestions - 1) {
+      currentQuestionIndex++;
+      selectedAnswerIndex = null; // Сбросить выбранный ответ
+      nextButton.classList.add('button--unactive');
+      nextButton.classList.remove('button--accent');
+      updateQuestion();
+    } else {
+      showResult(); // Показать результаты на последнем вопросе
+    }
+  }
+
+  // Функция для возвращения к предыдущему вопросу
+  function goToPreviousQuestion() {
+    if (currentQuestionIndex > 0) {
+      currentQuestionIndex--;
+      selectedAnswerIndex = null; // Сбросить выбранный ответ
+      nextButton.classList.add('button--unactive');
+      nextButton.classList.remove('button--accent');
+      updateQuestion();
+    }
+  }
+
+  // Функция для отображения результатов теста
+  function showResult() {
+    testWidget.innerHTML = "<h1>\u0420\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442\u044B \u0442\u0435\u0441\u0442\u0430</h1><p>\u0412\u044B \u043E\u0442\u0432\u0435\u0442\u0438\u043B\u0438 \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E \u043D\u0430 ".concat(correctAnswers, " \u0438\u0437 ").concat(totalQuestions, " \u0432\u043E\u043F\u0440\u043E\u0441\u043E\u0432.</p>");
+  }
+
+  // Обработчики событий для кнопок
+  nextButton.addEventListener('click', goToNextQuestion);
+  prevButton.addEventListener('click', goToPreviousQuestion);
 });
 // EXTERNAL MODULE: ./src/utils/router.js
 var router = __webpack_require__(207);
@@ -11750,6 +12006,7 @@ var failslider = new Swiper('#failures_slider', {
   }
 });
 ;// ./src/index.js
+
 
 
 

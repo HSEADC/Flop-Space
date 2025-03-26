@@ -1,0 +1,21 @@
+@use '../design-system/variables' as *;
+@use '../design-system/mixins' as *; 
+
+.button {
+    padding: $spacing-m $spacing-xxl $spacing-m $spacing-xxl;
+    background: $color-base-input;
+    border-radius: $border-radius-s;
+
+    &--primary {
+        color: $color-font-primary !important;
+    }
+
+    &--unactive {
+        color: $color-font-hint !important;
+    }
+
+    &--accent {
+        background: $color-brand-accent;
+        color: $color-base-block;
+    }
+}

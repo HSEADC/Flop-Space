@@ -3,6 +3,7 @@
 
 .header {
     min-height: $header-height;
+    background: $color-base-block;
     display: flex;
     @include outline(bottom);
 
@@ -16,6 +17,11 @@
     &__logo {
         display: flex;
         align-items: center;
+
+        .icon {
+            height: 35px;
+            width: 35px;
+        }
     }
 
     &__right-side {

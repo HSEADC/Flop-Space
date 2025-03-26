@@ -54,6 +54,10 @@ body {
         overflow-y: auto;
         height: 100%;
         padding-top: $spacing-xl;
+
+        &--wide {
+            width: $central-content-width;
+        }
     }
 
     &__target-content::-webkit-scrollbar {
@@ -81,4 +85,10 @@ body {
     display: flex;
     gap: $spacing-xl;
     flex-direction: row;
+}
+
+.cases-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-s;
 }

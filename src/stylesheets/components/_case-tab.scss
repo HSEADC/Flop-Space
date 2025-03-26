@@ -1,0 +1,90 @@
+@use '../design-system/variables' as *;
+@use '../design-system/mixins' as *;
+
+.case-tab {
+    display: flex;
+    justify-content: space-between;
+    background: $color-base-block;
+    padding: $spacing-xl $spacing-xxl $spacing-xl $spacing-xxl;
+    border-radius: $border-radius-s;
+    @include outline($side: all);
+    cursor: pointer;
+
+    &:hover {
+        background: $color-base-input;
+    }
+
+    &__image {
+       height: 48px;
+       width: 48px;
+       border-radius: $border-radius-absolute;
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+       @include outline($side: all);
+
+       // подключение картинок временно так, в дальнейшем кейсы будем генерить через js как карточки статей
+
+       &--1 {
+        background-image: url(./images/cases/quibi.jpg);
+       }
+
+       &--2 {
+        background-image: url(./images/card-image.jpg);
+       }
+
+       &--3 {
+        background-image: url(./images/card-image.jpg);
+       }
+
+       &--4 {
+        background-image: url(./images/card-image.jpg);
+       }
+
+       &--5 {
+        background-image: url(./images/card-image.jpg);
+       }
+
+       &--6 {
+        background-image: url(./images/card-image.jpg);
+       }
+
+       &--7 {
+        background-image: url(./images/card-image.jpg);
+       }
+
+       &--8 {
+        background-image: url(./images/card-image.jpg);
+       }
+    }
+
+    &__left-side {
+        display: flex;
+        width: 65%;
+    }
+
+    &__title {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: $spacing-l;
+    }
+
+    &__sphere-tag {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__years-tag {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__reason-tag {
+        display: flex;
+        align-items: center;
+    }
+    
+}

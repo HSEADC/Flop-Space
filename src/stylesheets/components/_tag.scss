@@ -1,0 +1,15 @@
+@use '../design-system/variables' as *;
+@use '../design-system/mixins' as *;
+
+.tag {
+
+    @include outline($side: all);
+    padding: $spacing-s $spacing-l $spacing-s $spacing-l;
+    border-radius: $border-radius-s;
+
+    &--accent {
+        border-color: $color-brand-accent;
+        color: $color-brand-accent;
+    }
+    
+}

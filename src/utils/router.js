@@ -3,16 +3,32 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('#main').addEventListener('click', () => {
       window.location.href = 'index.html'; 
     });
-  
-    document.querySelector('#goToAbout').addEventListener('click', () => {
-      window.location.href = 'about.html'; 
+
+    document.querySelector('#home').addEventListener('click', () => {
+      window.location.href = 'index.html'; 
     });
   
-    document.querySelector('#goToServices').addEventListener('click', () => {
-      window.location.href = 'services.html'; 
+    document.querySelector('#podcasts').addEventListener('click', () => {
+      window.location.href = 'podcasts.html'; 
     });
   
-    document.querySelector('#goToContacts').addEventListener('click', () => {
-      window.location.href = 'contacts.html'; 
+    document.querySelector('#videos').addEventListener('click', () => {
+      window.location.href = 'videos.html'; 
+    });
+  
+    document.querySelector('#tests').addEventListener('click', () => {
+      window.location.href = 'tests.html'; 
+    });
+
+    document.querySelector('#network').addEventListener('click', () => {
+      window.location.href = 'network.html'; 
+    });
+
+    document.querySelector('#fav').addEventListener('click', () => {
+      window.location.href = 'fav.html'; 
+    });
+
+    document.querySelector('#cases').addEventListener('click', () => {
+      window.location.href = 'cases.html'; 
     });
   });

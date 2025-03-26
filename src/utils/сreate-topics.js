@@ -14,7 +14,7 @@ function createTopic(topic) {
 
     topicElement.innerHTML = `
     <div class="topic-list__image" style="background-image: url('${imagePath}')"></div>
-    <p class="typography__subheader1 typography--muted"> ${topic.title} </p>
+    <p class="typography__subheader1"> ${topic.title} </p>
     `;
 
     return topicElement; 

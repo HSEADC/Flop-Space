@@ -88,5 +88,16 @@
         flex-direction: column;
         gap: $spacing-s;
     }
+
+    &--small {
+        background: none;
+        border-radius: 0px;
+        border: none;
+        height: 100%;
+
+        .article-card__content {
+            padding: 0px;
+        }
+    }
     
 }

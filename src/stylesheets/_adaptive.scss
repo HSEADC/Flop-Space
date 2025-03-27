@@ -89,4 +89,34 @@
             width: 100%;
         }
     }
+
+    .subscription-promo__header {
+        flex-direction: column;
+        gap: $spacing-xxl;
+
+        .button {
+            width: fit-content;
+        }
+    }
+
+    .subscription-promo__image {
+        display: none;
+    }
+
+    .quote-block__image {
+        display: none;
+    }
+
+    .test-widget__header {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .article-card--horiz {
+        flex-direction: column;
+        
+        .article-card__image {
+            min-height: 10rem;
+        }
+    }
 }

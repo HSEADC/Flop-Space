@@ -10,7 +10,7 @@ function createTopic(topic) {
         filterCards(topic.id, topic.title); // Фильтруем карточки по категории
     });
 
-    let imagePath = require(`../images/${topic.image}`);
+    let imagePath = require(`../images/topics/${topic.image}`);
 
     topicElement.innerHTML = `
     <div class="topic-list__image" style="background-image: url('${imagePath}')"></div>

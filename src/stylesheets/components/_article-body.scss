@@ -23,4 +23,12 @@
         border-radius: $border-radius-s;
         height: 22rem;
     }
+
+    &__tag-container {
+        display: flex;
+        gap: $spacing-s;
+        .tag {
+            width: fit-content;
+        }
+    }
 }

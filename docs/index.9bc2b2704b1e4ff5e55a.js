@@ -1,7 +1,7 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 793:
+/***/ 4793:
 /***/ (() => {
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -67,21 +67,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /***/ }),
 
-/***/ 92:
+/***/ 7092:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 var requireAll = function requireAll(requireContext) {
   return requireContext.keys().forEach(requireContext);
 };
 try {
-  requireAll(__webpack_require__(46));
+  requireAll(__webpack_require__(6046));
 } catch (error) {
   console.error("Ошибка при импорте SVG иконок:", error);
 }
 
 /***/ }),
 
-/***/ 207:
+/***/ 6207:
 /***/ (() => {
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -107,6 +107,30 @@ document.addEventListener('DOMContentLoaded', function () {
     window.location.href = 'fav.html';
   });
   document.querySelector('#cases').addEventListener('click', function () {
+    window.location.href = 'cases.html';
+  });
+  document.querySelector('#main-mob').addEventListener('click', function () {
+    window.location.href = 'index.html';
+  });
+  document.querySelector('#home-mob').addEventListener('click', function () {
+    window.location.href = 'index.html';
+  });
+  document.querySelector('#podcasts-mob').addEventListener('click', function () {
+    window.location.href = 'podcasts.html';
+  });
+  document.querySelector('#videos-mob').addEventListener('click', function () {
+    window.location.href = 'videos.html';
+  });
+  document.querySelector('#tests-mob').addEventListener('click', function () {
+    window.location.href = 'tests.html';
+  });
+  document.querySelector('#network-mob').addEventListener('click', function () {
+    window.location.href = 'network.html';
+  });
+  document.querySelector('#fav-mob').addEventListener('click', function () {
+    window.location.href = 'fav.html';
+  });
+  document.querySelector('#cases-mob').addEventListener('click', function () {
     window.location.href = 'cases.html';
   });
 });
@@ -141,7 +165,7 @@ updateCustomScrollbar(); // Обновляем при загрузке
 
 /***/ }),
 
-/***/ 897:
+/***/ 2897:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 (function (global, factory) {
@@ -415,7 +439,7 @@ return BrowserSpriteSymbol;
 
 /***/ }),
 
-/***/ 321:
+/***/ 5812:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -423,9 +447,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2897);
 /* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5042);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
+  "id": "docs",
+  "use": "docs-usage",
+  "viewBox": "0 0 354 137",
+  "content": "<symbol viewBox=\"0 0 354 137\" xmlns=\"http://www.w3.org/2000/svg\" id=\"docs\"><path d=\"M57.8227 85.8858L38.0885 104H0.976562V55.5483L32.9341 26.3889H86.393V110.922L58.2645 136.547L29.5469 136.841V111.216L57.8227 110.922V85.8858ZM57.8227 78.0805V52.3083H29.5469V78.0805H57.8227Z\" /><path d=\"M148.215 78.0805V52.3083H119.939V78.0805H148.215ZM91.3691 104V55.401L123.474 26.3889H176.785V74.9879L145.122 104H91.3691Z\" /><path d=\"M250.831 121.82L210.332 76.0188V104H181.762V0.616699H210.332V54.2229L235.073 26.3889H271.449L235.662 63.5008L271.449 104L250.831 121.82Z\" /><path d=\"M353.975 26.3889V104H325.405V85.8858L305.523 104H268.559V26.3889H297.129V78.0805H325.405V26.3889H353.975Z\" /></symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
+
+/***/ }),
+
+/***/ 4321:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5042);
 /* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -440,7 +489,7 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 
 /***/ }),
 
-/***/ 792:
+/***/ 3791:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -448,9 +497,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2897);
 /* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5042);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
+  "id": "file",
+  "use": "file-usage",
+  "viewBox": "0 0 24 24",
+  "content": "<symbol viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" id=\"file\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M2 2H15.9849L22 7.52409V23H2V2ZM5 5V20H19V8.84214L14.8163 5H5ZM11.4167 7.14286H7.33333V17.8571H16.6667V11.9643H11.4167V7.14286ZM16.6667 9.82143V9.72929L13.8503 7.14286H13.75V9.82143H16.6667Z\" /></symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
+
+/***/ }),
+
+/***/ 4792:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5042);
 /* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -465,7 +539,7 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 
 /***/ }),
 
-/***/ 890:
+/***/ 5890:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -473,9 +547,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2897);
 /* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5042);
 /* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -490,7 +564,7 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 
 /***/ }),
 
-/***/ 758:
+/***/ 4758:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -498,9 +572,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2897);
 /* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5042);
 /* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -515,7 +589,7 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 
 /***/ }),
 
-/***/ 409:
+/***/ 1409:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -523,9 +597,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2897);
 /* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5042);
 /* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -540,7 +614,7 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 
 /***/ }),
 
-/***/ 752:
+/***/ 6752:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -548,9 +622,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2897);
 /* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5042);
 /* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -565,7 +639,7 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 
 /***/ }),
 
-/***/ 298:
+/***/ 1298:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -573,9 +647,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2897);
 /* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5042);
 /* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -590,7 +664,7 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 
 /***/ }),
 
-/***/ 798:
+/***/ 4798:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -598,9 +672,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2897);
 /* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5042);
 /* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -615,7 +689,7 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 
 /***/ }),
 
-/***/ 417:
+/***/ 9798:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -623,9 +697,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2897);
 /* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5042);
 /* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -640,7 +714,7 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 
 /***/ }),
 
-/***/ 642:
+/***/ 7642:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -648,9 +722,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2897);
 /* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5042);
 /* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -673,9 +747,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2897);
 /* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5042);
 /* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -690,7 +764,7 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 
 /***/ }),
 
-/***/ 98:
+/***/ 8098:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -698,9 +772,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2897);
 /* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5042);
 /* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -715,7 +789,7 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 
 /***/ }),
 
-/***/ 563:
+/***/ 4563:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -723,9 +797,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2897);
 /* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5042);
 /* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -740,7 +814,7 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 
 /***/ }),
 
-/***/ 25:
+/***/ 9025:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -748,9 +822,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2897);
 /* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5042);
 /* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -765,7 +839,7 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 
 /***/ }),
 
-/***/ 907:
+/***/ 7907:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -773,9 +847,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2897);
 /* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5042);
 /* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -790,7 +864,7 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 
 /***/ }),
 
-/***/ 175:
+/***/ 6175:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -798,9 +872,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2897);
 /* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5042);
 /* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -815,7 +889,7 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 
 /***/ }),
 
-/***/ 78:
+/***/ 4078:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -823,9 +897,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2897);
 /* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5042);
 /* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -840,7 +914,7 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 
 /***/ }),
 
-/***/ 388:
+/***/ 9388:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -848,9 +922,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2897);
 /* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5042);
 /* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -865,7 +939,57 @@ var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WE
 
 /***/ }),
 
-/***/ 42:
+/***/ 6516:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5042);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
+  "id": "lock",
+  "use": "lock-usage",
+  "viewBox": "0 0 24 24",
+  "content": "<symbol viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\" id=\"lock\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M7.5 10.875V18.75H16.5V10.875H7.5ZM10.5 13.875H13.5V15.75H10.5V13.875ZM14.25 8.625V6.375C14.25 6.09757 14.1475 5.8307 13.9635 5.625C13.9496 5.60948 13.9353 5.59431 13.9205 5.5795C13.7095 5.36853 13.4234 5.25 13.125 5.25H10.875C10.5766 5.25 10.2905 5.36853 10.0795 5.5795C10.0647 5.59431 10.0504 5.60948 10.0365 5.625C9.85248 5.8307 9.75 6.09757 9.75 6.375V8.625H14.25ZM16.5 8.625C16.758 8.625 17.0113 8.6693 17.25 8.75368C17.5634 8.8645 17.8514 9.04446 18.091 9.28401C18.5129 9.70597 18.75 10.2783 18.75 10.875V18.75C18.75 19.3467 18.5129 19.919 18.091 20.341C17.669 20.7629 17.0967 21 16.5 21H7.5C6.90326 21 6.33097 20.7629 5.90901 20.341C5.48705 19.919 5.25 19.3467 5.25 18.75V10.875C5.25 10.2783 5.48705 9.70597 5.90901 9.28401C6.14856 9.04446 6.43657 8.8645 6.75 8.75368C6.98865 8.6693 7.24204 8.625 7.5 8.625V6.375C7.5 5.47989 7.85558 4.62145 8.48851 3.98851C9.12145 3.35558 9.97989 3 10.875 3H13.125C14.0201 3 14.8786 3.35558 15.5115 3.98851C16.1444 4.62145 16.5 5.47989 16.5 6.375V8.625ZM4.5 6.56655C4.24712 6.74263 4.00858 6.9418 3.78769 7.16269C2.80312 8.14725 2.25 9.48261 2.25 10.875V18.75C2.25 20.1424 2.80312 21.4777 3.78769 22.4623C4.77225 23.4469 6.10761 24 7.5 24H16.5C17.8924 24 19.2277 23.4469 20.2123 22.4623C21.1969 21.4777 21.75 20.1424 21.75 18.75V10.875C21.75 9.48261 21.1969 8.14725 20.2123 7.16269C19.9914 6.9418 19.7529 6.74263 19.5 6.56655V6.375C19.5 4.68425 18.8284 3.06274 17.6328 1.86719C16.4373 0.671649 14.8158 0 13.125 0H10.875C9.18425 0 7.56274 0.67165 6.36719 1.86719C5.17165 3.06274 4.5 4.68424 4.5 6.375V6.56655Z\" fill-opacity=\"0.3\" /></symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
+
+/***/ }),
+
+/***/ 951:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2897);
+/* harmony import */ var _node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5042);
+/* harmony import */ var _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var symbol = new (_node_modules_svg_baker_runtime_browser_symbol_js__WEBPACK_IMPORTED_MODULE_0___default())({
+  "id": "quote",
+  "use": "quote-usage",
+  "viewBox": "0 0 79 34",
+  "content": "<symbol viewBox=\"0 0 79 34\" xmlns=\"http://www.w3.org/2000/svg\" id=\"quote\"><path d=\"M13.8433 0.616699H41.2355L28.1285 33.016H0.736328L13.8433 0.616699ZM50.808 0.616699H78.2002L65.0932 33.016H37.701L50.808 0.616699Z\" /></symbol>"
+});
+var result = _node_modules_svg_sprite_loader_runtime_browser_sprite_build_js__WEBPACK_IMPORTED_MODULE_1___default().add(symbol);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (symbol);
+
+/***/ }),
+
+/***/ 5042:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 (function (global, factory) {
@@ -1879,28 +2003,32 @@ return sprite$1;
 
 /***/ }),
 
-/***/ 46:
+/***/ 6046:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
-	"./error.svg": 321,
-	"./icon-burger-menu.svg": 792,
-	"./icon-cases.svg": 890,
-	"./icon-fav.svg": 758,
-	"./icon-file.svg": 409,
-	"./icon-like-alt.svg": 752,
-	"./icon-like.svg": 298,
-	"./icon-lock.svg": 798,
-	"./icon-logo.svg": 417,
-	"./icon-mail.svg": 642,
+	"./docs.svg": 5812,
+	"./error.svg": 4321,
+	"./file.svg": 3791,
+	"./icon-burger-menu.svg": 4792,
+	"./icon-cases.svg": 5890,
+	"./icon-fav.svg": 4758,
+	"./icon-file.svg": 1409,
+	"./icon-like-alt.svg": 6752,
+	"./icon-like.svg": 1298,
+	"./icon-lock.svg": 4798,
+	"./icon-logo.svg": 9798,
+	"./icon-mail.svg": 7642,
 	"./icon-main.svg": 472,
-	"./icon-news.svg": 98,
-	"./icon-open.svg": 563,
-	"./icon-podcast.svg": 25,
-	"./icon-search.svg": 907,
-	"./icon-sub.svg": 175,
-	"./icon-tests.svg": 78,
-	"./icon-video.svg": 388
+	"./icon-news.svg": 8098,
+	"./icon-open.svg": 4563,
+	"./icon-podcast.svg": 9025,
+	"./icon-search.svg": 7907,
+	"./icon-sub.svg": 6175,
+	"./icon-tests.svg": 4078,
+	"./icon-video.svg": 9388,
+	"./lock.svg": 6516,
+	"./quote.svg": 951
 };
 
 
@@ -1921,23 +2049,23 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 46;
+webpackContext.id = 6046;
 
 /***/ }),
 
-/***/ 288:
+/***/ 2746:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
-	"./avatar.jpg": 117,
-	"./card-image.jpg": 160,
-	"./cases/quibi.jpg": 686,
-	"./image1.jpeg": 171,
-	"./image2.jpg": 265,
-	"./image3.jpeg": 805,
-	"./image4.jpeg": 888,
-	"./tomato.jpg": 852,
-	"./topic1.jpg": 920
+	"./1.jpg": 6566,
+	"./2.jpg": 6913,
+	"./3.jpg": 8868,
+	"./4.jpg": 3807,
+	"./5.jpg": 1426,
+	"./6.jpg": 1325,
+	"./7.jpg": 192,
+	"./8.jpg": 4891,
+	"./9.jpg": 7054
 };
 
 
@@ -1958,11 +2086,61 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 288;
+webpackContext.id = 2746;
 
 /***/ }),
 
-/***/ 117:
+/***/ 3907:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var map = {
+	"./avatar.jpg": 5117,
+	"./card-image.jpg": 8160,
+	"./cases/quibi.jpg": 4686,
+	"./favicon.ico": 6826,
+	"./image1.jpeg": 7171,
+	"./image2.jpg": 7265,
+	"./image3.jpeg": 9805,
+	"./image4.jpeg": 4888,
+	"./meta.jpg": 1889,
+	"./tomato.jpg": 2852,
+	"./topic1.jpg": 3920,
+	"./topics/1.jpg": 6566,
+	"./topics/2.jpg": 6913,
+	"./topics/3.jpg": 8868,
+	"./topics/4.jpg": 3807,
+	"./topics/5.jpg": 1426,
+	"./topics/6.jpg": 1325,
+	"./topics/7.jpg": 192,
+	"./topics/8.jpg": 4891,
+	"./topics/9.jpg": 7054,
+	"./videos/video-first.jpg": 5803,
+	"./videos/video-second.jpg": 8945
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 3907;
+
+/***/ }),
+
+/***/ 5117:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1970,7 +2148,7 @@ module.exports = __webpack_require__.p + "images/avatar.7c070b.jpg";
 
 /***/ }),
 
-/***/ 160:
+/***/ 8160:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1978,7 +2156,7 @@ module.exports = __webpack_require__.p + "images/card-image.fefd1b.jpg";
 
 /***/ }),
 
-/***/ 686:
+/***/ 4686:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1986,7 +2164,15 @@ module.exports = __webpack_require__.p + "images/quibi.4e32c6.jpg";
 
 /***/ }),
 
-/***/ 171:
+/***/ 6826:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/favicon.0e8f6e.ico";
+
+/***/ }),
+
+/***/ 7171:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1994,7 +2180,7 @@ module.exports = __webpack_require__.p + "images/image1.d727a5.jpeg";
 
 /***/ }),
 
-/***/ 265:
+/***/ 7265:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -2002,7 +2188,7 @@ module.exports = __webpack_require__.p + "images/image2.b4938a.jpg";
 
 /***/ }),
 
-/***/ 805:
+/***/ 9805:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -2010,7 +2196,7 @@ module.exports = __webpack_require__.p + "images/image3.84ec89.jpeg";
 
 /***/ }),
 
-/***/ 888:
+/***/ 4888:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -2018,7 +2204,15 @@ module.exports = __webpack_require__.p + "images/image4.b7b32a.jpeg";
 
 /***/ }),
 
-/***/ 852:
+/***/ 1889:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/meta.d10e6a.jpg";
+
+/***/ }),
+
+/***/ 2852:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -2026,11 +2220,99 @@ module.exports = __webpack_require__.p + "images/tomato.976d82.jpg";
 
 /***/ }),
 
-/***/ 920:
+/***/ 3920:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 module.exports = __webpack_require__.p + "images/topic1.df765d.jpg";
+
+/***/ }),
+
+/***/ 6566:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/1.6e6c02.jpg";
+
+/***/ }),
+
+/***/ 6913:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/2.b93c78.jpg";
+
+/***/ }),
+
+/***/ 8868:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/3.3990ac.jpg";
+
+/***/ }),
+
+/***/ 3807:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/4.9d0c25.jpg";
+
+/***/ }),
+
+/***/ 1426:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/5.b6149d.jpg";
+
+/***/ }),
+
+/***/ 1325:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/6.359a2a.jpg";
+
+/***/ }),
+
+/***/ 192:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/7.761554.jpg";
+
+/***/ }),
+
+/***/ 4891:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/8.c17c0c.jpg";
+
+/***/ }),
+
+/***/ 7054:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/9.77197c.jpg";
+
+/***/ }),
+
+/***/ 5803:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/video-first.198831.jpg";
+
+/***/ }),
+
+/***/ 8945:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/video-second.178231.jpg";
 
 /***/ })
 
@@ -2127,15 +2409,15 @@ var __webpack_exports__ = {};
 // EXTERNAL MODULE: ./src/utils/scroll.js
 var utils_scroll = __webpack_require__(775);
 // EXTERNAL MODULE: ./src/stylesheets/components/search-bar.js
-var search_bar = __webpack_require__(793);
+var search_bar = __webpack_require__(4793);
 // EXTERNAL MODULE: ./src/stylesheets/components/topic-list.js
 var topic_list = __webpack_require__(795);
 // EXTERNAL MODULE: ./src/utils/import-icons.js
-var import_icons = __webpack_require__(92);
+var import_icons = __webpack_require__(7092);
 ;// ./src/data/content.json
-const content_namespaceObject = /*#__PURE__*/JSON.parse('[{"position":1,"type":"card-small","image":"card-image.jpg","title":"Как новый стартап нарушил правила рынка и быстро достиг успеха","subtitle":"Как стартап с необычной моделью бизнеса привлёк внимание инвесторов и стал успешным?","author":"Анна Гречко","authorTitle":"Business / 21.03.25","content":"Новый подход в бизнесе, рискованные инвестиции и нестандартные решения — как стартап смог так быстро выйти на рынок?","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"med","suggestionTitle":"Выбор сообщества"},{"position":2,"type":"card-small","image":"tomato.jpg","title":"Blue Tomato: Томаты, которые не стали синими. История провала стартапа","subtitle":"Как амбициозная идея о генетически модифицированных помидорах привела к краху компании.","author":"Максим Борисов","authorTitle":"Tech / 19.03.25","content":"Как амбициозная идея о генетически модифицированных помидорах привела к краху компании.","avatar":"avatar.jpg","pagelink":"article_blue_tomato.html","category":"med","suggestionTitle":"Выбор сообщества"},{"position":3,"type":"card-small","image":"image4.jpeg","title":"Будущее цифровых валют: как изменится финансовая система?","subtitle":"Почему криптовалюты будут доминировать в экономике через 10 лет?","author":"Дмитрий Федоров","authorTitle":"Finance / 18.03.25","content":"С ростом криптовалют и блокчейн-технологий многие задаются вопросом, как изменится финансовая система в будущем.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"med","suggestionTitle":"Выбор сообщества"},{"position":4,"type":"card-small","image":"image1.jpeg","title":"Как создать успешный стартап в условиях кризиса?","subtitle":"Трудности и возможности для новых проектов в экономической нестабильности.","author":"Алексей Громов","authorTitle":"Startup / 22.03.25","content":"В условиях экономического кризиса многие стартапы сталкиваются с новыми вызовами. Какие стратегии позволят добиться успеха?","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Выбор сообщества"},{"position":5,"type":"card-small","image":"image2.jpg","title":"Искусственный интеллект и будущее работы: угроза или шанс?","subtitle":"Как AI меняет рынок труда и какие профессии исчезнут в ближайшие годы?","author":"Ольга Симонова","authorTitle":"HR / 20.03.25","content":"AI уже оказывает влияние на большинство профессий. Какие навыки и профессии останутся востребованными, а какие уйдут в прошлое?","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Выбор сообщества"},{"position":6,"type":"card-small","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением?","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Выбор сообщества"},{"position":7,"type":"card-medium","image":"image2.jpg","title":"Искусственный интеллект и будущее работы: угроза или шанс?","subtitle":"Как AI меняет рынок труда и какие профессии исчезнут в ближайшие годы?","author":"Ольга Симонова","authorTitle":"HR / 20.03.25","content":"AI уже оказывает влияние на большинство профессий. Какие навыки и профессии останутся востребованными, а какие уйдут в прошлое?","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food"},{"position":8,"type":"card-medium","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением?","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food"},{"position":9,"type":"card-small","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением? Частые ошибки при масштабировании бизнеса и способы их избежать.","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Выбор сообщества"},{"position":10,"type":"card-small","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением? Частые ошибки при масштабировании бизнеса и способы их избежать.","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Выбор сообщества"},{"position":11,"type":"card-small","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением? Частые ошибки при масштабировании бизнеса и способы их избежать.","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Выбор сообщества"},{"position":12,"type":"card-small","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением? Частые ошибки при масштабировании бизнеса и способы их избежать.","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Выбор сообщества"},{"position":13,"type":"card-small","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением? Частые ошибки при масштабировании бизнеса и способы их избежать.","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Выбор сообщества"},{"position":14,"type":"card-small","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением? Частые ошибки при масштабировании бизнеса и способы их избежать.","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Выбор сообщества"},{"position":15,"type":"card-small","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением? Частые ошибки при масштабировании бизнеса и способы их избежать.","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Говно дня"},{"position":16,"type":"card-small","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением? Частые ошибки при масштабировании бизнеса и способы их избежать.","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Говно дня"},{"position":17,"type":"card-small","image":"image3.jpeg","title":"Почему стартапы не всегда справляются с расширением? Частые ошибки при масштабировании бизнеса и способы их избежать.","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Говно дня"}]');
+const content_namespaceObject = /*#__PURE__*/JSON.parse('[{"position":1,"type":"card-small","image":"image1.jpeg","title":"Juicero: Соковыжималка за $400, которая никому не была нужна","subtitle":"Как стартап с инвестициями в $120 млн провалился из-за ненужного продукта.","author":"Алексей Смирнов","authorTitle":"Бизнес / 26.03.25","content":"Juicero предлагал инновационную соковыжималку за $400, но оказалось, что пакеты сока можно выдавить руками.","avatar":"avatar.jpg","pagelink":"article_juicero.html","category":"food","suggestionTitle":"Выбор сообщества"},{"position":2,"type":"card-small","image":"image1.jpeg","title":"Theranos: Как «кровожадный» стартап обманул всех","subtitle":"История крупнейшего мошенничества в истории Silicon Valley.","author":"Алексей Смирнов","authorTitle":"Бизнес / 26.03.25","content":"Стартап Элизабет Холмс обещал революцию в медицине, но оказался грандиозным обманом.","avatar":"avatar.jpg","pagelink":"article_theranos.html","category":"med","suggestionTitle":"Выбор сообщества"},{"position":3,"type":"card-small","image":"image1.jpeg","title":"Quibi: Как стартап с $1,75 млрд инвестиций провалился за полгода","subtitle":"Почему мобильный стриминговый сервис не смог удержаться на рынке?","author":"Алексей Смирнов","authorTitle":"Бизнес / 26.03.25","content":"Quibi пытался изменить формат потребления видео, но пользователи не оценили концепцию.","avatar":"avatar.jpg","pagelink":"article_quibi.html","category":"fun","suggestionTitle":"Выбор сообщества"},{"position":4,"type":"card-small","image":"meta.jpg","title":"Как создать успешный стартап в условиях кризиса?","subtitle":"Трудности и возможности для новых проектов в экономической нестабильности.","author":"Алексей Громов","authorTitle":"Startup / 22.03.25","content":"В условиях экономического кризиса многие стартапы сталкиваются с новыми вызовами. Какие стратегии позволят добиться успеха?","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Выбор сообщества"},{"position":5,"type":"card-small","image":"meta.jpg","title":"Искусственный интеллект и будущее работы: угроза или шанс?","subtitle":"Как AI меняет рынок труда и какие профессии исчезнут в ближайшие годы?","author":"Ольга Симонова","authorTitle":"HR / 20.03.25","content":"AI уже оказывает влияние на большинство профессий. Какие навыки и профессии останутся востребованными, а какие уйдут в прошлое?","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Выбор сообщества"},{"position":6,"type":"card-small","image":"meta.jpg","title":"Почему стартапы не всегда справляются с расширением?","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Выбор сообщества"},{"position":7,"type":"card-medium","image":"meta.jpg","title":"Искусственный интеллект и будущее работы: угроза или шанс?","subtitle":"Как AI меняет рынок труда и какие профессии исчезнут в ближайшие годы?","author":"Ольга Симонова","authorTitle":"HR / 20.03.25","content":"AI уже оказывает влияние на большинство профессий. Какие навыки и профессии останутся востребованными, а какие уйдут в прошлое?","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food"},{"position":8,"type":"card-medium","image":"meta.jpg","title":"Почему стартапы не всегда справляются с расширением?","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food"},{"position":9,"type":"card-default","image":"meta.jpg","title":"Почему стартапы не всегда справляются с расширением?","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food"},{"position":10,"type":"card-medium","image":"meta.jpg","title":"Почему стартапы не всегда справляются с расширением?","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food"},{"position":11,"type":"card-medium","image":"meta.jpg","title":"Почему стартапы не всегда справляются с расширением?","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food"},{"position":12,"type":"card-small","image":"meta.jpg","title":"Как создать успешный стартап в условиях кризиса?","subtitle":"Трудности и возможности для новых проектов в экономической нестабильности.","author":"Алексей Громов","authorTitle":"Startup / 22.03.25","content":"В условиях экономического кризиса многие стартапы сталкиваются с новыми вызовами. Какие стратегии позволят добиться успеха?","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Провалы дня"},{"position":13,"type":"card-small","image":"meta.jpg","title":"Искусственный интеллект и будущее работы: угроза или шанс?","subtitle":"Как AI меняет рынок труда и какие профессии исчезнут в ближайшие годы?","author":"Ольга Симонова","authorTitle":"HR / 20.03.25","content":"AI уже оказывает влияние на большинство профессий. Какие навыки и профессии останутся востребованными, а какие уйдут в прошлое?","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Провалы дня"},{"position":14,"type":"card-small","image":"meta.jpg","title":"Почему стартапы не всегда справляются с расширением?","subtitle":"Частые ошибки при масштабировании бизнеса и способы их избежать.","author":"Сергей Новиков","authorTitle":"Business / 23.03.25","content":"Масштабирование стартапа может быть не таким простым, как кажется. Узнайте, какие проблемы могут возникнуть и как их преодолеть.","avatar":"avatar.jpg","pagelink":"placeholder.html","category":"food","suggestionTitle":"Провалы дня"}]');
 ;// ./src/data/topics.json
-const topics_namespaceObject = /*#__PURE__*/JSON.parse('[{"position":1,"image":"topic1.jpg","title":"Образование","link":"placeholder.html","id":"edu"},{"position":2,"image":"topic1.jpg","title":"Финансы","link":"placeholder.html","id":"fin"},{"position":3,"image":"topic1.jpg","title":"Медицина","link":"placeholder.html","id":"med"},{"position":4,"image":"topic1.jpg","title":"Экология","link":"placeholder.html","id":"eco"},{"position":5,"image":"topic1.jpg","title":"Развлечения","link":"placeholder.html","id":"fun"},{"position":6,"image":"topic1.jpg","title":"Логистика","link":"placeholder.html","id":"log"},{"position":7,"image":"image4.jpeg","title":"Пищепром","link":"placeholder.html","id":"food"}]');
+const topics_namespaceObject = /*#__PURE__*/JSON.parse('[{"position":1,"image":"1.jpg","title":"Образование","link":"placeholder.html","id":"edu"},{"position":2,"image":"2.jpg","title":"Финансы","link":"placeholder.html","id":"fin"},{"position":3,"image":"3.jpg","title":"Медицина","link":"placeholder.html","id":"med"},{"position":4,"image":"4.jpg","title":"Экология","link":"placeholder.html","id":"eco"},{"position":5,"image":"5.jpg","title":"Развлечения","link":"placeholder.html","id":"fun"},{"position":6,"image":"6.jpg","title":"Логистика","link":"placeholder.html","id":"log"},{"position":7,"image":"7.jpg","title":"Пищепром","link":"placeholder.html","id":"food"}]');
 ;// ./src/utils/create-cards.js
 
 
@@ -2146,8 +2428,8 @@ function createCard(card) {
   cardElement.addEventListener('click', function () {
     window.location.href = "".concat(card.pagelink);
   });
-  var imagePath = __webpack_require__(288)("./".concat(card.image));
-  var avatarPath = card.avatar ? __webpack_require__(288)("./".concat(card.avatar)) : '';
+  var imagePath = __webpack_require__(3907)("./".concat(card.image));
+  var avatarPath = card.avatar ? __webpack_require__(3907)("./".concat(card.avatar)) : '';
   if (card.type === 'card-default') {
     cardElement.innerHTML = "\n      <div class=\"article-card__content\">\n        <div class=\"author-block\">\n          <div class=\"author-block__avatar\" style=\"background-image: url(".concat(avatarPath, ")\"></div>\n          <div class=\"author-block__text-block\">\n            <p class=\"typography__caption2\">").concat(card.author, "</p>\n            <p class=\"typography__caption1 typography--muted\">").concat(card.authorTitle, "</p>\n          </div>\n        </div>\n        <h1 class=\"typography__display1 typography--line-limit\">").concat(card.title, "</h1>\n        <p class=\"typography__body2 typography--muted typography--line-limit\">").concat(card.content, "</p>\n      </div>\n      <div class=\"article-card__image\" style=\"background-image: url(").concat(imagePath, ")\"></div>\n    ");
   }
@@ -2232,8 +2514,8 @@ function filterCards(category, categoryTitle) {
         return topic.id === category;
       });
       if (currentTopic) {
-        var imagePath1 = __webpack_require__(288)("./".concat(currentTopic.image));
-        var imagePath2 = __webpack_require__(288)("./".concat(currentTopic.image));
+        var imagePath1 = __webpack_require__(2746)("./".concat(currentTopic.image));
+        var imagePath2 = __webpack_require__(2746)("./".concat(currentTopic.image));
         topicImage1.style.backgroundImage = "url('".concat(imagePath1, "')");
         topicImage2.style.backgroundImage = "url('".concat(imagePath2, "')");
       }
@@ -2307,7 +2589,7 @@ function createTopic(topic) {
     event.preventDefault(); // Отменяем стандартный переход
     filterCards(topic.id, topic.title); // Фильтруем карточки по категории
   });
-  var imagePath = __webpack_require__(288)("./".concat(topic.image));
+  var imagePath = __webpack_require__(2746)("./".concat(topic.image));
   topicElement.innerHTML = "\n    <div class=\"topic-list__image\" style=\"background-image: url('".concat(imagePath, "')\"></div>\n    <p class=\"typography__subheader1\"> ").concat(topic.title, " </p>\n    ");
   return topicElement;
 }
@@ -2327,7 +2609,7 @@ document.addEventListener('DOMContentLoaded', function () {
   renderTopics(topics_namespaceObject);
 });
 ;// ./src/data/test-data.json
-const test_data_namespaceObject = /*#__PURE__*/JSON.parse('{"a":[{"title":"Что обещала Theranos?","description":"Theranos утверждала, что разработала революционную технологию для анализа крови, способную проводить тесты с помощью всего нескольких капель крови.","options":["Новые методы диагностики болезней","Простую диагностику с помощью мочи","Технологию анализа крови на основе нескольких капель","Создание персонализированных медицинских приборов"],"correctAnswerIndex":1},{"title":"Что привело к провалу Theranos?","description":"Компания использовала ненадежные технологии и фальсифицировала результаты анализов, что привело к падению доверия и закрытию бизнеса.","options":["Нехватка финансирования","Недостоверность технологий и обман инвесторов","Проблемы с маркетинговой стратегией","Проблемы с патентами и авторскими правами"],"correctAnswerIndex":1},{"title":"Что разрушило репутацию Theranos?","description":"Когда стало известно, что технологии компании не работали должным образом, а данные о тестах были фальсифицированы, начались судебные разбирательства.","options":["Уход основателей компании","Признание технологий неработающими и попытки фальсификации","Отказ от публичных заявлений","Изменение бизнес-модели компании"],"correctAnswerIndex":2},{"title":"Что предъявили Холмс?","description":"Элизабету Холмс обвиняли в мошенничестве и обмане инвесторов, а также в предоставлении ложной информации о функциональности технологий.","options":["Мошенничество и обман инвесторов","Нарушение законов о безопасности данных","Незаконное использование технологий других компаний","Плагиат и нарушение авторских прав"],"correctAnswerIndex":3},{"title":"Какое было финансирование?","description":"Theranos привлекала миллионы долларов инвестиций от крупных венчурных капиталистов, таких как Rupert Murdoch и Larry Ellison.","options":["Несколько миллиардов долларов инвестиций","Ограниченные инвестиции от небольших компаний","Государственное финансирование","Минимальные частные вложения"],"correctAnswerIndex":4}]}');
+const test_data_namespaceObject = /*#__PURE__*/JSON.parse('{"a":[{"title":"Что обещала Theranos?","description":"Какая инновация была заявлена компанией?","options":["Новые методы диагностики болезней","Простую диагностику с помощью мочи","Технологию анализа крови на основе нескольких капель","Создание персонализированных медицинских приборов"],"correctAnswerIndex":2},{"title":"Что привело к провалу Theranos?","description":"Какая основная причина привела к краху компании?","options":["Нехватка финансирования","Недостоверность технологий и обман инвесторов","Проблемы с маркетинговой стратегией","Проблемы с патентами и авторскими правами"],"correctAnswerIndex":1},{"title":"Что разрушило репутацию Theranos?","description":"Какое событие стало ключевым в падении репутации компании?","options":["Уход основателей компании","Признание технологий неработающими и попытки фальсификации","Отказ от публичных заявлений","Изменение бизнес-модели компании"],"correctAnswerIndex":1},{"title":"Что предъявили Холмс?","description":"В чем официально обвиняли Элизабет Холмс?","options":["Мошенничество и обман инвесторов","Нарушение законов о безопасности данных","Незаконное использование технологий других компаний","Плагиат и нарушение авторских прав"],"correctAnswerIndex":0},{"title":"Какое было финансирование?","description":"Какие инвестиции привлекла Theranos?","options":["Несколько миллиардов долларов инвестиций","Ограниченные инвестиции от небольших компаний","Государственное финансирование","Минимальные частные вложения"],"correctAnswerIndex":0}]}');
 ;// ./src/utils/test.js
 
 var currentQuestionIndex = 0;
@@ -2492,7 +2774,7 @@ document.addEventListener('DOMContentLoaded', function () {
   prevButton.addEventListener('click', goToPreviousQuestion);
 });
 // EXTERNAL MODULE: ./src/utils/router.js
-var router = __webpack_require__(207);
+var router = __webpack_require__(6207);
 ;// ./node_modules/swiper/shared/ssr-window.esm.mjs
 /**
  * SSR Window 4.0.2

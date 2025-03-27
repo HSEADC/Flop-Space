@@ -142,8 +142,8 @@ export function filterCards(category, categoryTitle) {
       // Находим текущий топик в данных
       const currentTopic = topics.find(topic => topic.id === category);
       if (currentTopic) {
-        const imagePath1 = require(`../images/${currentTopic.image}`);
-        const imagePath2 = require(`../images/${currentTopic.image}`);
+        const imagePath1 = require(`../images/topics/${currentTopic.image}`);
+        const imagePath2 = require(`../images/topics/${currentTopic.image}`);
 
         topicImage1.style.backgroundImage = `url('${imagePath1}')`;
         topicImage2.style.backgroundImage = `url('${imagePath2}')`;

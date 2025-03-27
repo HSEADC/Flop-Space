@@ -99,5 +99,22 @@
             padding: 0px;
         }
     }
+
+    &--horiz {
+       flex-direction: row;
+
+       .article-card__image {
+        min-width: 20rem;
+        height: 100%;
+       }
+    }
     
+}
+
+#video-first {
+    background-image: url(./images/videos/video-first.jpg) !important;
+}
+
+#video-second {
+    background-image: url(./images/videos/video-second.jpg) !important;
 }

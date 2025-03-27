@@ -1,0 +1,50 @@
+@use '../design-system/variables' as *;
+@use '../design-system/mixins' as *;
+
+.subscription-promo {
+
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xxxl;
+    padding: $spacing-xxl;
+    @include outline($side:all);
+    position: relative;
+    overflow: hidden;
+    border-radius: $border-radius-s;
+    
+    .button {
+        z-index: 1;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $spacing-m 0 $spacing-m 0;
+        @include outline($side:bottom);
+
+        .icon {
+            fill: $color-font-hint;
+        }
+    }
+
+    &__file {
+        display: flex;
+        gap: $spacing-s;
+    }
+
+    &__image {
+        height: 350px;
+        width: 350px;
+        position: absolute;
+        top: -120px;
+        right: 0;
+        z-index: 0;
+        opacity: 10%;
+    }
+}

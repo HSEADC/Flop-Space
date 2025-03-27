@@ -1,49 +1,49 @@
 [
     {
         "position": 1,
-        "image": "topic1.jpg",
+        "image": "1.jpg",
         "title": "Образование",
         "link": "placeholder.html",
         "id": "edu"
     },
     {
         "position": 2,
-        "image": "topic1.jpg",
+        "image": "2.jpg",
         "title": "Финансы",
         "link": "placeholder.html",
         "id": "fin"
     },
     {
         "position": 3,
-        "image": "topic1.jpg",
+        "image": "3.jpg",
         "title": "Медицина",
         "link": "placeholder.html",
         "id": "med"
     },
     {
         "position": 4,
-        "image": "topic1.jpg",
+        "image": "4.jpg",
         "title": "Экология",
         "link": "placeholder.html",
         "id": "eco"
     },
     {
         "position": 5,
-        "image": "topic1.jpg",
+        "image": "5.jpg",
         "title": "Развлечения",
         "link": "placeholder.html",
         "id": "fun"
     },
     {
         "position": 6,
-        "image": "topic1.jpg",
+        "image": "6.jpg",
         "title": "Логистика",
         "link": "placeholder.html",
         "id": "log"
     },
     {
         "position": 7,
-        "image": "image4.jpeg",
+        "image": "7.jpg",
         "title": "Пищепром",
         "link": "placeholder.html",
         "id": "food"

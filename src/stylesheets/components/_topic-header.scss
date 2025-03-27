@@ -4,9 +4,10 @@
 .topic-header {
     position: relative;
     height: 15rem;
+    background-color: $color-base-block;
     padding-bottom: 8rem;
-    background-color: $color-base-background;
     display: none;
+    border-radius: $border-radius-s;
 
     &__cover {
         height: 10.25rem;
@@ -20,7 +21,7 @@
     &__content {
         position: absolute;
         bottom: 0rem;
-        padding: 0 $spacing-xxl 0 $spacing-xxl;
+        padding: 0 $spacing-xxl $spacing-xxl $spacing-xxl;
         display: flex;
         align-items: flex-end;
         gap: $spacing-l;
@@ -30,12 +31,12 @@
        height: 6.25rem;
        width: 6.25rem;
        background-image: url(./images/card-image.jpg);
-       border-radius: $border-radius-m;
+       border-radius: $border-radius-s $border-radius-s 0 0;
        background-size: cover;
        background-position: center;
        background-repeat: no-repeat;
 
-       border: 0.5rem solid $color-base-background;
+       border: 0.5rem solid $color-base-block;
     }
 
     &__info {

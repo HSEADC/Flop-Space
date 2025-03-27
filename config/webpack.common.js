@@ -80,7 +80,7 @@ module.exports = {
         type: 'asset/source'
       },
       {
-        test: /\.(png|jpg|jpeg|gif)$/i,
+        test: /\.(png|jpg|jpeg|gif|ico)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'images/[name].[hash:6][ext]',

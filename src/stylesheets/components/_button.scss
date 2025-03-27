@@ -5,6 +5,10 @@
     padding: $spacing-m $spacing-xxl $spacing-m $spacing-xxl;
     background: $color-base-input;
     border-radius: $border-radius-s;
+    display: flex;
+    gap: $spacing-s;
+    align-items: center;
+    white-space: nowrap;
 
     &--primary {
         color: $color-font-primary !important;

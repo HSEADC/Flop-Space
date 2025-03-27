@@ -23,6 +23,6 @@ module.exports = pages.map(page => new HtmlWebpackPlugin({
   filename: page.filename,
   favicon: './src/images/favicon.ico', // Указываем путь к фавиконке
   meta: {
-    'og:image': { property: 'og:image', content: '/images/meta.jpg' }
+    'og:image': { property: 'og:image', content: './images/meta.d10e6a.jpg' }
   }
 }));

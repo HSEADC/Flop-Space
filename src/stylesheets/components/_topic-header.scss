@@ -47,3 +47,32 @@
     }
 
 }
+
+.feed-header {
+    min-height: 10.25rem;
+        border-radius: $border-radius-s;
+        background-size: cover;
+        background-position: left center;
+        background-repeat: no-repeat;
+        @include outline($side:all);
+}
+
+#fh-image-1 {
+    background-image: url(./images/card-image-1.jpg);
+}
+
+#fh-image-2 {
+    background-image: url(./images/card-image-2.jpg);
+}
+
+#fh-image-3 {
+    background-image: url(./images/card-image-3.jpg);
+}
+
+#fh-image-4 {
+    background-image: url(./images/card-image-4.jpg);
+}
+
+#fh-image-5 {
+    background-image: url(./images/card-image-5.jpg);
+}

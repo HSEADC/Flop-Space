@@ -2095,6 +2095,11 @@ webpackContext.id = 2746;
 
 var map = {
 	"./avatar.jpg": 5117,
+	"./card-image-1.jpg": 2478,
+	"./card-image-2.jpg": 9593,
+	"./card-image-3.jpg": 8540,
+	"./card-image-4.jpg": 4535,
+	"./card-image-5.jpg": 8698,
 	"./card-image.jpg": 8160,
 	"./cases/quibi.jpg": 4686,
 	"./favicon.ico": 6826,
@@ -2145,6 +2150,46 @@ webpackContext.id = 3907;
 
 "use strict";
 module.exports = __webpack_require__.p + "images/avatar.7c070b.jpg";
+
+/***/ }),
+
+/***/ 2478:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/card-image-1.fc22d5.jpg";
+
+/***/ }),
+
+/***/ 9593:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/card-image-2.4242e0.jpg";
+
+/***/ }),
+
+/***/ 8540:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/card-image-3.b20049.jpg";
+
+/***/ }),
+
+/***/ 4535:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/card-image-4.ff43dc.jpg";
+
+/***/ }),
+
+/***/ 8698:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/card-image-5.96a814.jpg";
 
 /***/ }),
 
@@ -2502,6 +2547,14 @@ function filterCards(category, categoryTitle) {
   var topicHeader = document.querySelector('.topic-header');
   var topicImage1 = document.querySelector('.topic-header__cover');
   var topicImage2 = document.querySelector('.topic-header__image');
+  var feedHeader = document.querySelector('.feed-header');
+  if (feedHeader) {
+    if (category === 'all') {
+      feedHeader.style.display = 'block'; // Показываем при выборе "Все"
+    } else {
+      feedHeader.style.display = 'none'; // Скрываем при выборе конкретного топика
+    }
+  }
   if (topicHeader) {
     if (category === 'all') {
       topicHeader.style.display = 'none'; // Скрываем весь контейнер заголовка

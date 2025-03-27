@@ -132,6 +132,16 @@ export function filterCards(category, categoryTitle) {
   const topicImage1 = document.querySelector('.topic-header__cover');
   const topicImage2 = document.querySelector('.topic-header__image');
 
+  const feedHeader = document.querySelector('.feed-header');
+
+if (feedHeader) {
+  if (category === 'all') {
+    feedHeader.style.display = 'block'; // Показываем при выборе "Все"
+  } else {
+    feedHeader.style.display = 'none'; // Скрываем при выборе конкретного топика
+  }
+}
+
   if (topicHeader) {
     if (category === 'all') {
       topicHeader.style.display = 'none'; // Скрываем весь контейнер заголовка

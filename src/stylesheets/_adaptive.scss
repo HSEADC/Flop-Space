@@ -119,4 +119,10 @@
             min-height: 10rem;
         }
     }
+
+    .subscription-promo__item {
+        flex-direction: column !important;
+        align-items: inherit;
+        gap: $spacing-xs;
+    }
 }

@@ -133,6 +133,9 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('#fav-mob').addEventListener('click', function () {
     window.location.href = 'fav.html';
   });
+  document.querySelector('#theranos-case').addEventListener('click', function () {
+    window.location.href = 'article_theranos.html';
+  });
   document.querySelector('#cases-mob').addEventListener('click', function () {
     window.location.href = 'cases.html';
   });
@@ -18754,6 +18757,8 @@ var map = {
 	"./styleguide/19.png": 2370,
 	"./styleguide/2.png": 5392,
 	"./styleguide/20.png": 6146,
+	"./styleguide/21.png": 4011,
+	"./styleguide/22.png": 2032,
 	"./styleguide/3.png": 1641,
 	"./styleguide/4.png": 2246,
 	"./styleguide/5.png": 1263,
@@ -19107,6 +19112,22 @@ module.exports = __webpack_require__.p + "images/2.f26235.png";
 
 "use strict";
 module.exports = __webpack_require__.p + "images/20.4f4068.png";
+
+/***/ }),
+
+/***/ 4011:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/21.f32a11.png";
+
+/***/ }),
+
+/***/ 2032:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/22.354906.png";
 
 /***/ }),
 

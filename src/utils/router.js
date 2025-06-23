@@ -64,6 +64,10 @@ document.addEventListener('DOMContentLoaded', () => {
       window.location.href = 'fav.html'; 
     });
 
+        document.querySelector('#theranos-case').addEventListener('click', () => {
+      window.location.href = 'article_theranos.html'; 
+    });
+
     document.querySelector('#cases-mob').addEventListener('click', () => {
       window.location.href = 'cases.html'; 
     });

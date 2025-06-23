@@ -70,15 +70,6 @@ const SearchBar = () => {
         value={query}
         onChange={handleChange}
       />
-      <div className="search-results">
-        {filteredPosts.map(post => (
-          <div key={post.id} className="search-result-item">
-            <a href={post.url} target="_blank" rel="noopener noreferrer">
-              {post.title} — <i>{post.category}</i>
-            </a>
-          </div>
-        ))}
-      </div>
     </div>
   );
 };

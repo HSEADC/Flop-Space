@@ -11,6 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('#podcasts').addEventListener('click', () => {
       window.location.href = 'podcasts.html'; 
     });
+
+    document.querySelector('#styleguide').addEventListener('click', () => {
+      window.location.href = 'styleguide.html'; 
+    });
   
     document.querySelector('#videos').addEventListener('click', () => {
       window.location.href = 'videos.html'; 

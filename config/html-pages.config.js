@@ -10,6 +10,7 @@ const pages = [
   { template: './src/pages/podcasts.html', filename: './podcasts.html' },
   { template: './src/pages/videos.html', filename: './videos.html' },
   { template: './src/pages/tests.html', filename: './tests.html' },
+  { template: './src/pages/styleguide.html', filename: './styleguide.html' },
   { template: './src/pages/articles/article_theranos.html', filename: './article_theranos.html' },
   { template: './src/pages/articles/article_juicero.html', filename: './article_juicero.html' },
   { template: './src/pages/articles/article_quibi.html', filename: './article_quibi.html' },

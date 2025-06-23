@@ -94,6 +94,9 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('#podcasts').addEventListener('click', function () {
     window.location.href = 'podcasts.html';
   });
+  document.querySelector('#styleguide').addEventListener('click', function () {
+    window.location.href = 'styleguide.html';
+  });
   document.querySelector('#videos').addEventListener('click', function () {
     window.location.href = 'videos.html';
   });
@@ -18731,6 +18734,26 @@ var map = {
 	"./image3.jpeg": 9805,
 	"./image4.jpeg": 4888,
 	"./meta.jpg": 1889,
+	"./styleguide/1.png": 6683,
+	"./styleguide/10.png": 2947,
+	"./styleguide/11.png": 3114,
+	"./styleguide/12.png": 9361,
+	"./styleguide/13.png": 968,
+	"./styleguide/14.png": 583,
+	"./styleguide/15.png": 2417,
+	"./styleguide/16.png": 1525,
+	"./styleguide/17.png": 9900,
+	"./styleguide/18.png": 3915,
+	"./styleguide/19.png": 2370,
+	"./styleguide/2.png": 5392,
+	"./styleguide/20.png": 6146,
+	"./styleguide/3.png": 1641,
+	"./styleguide/4.png": 2246,
+	"./styleguide/5.png": 1263,
+	"./styleguide/6.png": 6772,
+	"./styleguide/7.png": 2186,
+	"./styleguide/8.png": 3210,
+	"./styleguide/9.png": 2067,
 	"./tomato.jpg": 2852,
 	"./topic1.jpg": 3920,
 	"./topics/1.jpg": 6566,
@@ -18917,6 +18940,166 @@ module.exports = __webpack_require__.p + "images/image4.b7b32a.jpeg";
 
 "use strict";
 module.exports = __webpack_require__.p + "images/meta.d10e6a.jpg";
+
+/***/ }),
+
+/***/ 6683:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/1.8af8fe.png";
+
+/***/ }),
+
+/***/ 2947:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/10.2e23ef.png";
+
+/***/ }),
+
+/***/ 3114:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/11.8c1210.png";
+
+/***/ }),
+
+/***/ 9361:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/12.2dcf67.png";
+
+/***/ }),
+
+/***/ 968:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/13.014437.png";
+
+/***/ }),
+
+/***/ 583:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/14.cab0ae.png";
+
+/***/ }),
+
+/***/ 2417:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/15.a8ed81.png";
+
+/***/ }),
+
+/***/ 1525:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/16.fa7406.png";
+
+/***/ }),
+
+/***/ 9900:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/17.c89751.png";
+
+/***/ }),
+
+/***/ 3915:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/18.be8864.png";
+
+/***/ }),
+
+/***/ 2370:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/19.262998.png";
+
+/***/ }),
+
+/***/ 5392:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/2.f26235.png";
+
+/***/ }),
+
+/***/ 6146:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/20.4f4068.png";
+
+/***/ }),
+
+/***/ 1641:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/3.f0b30c.png";
+
+/***/ }),
+
+/***/ 2246:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/4.da0773.png";
+
+/***/ }),
+
+/***/ 1263:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/5.a22fb9.png";
+
+/***/ }),
+
+/***/ 6772:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/6.dafe97.png";
+
+/***/ }),
+
+/***/ 2186:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/7.4a4727.png";
+
+/***/ }),
+
+/***/ 3210:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/8.363458.png";
+
+/***/ }),
+
+/***/ 2067:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/9.4639fc.png";
 
 /***/ }),
 
@@ -19184,7 +19367,8 @@ var SearchBar = function SearchBar() {
                 return {
                   id: record.id,
                   title: record.fields.Title,
-                  category: record.fields.Category
+                  category: record.fields.Category,
+                  url: record.fields.URL || '#' // подтягиваем поле URL
                 };
               });
               setPosts(loadedPosts);
@@ -19207,7 +19391,7 @@ var SearchBar = function SearchBar() {
     }
     fetchPosts();
   }, []);
-  var filteredPosts = posts.filter(function (post) {
+  var filteredPosts = query.trim() === '' ? [] : posts.filter(function (post) {
     return post.title.toLowerCase().includes(query.toLowerCase());
   });
   var handleChange = function handleChange(e) {
@@ -19223,14 +19407,7 @@ var SearchBar = function SearchBar() {
     className: "search-bar__input-field",
     value: query,
     onChange: handleChange
-  }), /*#__PURE__*/react.createElement("div", {
-    className: "search-results"
-  }, filteredPosts.map(function (post) {
-    return /*#__PURE__*/react.createElement("div", {
-      key: post.id,
-      className: "search-result-item"
-    }, post.title, " \u2014 ", /*#__PURE__*/react.createElement("i", null, post.category));
-  })));
+  }));
 };
 /* harmony default export */ const react_components_SearchBar = (SearchBar);
 // EXTERNAL MODULE: ./src/utils/scroll.js

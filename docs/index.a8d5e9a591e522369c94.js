@@ -18727,7 +18727,14 @@ var map = {
 	"./card-image-4.jpg": 4535,
 	"./card-image-5.jpg": 8698,
 	"./card-image.jpg": 8160,
+	"./cases/carprice.jpg": 1301,
+	"./cases/darberry.jpg": 4651,
+	"./cases/edadil.jpg": 6851,
+	"./cases/glass.jpg": 7426,
+	"./cases/juicero.jpg": 7871,
 	"./cases/quibi.jpg": 4686,
+	"./cases/theranos.jpg": 7502,
+	"./cases/zenefits.jpg": 9428,
 	"./favicon.ico": 6826,
 	"./image1.jpeg": 7171,
 	"./image2.jpg": 7265,
@@ -18887,11 +18894,67 @@ module.exports = __webpack_require__.p + "images/card-image.fefd1b.jpg";
 
 /***/ }),
 
+/***/ 1301:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/carprice.f2177b.jpg";
+
+/***/ }),
+
+/***/ 4651:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/darberry.b29b8c.jpg";
+
+/***/ }),
+
+/***/ 6851:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/edadil.6f4002.jpg";
+
+/***/ }),
+
+/***/ 7426:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/glass.37d5cf.jpg";
+
+/***/ }),
+
+/***/ 7871:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/juicero.287958.jpg";
+
+/***/ }),
+
 /***/ 4686:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 module.exports = __webpack_require__.p + "images/quibi.4e32c6.jpg";
+
+/***/ }),
+
+/***/ 7502:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/theranos.16cb7d.jpg";
+
+/***/ }),
+
+/***/ 9428:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/zenefits.984e7d.jpg";
 
 /***/ }),
 
